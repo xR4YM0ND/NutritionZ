@@ -13,12 +13,16 @@
         },
         "negative": {
             "minecraft:slowness": {
-                "time": 20,
+                "duration": 20,
                 "amplifier": 0
+            },
+            "generic.armor": {
+                "operation": "ADDITION",
+                "value": -2.0
             }
         }
     },
-    "protein":{
-        
-    }
+    "protein": {},
+    "fat": {},
+    "vitamin": {}
 }
