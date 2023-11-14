@@ -1,6 +1,5 @@
 package net.nutritionz.mixin;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -30,10 +29,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
     private int proteinLevel = NutritionMain.NUTRITION_MAX_VALUES;
     private int fatLevel = NutritionMain.NUTRITION_MAX_VALUES;
     private int vitaminLevel = NutritionMain.NUTRITION_MAX_VALUES;
-    // private HashMap<Integer, Boolean> effectMap = new HashMap<>();
     private Map<Integer, Boolean> effectMap = Map.of(0, false, 1, false, 2, false, 3, false);
-    // private boolean hasNegativeEffects = false;
-    // private boolean hasPositiveEffects = false;
 
     @Shadow
     private int foodTickTimer;
@@ -73,38 +69,43 @@ public class HungerManagerMixin implements HungerManagerAccess {
     @Inject(method = "update", at = @At("TAIL"))
     private void updateNutritionEffectsMixin(PlayerEntity player, CallbackInfo info) {
         if (player.getWorld().getTime() % 20 == 0) {
-
-            if (this.carbohydrateLevel <= NutritionMain.NUTRITION_NEGATIVE_VALUE) {
-                List<Object> negativeEffectList = NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(0);
-                for (int i = 0; i < negativeEffectList.size(); i++) {
-                    if (negativeEffectList.get(i) instanceof StatusEffectInstance) {
-                        player.addStatusEffect((StatusEffectInstance) negativeEffectList.get(i));
-                    } else if (!this.effectMap.get(0) && negativeEffectList.get(i) instanceof Multimap) {
-                        player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) negativeEffectList.get(i));
+            List<Integer> list = List.of(this.carbohydrateLevel, this.proteinLevel, this.fatLevel, this.vitaminLevel);
+            for (int i = 0; i < list.size(); i++) {
+                if (list.get(i) <= NutritionMain.NUTRITION_NEGATIVE_VALUE) {
+                    List<Object> negativeEffectList = NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i);
+                    for (int u = 0; u < negativeEffectList.size(); u++) {
+                        if (negativeEffectList.get(u) instanceof StatusEffectInstance) {
+                            player.addStatusEffect((StatusEffectInstance) negativeEffectList.get(u));
+                        } else if (!this.effectMap.get(i) && negativeEffectList.get(u) instanceof Multimap) {
+                            player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) negativeEffectList.get(u));
+                        }
                     }
-                }
-                this.effectMap.put(0, true);
-            } else if (this.carbohydrateLevel >= NutritionMain.NUTRITION_POSITIVE_VALUE) {
-                List<Object> positiveEffectList = NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(0);
-                for (int i = 0; i < positiveEffectList.size(); i++) {
-                    if (positiveEffectList.get(i) instanceof StatusEffectInstance) {
-                        player.addStatusEffect((StatusEffectInstance) positiveEffectList.get(i));
+                    this.effectMap.put(i, true);
+                } else if (list.get(i) >= NutritionMain.NUTRITION_POSITIVE_VALUE) {
+                    List<Object> positiveEffectList = NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i);
+                    for (int u = 0; u < positiveEffectList.size(); u++) {
+                        if (positiveEffectList.get(u) instanceof StatusEffectInstance) {
+                            player.addStatusEffect((StatusEffectInstance) positiveEffectList.get(u));
+                        } else if (!this.effectMap.get(i) && positiveEffectList.get(u) instanceof Multimap) {
+                            player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(i));
+                        }
                     }
-                    // else if (!this.hasPositiveEffects && positiveEffectList.get(i) instanceof Multimap) { // to only once add temporary modifiers, check for relog? maybe not storing in nbt
-                    // player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(i));
-                    // }
-                    else if (!this.effectMap.get(0) && positiveEffectList.get(i) instanceof Multimap) {
-                        player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(i));
-                    }
-                }
-                this.effectMap.put(0, true);
-                // this.hasPositiveEffects = true;
-            } else if (this.effectMap.get(0)) {
-                this.effectMap.put(0, false);
-                List<Object> positiveEffectList = NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(0);
-                for (int i = 0; i < positiveEffectList.size(); i++) {
-                    if (positiveEffectList.get(i) instanceof Multimap) {
-                        player.getAttributes().removeModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(i));
+                    this.effectMap.put(i, true);
+                } else {
+                    if (this.effectMap.get(i)) {
+                        this.effectMap.put(i, false);
+                        List<Object> positiveEffectList = NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i);
+                        for (int u = 0; u < positiveEffectList.size(); u++) {
+                            if (positiveEffectList.get(i) instanceof Multimap) {
+                                player.getAttributes().removeModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u));
+                            }
+                        }
+                        List<Object> negativeEffectList = NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i);
+                        for (int u = 0; u < negativeEffectList.size(); u++) {
+                            if (negativeEffectList.get(i) instanceof Multimap) {
+                                player.getAttributes().removeModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) negativeEffectList.get(u));
+                            }
+                        }
                     }
                 }
             }
