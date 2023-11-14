@@ -1,6 +1,9 @@
 package net.nutritionz.screen;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import com.google.common.collect.Multimap;
 
 import org.jetbrains.annotations.Nullable;
 
@@ -9,6 +12,9 @@ import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.ingame.InventoryScreen;
+import net.minecraft.entity.attribute.EntityAttribute;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.text.Text;
@@ -43,6 +49,7 @@ public class NutritionScreen extends Screen {
         this.hungerManagerAccess = this.client != null && this.client.player != null ? (HungerManagerAccess) this.client.player.getHungerManager() : null;
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
         this.renderBackground(context);
@@ -62,10 +69,41 @@ public class NutritionScreen extends Screen {
                 }
                 context.drawText(this.textRenderer, Text.translatable("screen.nutritionz.nutritionValue", this.hungerManagerAccess.getNutritionLevel(i), NutritionMain.NUTRITION_MAX_VALUES),
                         this.x + 132, this.y + 26 + extraY, 0x3F3F3F, false);
+                List<Text> tooltips = new ArrayList<>();
                 if (isPointWithinBounds(27, 36 + extraY, 31, 5, mouseX, mouseY)) {
-                    // context.drawTooltip(textRenderer, Text.translatable("text.jobsaddon.jobLevelExperience", jobXP, jobsManager.getNextJobLevelExperience(jobName)), mouseX, mouseY);
-                } else if (isPointWithinBounds(137, 36 + extraY, 31, 5, mouseX, mouseY)) {
+                    if (NutritionMain.NUTRITION_NEGATIVE_EFFECTS.containsKey(i)) {
+                        NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i).forEach(effect -> {
+                            if (effect instanceof StatusEffectInstance) {
+                                StatusEffectInstance statusEffectInstance = (StatusEffectInstance) effect;
+                                tooltips.add(statusEffectInstance.getEffectType().getName());
+                            } else {
+                                Multimap<EntityAttribute, EntityAttributeModifier> map = (Multimap<EntityAttribute, EntityAttributeModifier>) effect;
+                                map.forEach((attribute, modifier) -> {
+                                    tooltips.add(Text.translatable(attribute.getTranslationKey()));
+                                    return;
+                                });
+                            }
+                        });
+                    }
 
+                } else if (isPointWithinBounds(137, 36 + extraY, 31, 5, mouseX, mouseY)) {
+                    if (NutritionMain.NUTRITION_POSITIVE_EFFECTS.containsKey(i)) {
+                        NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i).forEach(effect -> {
+                            if (effect instanceof StatusEffectInstance) {
+                                StatusEffectInstance statusEffectInstance = (StatusEffectInstance) effect;
+                                tooltips.add(statusEffectInstance.getEffectType().getName());
+                            } else {
+                                Multimap<EntityAttribute, EntityAttributeModifier> map = (Multimap<EntityAttribute, EntityAttributeModifier>) effect;
+                                map.forEach((attribute, modifier) -> {
+                                    tooltips.add(Text.translatable(attribute.getTranslationKey()));
+                                    return;
+                                });
+                            }
+                        });
+                    }
+                }
+                if (!tooltips.isEmpty()) {
+                    context.drawTooltip(textRenderer, tooltips, mouseX, mouseY);
                 }
                 // return this.carbohydrateLevel;
                 // case 1:

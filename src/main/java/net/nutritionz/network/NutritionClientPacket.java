@@ -87,6 +87,7 @@ public class NutritionClientPacket {
                             Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers = LinkedHashMultimap.create();
                             attributeModifiers.put(Registries.ATTRIBUTE.get(identifier),
                                     new EntityAttributeModifier(Registries.ATTRIBUTE.get(identifier).getTranslationKey(), value, Operation.valueOf(operation.toUpperCase())));
+                            objectList.add(attributeModifiers);
                         }
 
                     }
