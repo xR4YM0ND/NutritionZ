@@ -120,7 +120,6 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
                         }
                     }
                 }
-
             } catch (Exception e) {
                 LOGGER.error("Error occurred while loading resource {}. {}", id.toString(), e.toString());
             }
@@ -141,7 +140,6 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
             }
 
             JsonObject effectJsonObject = effectsJsonObject.get(effectId).getAsJsonObject();
-
             if (Registries.STATUS_EFFECT.containsId(effectIdentifier)) {
                 list.add(new StatusEffectInstance(Registries.STATUS_EFFECT.get(effectIdentifier), effectJsonObject.get("duration").getAsInt(),
                         effectJsonObject.has("amplifier") ? effectJsonObject.get("amplifier").getAsInt() : 0, false, false, true));

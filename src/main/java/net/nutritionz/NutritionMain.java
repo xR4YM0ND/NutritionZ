@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.List;
 
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.entity.attribute.EntityAttributeInstance;
 import net.minecraft.item.Item;
 import net.nutritionz.init.ConfigInit;
 import net.nutritionz.init.EventInit;
