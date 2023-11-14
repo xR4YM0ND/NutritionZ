@@ -1,0 +1,14 @@
+{
+    "minecraft:apple": {
+        "carbohydrate": 5,
+        "protein": 3,
+        "fat": 2,
+        "vitamin": 5
+    },
+    "minecraft:bread": {
+        "carbohydrate": 5,
+        "protein": 3,
+        "fat": 2,
+        "vitamin": 5
+    }
+}
