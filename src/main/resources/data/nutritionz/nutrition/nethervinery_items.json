@@ -1,0 +1,16 @@
+{
+    "nethervinery:crimson_grape": {
+        "carbohydrates": 2,
+        "protein": 1,
+        "fat": 0,
+        "vitamins": 7,
+        "minerals": 0
+    },
+    "nethervinery:warped_grape": {
+        "carbohydrates": 2,
+        "protein": 1,
+        "fat": 0,
+        "vitamins": 7,
+        "minerals": 0
+    }
+}

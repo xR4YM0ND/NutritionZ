@@ -1,0 +1,107 @@
+{
+    "meadow:cheesecake_slice": {
+        "carbohydrates": 13,
+        "protein": 5,
+        "fat": 13,
+        "vitamins": 0,
+        "minerals": 4
+    },
+    "meadow:cheese_tart_slice": {
+        "carbohydrates": 13,
+        "protein": 5,
+        "fat": 13,
+        "vitamins": 0,
+        "minerals": 4
+    },
+    "meadow:piece_of_cheese": {
+        "carbohydrates": 0,
+        "protein": 8,
+        "fat": 17,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "meadow:piece_of_sheep_cheese": {
+        "carbohydrates": 0,
+        "protein": 15,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "meadow:piece_of_grain_cheese": {
+        "carbohydrates": 0,
+        "protein": 8,
+        "fat": 17,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "meadow:piece_of_amethyst_cheese": {
+        "carbohydrates": 0,
+        "protein": 4,
+        "fat": 8,
+        "vitamins": 0,
+        "minerals": 18
+    },
+    "meadow:piece_of_buffalo_cheese": {
+        "carbohydrates": 0,
+        "protein": 15,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "meadow:piece_of_goat_cheese": {
+        "carbohydrates": 0,
+        "protein": 15,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "meadow:piece_of_warped_cheese": {
+        "carbohydrates": 0,
+        "protein": 4,
+        "fat": 8,
+        "vitamins": 0,
+        "minerals": 18
+    },
+    "meadow:cheese_sandwich": {
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "meadow:cheese_roll": {
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "meadow:cheese_stick": {
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "meadow:raw_bear_meat": {
+        "carbohydrates": 0,
+        "protein": 8,
+        "fat": 7,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "meadow:cooked_bear_meat": {
+        "carbohydrates": 0,
+        "protein": 24,
+        "fat": 21,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "meadow:ham_cheese": {
+        "carbohydrates": 0,
+        "protein": 11,
+        "fat": 17,
+        "vitamins": 0,
+        "minerals": 12
+    }
+}
