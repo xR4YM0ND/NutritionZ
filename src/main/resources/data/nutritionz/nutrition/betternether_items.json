@@ -26,5 +26,12 @@
         "fat": 0,
         "vitamins": 10,
         "minerals": 5
+    },
+    "betternether:black_apple": {
+        "carbohydrates": 5,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 5
     }
 }
