@@ -45,7 +45,7 @@ public class NutritionScreen extends Screen {
     protected void init() {
         super.init();
         this.x = this.width / 2 - (176 / 2);
-        this.y = this.height / 2 - (166 / 2);
+        this.y = this.height / 2 - (141 / 2);
         this.hungerManagerAccess = this.client != null && this.client.player != null ? (HungerManagerAccess) this.client.player.getHungerManager() : null;
     }
 
@@ -54,7 +54,7 @@ public class NutritionScreen extends Screen {
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
         this.renderBackground(context);
 
-        context.drawTexture(RenderInit.NUTRITION_ICONS, this.x, this.y, 0, 0, 176, 117);
+        context.drawTexture(RenderInit.NUTRITION_ICONS, this.x, this.y, 0, 0, 176, 142);
         context.drawText(this.textRenderer, this.title, this.x + 176 / 2 - this.textRenderer.getWidth(this.title) / 2, this.y + 7, 0x3F3F3F, false);
         int extraY = 0;
         int extraBarY = 0;
@@ -64,11 +64,11 @@ public class NutritionScreen extends Screen {
             context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 206 + extraBarY, 141, 5);
             if (this.hungerManagerAccess != null) {
                 if (this.hungerManagerAccess.getNutritionLevel(i) > 0) {
-                    context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 221 + extraBarY,
+                    context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 211 + extraBarY,
                             140 * this.hungerManagerAccess.getNutritionLevel(i) / NutritionMain.NUTRITION_MAX_VALUES, 5);
                 }
                 context.drawText(this.textRenderer, Text.translatable("screen.nutritionz.nutritionValue", this.hungerManagerAccess.getNutritionLevel(i), NutritionMain.NUTRITION_MAX_VALUES),
-                        this.x + 132, this.y + 26 + extraY, 0x3F3F3F, false);
+                        this.x + 127, this.y + 26 + extraY, 0x3F3F3F, false);
                 List<Text> tooltips = new ArrayList<>();
                 if (isPointWithinBounds(27, 36 + extraY, 31, 5, mouseX, mouseY)) {
                     if (NutritionMain.NUTRITION_NEGATIVE_EFFECTS.containsKey(i)) {
