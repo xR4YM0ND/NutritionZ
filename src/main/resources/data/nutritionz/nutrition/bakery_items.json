@@ -1,0 +1,226 @@
+{
+    "bakery:strawberry": {
+        "carbohydrates": 1,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 3,
+        "minerals": 1
+    },
+    "bakery:oat": {
+        "carbohydrates": 3,
+        "protein": 1,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "bakery:yeast": {
+        "carbohydrates": 2,
+        "protein": 12,
+        "fat": 6,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "bakery:sweet_dough": {
+        "carbohydrates": 14,
+        "protein": 2,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 4
+    },
+    "bakery:dough": {
+        "carbohydrates": 12,
+        "protein": 4,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 4
+    },
+    "bakery:croissant": {
+        "carbohydrates": 8,
+        "protein": 3,
+        "fat": 14,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "bakery:crusty_bread": {
+        "carbohydrates": 19,
+        "protein": 4,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "bakery:bread": {
+        "carbohydrates": 19,
+        "protein": 4,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "bakery:baguette": {
+        "carbohydrates": 19,
+        "protein": 4,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "bakery:toast": {
+        "carbohydrates": 19,
+        "protein": 4,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "bakery:braided_bread": {
+        "carbohydrates": 19,
+        "protein": 4,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "bakery:bun": {
+        "carbohydrates": 19,
+        "protein": 4,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "bakery:vegetable_sandwich": {
+        "carbohydrates": 28,
+        "protein": 8,
+        "fat": 2,
+        "vitamins": 4,
+        "minerals": 3
+    },
+    "bakery:sandwich": {
+        "carbohydrates": 19,
+        "protein": 28,
+        "fat": 17,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "bakery:strawberry_cake_slice": {
+        "carbohydrates": 14,
+        "protein": 3,
+        "fat": 12,
+        "vitamins": 8,
+        "minerals": 3
+    },
+    "bakery:sweetberry_cake_slice": {
+        "carbohydrates": 14,
+        "protein": 3,
+        "fat": 12,
+        "vitamins": 8,
+        "minerals": 3
+    },
+    "bakery:chocolate_cake_slice": {
+        "carbohydrates": 16,
+        "protein": 4,
+        "fat": 20,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "bakery:pudding_slice": {
+        "carbohydrates": 22,
+        "protein": 6,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 2
+    },
+    "bakery:bundt_cake_slice": {
+        "carbohydrates": 12,
+        "protein": 3,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "bakery:linzer_tart_slice": {
+        "carbohydrates": 12,
+        "protein": 3,
+        "fat": 6,
+        "vitamins": 4,
+        "minerals": 0
+    },
+    "bakery:apple_pie_slice": {
+        "carbohydrates": 12,
+        "protein": 3,
+        "fat": 6,
+        "vitamins": 4,
+        "minerals": 0
+    },
+    "bakery:glowberry_pie_slice": {
+        "carbohydrates": 12,
+        "protein": 2,
+        "fat": 5,
+        "vitamins": 3,
+        "minerals": 3
+    },
+    "bakery:chocolate_tart_slice": {
+        "carbohydrates": 16,
+        "protein": 4,
+        "fat": 20,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "bakery:strawberry_glazed_cookie": {
+        "carbohydrates": 10,
+        "protein": 3,
+        "fat": 7,
+        "vitamins": 5,
+        "minerals": 0
+    },
+    "bakery:sweetberry_glazed_cookie": {
+        "carbohydrates": 10,
+        "protein": 3,
+        "fat": 7,
+        "vitamins": 5,
+        "minerals": 0
+    },
+    "bakery:chocolate_glazed_cookie": {
+        "carbohydrates": 10,
+        "protein": 3,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 2
+    },
+    "bakery:strawberry_cupcake": {
+        "carbohydrates": 9,
+        "protein": 3,
+        "fat": 8,
+        "vitamins": 5,
+        "minerals": 0
+    },
+    "bakery:sweetberry_cupcake": {
+        "carbohydrates": 9,
+        "protein": 3,
+        "fat": 8,
+        "vitamins": 5,
+        "minerals": 0
+    },
+    "bakery:apple_cupcake": {
+        "carbohydrates": 9,
+        "protein": 3,
+        "fat": 8,
+        "vitamins": 3,
+        "minerals": 2
+    },
+    "bakery:jam_roll": {
+        "carbohydrates": 8,
+        "protein": 2,
+        "fat": 6,
+        "vitamins": 4,
+        "minerals": 0
+    },
+    "bakery:waffle": {
+        "carbohydrates": 10,
+        "protein": 3,
+        "fat": 12,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "bakery:chocolate_truffle": {
+        "carbohydrates": 4,
+        "protein": 1,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    }
+}

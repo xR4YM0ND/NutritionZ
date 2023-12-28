@@ -1,0 +1,79 @@
+{
+    "naturalist:cooked_egg": {
+        "carbohydrates": 0,
+        "protein": 10,
+        "fat": 15,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "naturalist:duck": {
+        "carbohydrates": 0,
+        "protein": 9,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "naturalist:cooked_duck": {
+        "carbohydrates": 0,
+        "protein": 27,
+        "fat": 3,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "naturalist:venison": {
+        "carbohydrates": 0,
+        "protein": 6,
+        "fat": 4,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "naturalist:cooked_venison": {
+        "carbohydrates": 0,
+        "protein": 18,
+        "fat": 12,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "naturalist:lizard_tail": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "naturalist:cooked_lizard_tail": {
+        "carbohydrates": 0,
+        "protein": 15,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "naturalist:catfish": {
+        "carbohydrates": 0,
+        "protein": 4,
+        "fat": 4,
+        "vitamins": 0,
+        "minerals": 2
+    },
+    "naturalist:cooked_catfish": {
+        "carbohydrates": 0,
+        "protein": 12,
+        "fat": 12,
+        "vitamins": 0,
+        "minerals": 6
+    },
+    "naturalist:bass": {
+        "carbohydrates": 0,
+        "protein": 5,
+        "fat": 3,
+        "vitamins": 0,
+        "minerals": 2
+    },
+    "naturalist:cooked_bass": {
+        "carbohydrates": 0,
+        "protein": 15,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 0
+    }
+}

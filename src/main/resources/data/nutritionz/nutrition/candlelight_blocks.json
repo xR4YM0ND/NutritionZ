@@ -1,0 +1,37 @@
+{
+    "candlelight:lettuce_tomato_block": {
+        "carbohydrates": 16,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 20,
+        "minerals": 4
+    },
+    "candlelight:pork_ribs_block": {
+        "carbohydrates": 12,
+        "protein": 12,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "candlelight:tomato_mozzarella_block": {
+        "carbohydrates": 0,
+        "protein": 2,
+        "fat": 18,
+        "vitamins": 10,
+        "minerals": 0
+    },
+    "candlelight:lasagne_block": {
+        "carbohydrates": 10,
+        "protein": 10,
+        "fat": 20,
+        "vitamins": 10,
+        "minerals": 0
+    },
+    "candlelight:beef_wellington_block": {
+        "carbohydrates": 10,
+        "protein": 15,
+        "fat": 10,
+        "vitamins": 15,
+        "minerals": 0
+    }
+}
