@@ -36,11 +36,11 @@ public class NutritionClientPacket {
             int mineralLevel = buf.readInt();
 
             client.execute(() -> {
-                ((HungerManagerAccess) client.player.getHungerManager()).addNutritionLevel(0, carbohydrateLevel);
-                ((HungerManagerAccess) client.player.getHungerManager()).addNutritionLevel(1, proteinLevel);
-                ((HungerManagerAccess) client.player.getHungerManager()).addNutritionLevel(2, fatLevel);
-                ((HungerManagerAccess) client.player.getHungerManager()).addNutritionLevel(3, vitaminLevel);
-                ((HungerManagerAccess) client.player.getHungerManager()).addNutritionLevel(4, mineralLevel);
+                ((HungerManagerAccess) client.player.getHungerManager()).setNutritionLevel(0, carbohydrateLevel);
+                ((HungerManagerAccess) client.player.getHungerManager()).setNutritionLevel(1, proteinLevel);
+                ((HungerManagerAccess) client.player.getHungerManager()).setNutritionLevel(2, fatLevel);
+                ((HungerManagerAccess) client.player.getHungerManager()).setNutritionLevel(3, vitaminLevel);
+                ((HungerManagerAccess) client.player.getHungerManager()).setNutritionLevel(4, mineralLevel);
             });
         });
 
