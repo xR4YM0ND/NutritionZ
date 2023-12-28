@@ -101,13 +101,13 @@ public class HungerManagerMixin implements HungerManagerAccess {
                         this.effectMap.put(i, false);
                         List<Object> positiveEffectList = NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i);
                         for (int u = 0; u < positiveEffectList.size(); u++) {
-                            if (positiveEffectList.get(i) instanceof Multimap) {
+                            if (positiveEffectList.get(u) instanceof Multimap) {
                                 player.getAttributes().removeModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u));
                             }
                         }
                         List<Object> negativeEffectList = NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i);
                         for (int u = 0; u < negativeEffectList.size(); u++) {
-                            if (negativeEffectList.get(i) instanceof Multimap) {
+                            if (negativeEffectList.get(u) instanceof Multimap) {
                                 player.getAttributes().removeModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) negativeEffectList.get(u));
                             }
                         }
