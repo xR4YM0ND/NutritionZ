@@ -31,9 +31,9 @@ public class NutritionScreen extends Screen {
     private int y;
     private final List<ItemStack> nutritionItems = List.of(new ItemStack(Registries.ITEM.get(new Identifier(ConfigInit.CONFIG.carbohydrateItemId))),
             new ItemStack(Registries.ITEM.get(new Identifier(ConfigInit.CONFIG.proteinItemId))), new ItemStack(Registries.ITEM.get(new Identifier(ConfigInit.CONFIG.fatItemId))),
-            new ItemStack(Registries.ITEM.get(new Identifier(ConfigInit.CONFIG.vitaminItemId))));
-    private final List<Text> nutritionTexts = List.of(Text.translatable("screen.nutritionz.carbohydrates"), Text.translatable("screen.nutritionz.proteins"),
-            Text.translatable("screen.nutritionz.fats"), Text.translatable("screen.nutritionz.vitamins"));
+            new ItemStack(Registries.ITEM.get(new Identifier(ConfigInit.CONFIG.vitaminItemId))), new ItemStack(Registries.ITEM.get(new Identifier(ConfigInit.CONFIG.mineralItemId))));
+    private final List<Text> nutritionTexts = List.of(Text.translatable("screen.nutritionz.carbohydrates"), Text.translatable("screen.nutritionz.protein"), Text.translatable("screen.nutritionz.fat"),
+            Text.translatable("screen.nutritionz.vitamins"), Text.translatable("screen.nutritionz.minerals"));
     @Nullable
     private HungerManagerAccess hungerManagerAccess = null;
 
@@ -61,7 +61,7 @@ public class NutritionScreen extends Screen {
         for (int i = 0; i < this.nutritionItems.size(); i++) {
             context.drawItem(this.nutritionItems.get(i), this.x + 7, this.y + 25 + extraY);
             context.drawText(this.textRenderer, this.nutritionTexts.get(i), this.x + 28, this.y + 26 + extraY, 0x3F3F3F, false);
-            context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 216 + extraBarY, 141, 5);
+            context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 206 + extraBarY, 141, 5);
             if (this.hungerManagerAccess != null) {
                 if (this.hungerManagerAccess.getNutritionLevel(i) > 0) {
                     context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 221 + extraBarY,

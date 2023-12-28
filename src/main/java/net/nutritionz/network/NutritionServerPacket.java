@@ -43,6 +43,7 @@ public class NutritionServerPacket {
         buf.writeInt(hungerManagerAccess.getNutritionLevel(1));
         buf.writeInt(hungerManagerAccess.getNutritionLevel(2));
         buf.writeInt(hungerManagerAccess.getNutritionLevel(3));
+        buf.writeInt(hungerManagerAccess.getNutritionLevel(4));
         CustomPayloadS2CPacket packet = new CustomPayloadS2CPacket(NUTRITION_SYNC_PACKET, buf);
         serverPlayerEntity.networkHandler.sendPacket(packet);
     }

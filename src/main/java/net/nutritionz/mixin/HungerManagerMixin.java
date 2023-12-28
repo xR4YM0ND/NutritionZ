@@ -29,7 +29,8 @@ public class HungerManagerMixin implements HungerManagerAccess {
     private int proteinLevel = NutritionMain.NUTRITION_MAX_VALUES;
     private int fatLevel = NutritionMain.NUTRITION_MAX_VALUES;
     private int vitaminLevel = NutritionMain.NUTRITION_MAX_VALUES;
-    private Map<Integer, Boolean> effectMap = Map.of(0, false, 1, false, 2, false, 3, false);
+    private int mineralLevel = NutritionMain.NUTRITION_MAX_VALUES;
+    private Map<Integer, Boolean> effectMap = Map.of(0, false, 1, false, 2, false, 3, false, 4, false);
 
     @Shadow
     private int foodTickTimer;
@@ -45,13 +46,13 @@ public class HungerManagerMixin implements HungerManagerAccess {
         }
     }
 
-    // java/lang/Math.max (FF)F
     @Inject(method = "update", at = @At(value = "INVOKE_ASSIGN", target = "Ljava/lang/Math;max(II)I", ordinal = 0))
     private void updateNutritionMixin(PlayerEntity player, CallbackInfo info) {
         decrementNutritionLevel(0, 1);
         decrementNutritionLevel(1, 1);
         decrementNutritionLevel(2, 1);
         decrementNutritionLevel(3, 1);
+        decrementNutritionLevel(4, 1);
     }
 
     @Inject(method = "update", at = @At(value = "FIELD", target = "Lnet/minecraft/entity/player/HungerManager;foodTickTimer:I", ordinal = 3))
@@ -114,7 +115,6 @@ public class HungerManagerMixin implements HungerManagerAccess {
 
     @Inject(method = "addExhaustion", at = @At("TAIL"))
     private void addExhaustionMixin(float exhaustion, CallbackInfo info) {
-
     }
 
     @Inject(method = "readNbt", at = @At("TAIL"))
@@ -123,6 +123,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
         this.proteinLevel = nbt.getInt("ProteinLevel");
         this.fatLevel = nbt.getInt("FatLevel");
         this.vitaminLevel = nbt.getInt("VitaminLevel");
+        this.mineralLevel = nbt.getInt("MineralLevel");
         // this.hasNegativeEffects = nbt.getBoolean("HasNegativeEffects");
         // this.hasPositiveEffects = nbt.getBoolean("HasPositiveEffects");
     }
@@ -133,6 +134,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
         nbt.putInt("ProteinLevel", this.proteinLevel);
         nbt.putFloat("FatLevel", this.fatLevel);
         nbt.putFloat("VitaminLevel", this.vitaminLevel);
+        nbt.putFloat("MineralLevel", this.mineralLevel);
         // nbt.putBoolean("HasNegativeEffects", this.hasNegativeEffects);
         // nbt.putBoolean("HasPositiveEffects", this.hasPositiveEffects);
     }
@@ -140,13 +142,15 @@ public class HungerManagerMixin implements HungerManagerAccess {
     @Override
     public void addNutritionLevel(int type, int level) {
         if (type == 0) {
-            this.carbohydrateLevel = (this.carbohydrateLevel + level > 40) ? 40 : (this.carbohydrateLevel + level);
+            this.carbohydrateLevel = (this.carbohydrateLevel + level > NutritionMain.NUTRITION_MAX_VALUES) ? NutritionMain.NUTRITION_MAX_VALUES : (this.carbohydrateLevel + level);
         } else if (type == 1) {
-            this.proteinLevel = (this.proteinLevel + level > 40) ? 40 : (this.proteinLevel + level);
+            this.proteinLevel = (this.proteinLevel + level > NutritionMain.NUTRITION_MAX_VALUES) ? NutritionMain.NUTRITION_MAX_VALUES : (this.proteinLevel + level);
         } else if (type == 2) {
-            this.fatLevel = (this.fatLevel + level > 40) ? 40 : (this.fatLevel + level);
+            this.fatLevel = (this.fatLevel + level > NutritionMain.NUTRITION_MAX_VALUES) ? NutritionMain.NUTRITION_MAX_VALUES : (this.fatLevel + level);
         } else if (type == 3) {
-            this.vitaminLevel = (this.vitaminLevel + level > 40) ? 40 : (this.vitaminLevel + level);
+            this.vitaminLevel = (this.vitaminLevel + level > NutritionMain.NUTRITION_MAX_VALUES) ? NutritionMain.NUTRITION_MAX_VALUES : (this.vitaminLevel + level);
+        } else if (type == 4) {
+            this.mineralLevel = (this.mineralLevel + level > NutritionMain.NUTRITION_MAX_VALUES) ? NutritionMain.NUTRITION_MAX_VALUES : (this.mineralLevel + level);
         }
     }
 
@@ -160,6 +164,8 @@ public class HungerManagerMixin implements HungerManagerAccess {
             this.fatLevel = (this.fatLevel - level < 0) ? 0 : (this.fatLevel - level);
         } else if (type == 3) {
             this.vitaminLevel = (this.vitaminLevel - level < 0) ? 0 : (this.vitaminLevel - level);
+        } else if (type == 4) {
+            this.mineralLevel = (this.mineralLevel - level < 0) ? 0 : (this.mineralLevel - level);
         }
     }
 
@@ -173,6 +179,8 @@ public class HungerManagerMixin implements HungerManagerAccess {
             this.fatLevel = level;
         } else if (type == 3) {
             this.vitaminLevel = level;
+        } else if (type == 3) {
+            this.mineralLevel = level;
         }
     }
 
@@ -187,18 +195,11 @@ public class HungerManagerMixin implements HungerManagerAccess {
             return this.fatLevel;
         case 3:
             return this.vitaminLevel;
+        case 4:
+            return this.mineralLevel;
         default:
             return 0;
         }
-    }
-
-    // When should the player not being able to sprint anymore? has to get synced to the client
-    @Override
-    public boolean canSprint() {
-        // if(this.carbohydrateLevel){
-
-        // }
-        return true;
     }
 
 }

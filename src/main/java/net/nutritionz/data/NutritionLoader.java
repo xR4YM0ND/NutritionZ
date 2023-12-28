@@ -86,6 +86,11 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
                     } else {
                         nutritionList.add(0);
                     }
+                    if (jsonObject.has("mineral")) {
+                        nutritionList.add(jsonObject.get("mineral").getAsInt());
+                    } else {
+                        nutritionList.add(0);
+                    }
                     NutritionMain.NUTRITION_ITEM_MAP.put(item, nutritionList);
                 }
 

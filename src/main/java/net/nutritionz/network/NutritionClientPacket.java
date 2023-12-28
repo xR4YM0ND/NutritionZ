@@ -33,12 +33,14 @@ public class NutritionClientPacket {
             int proteinLevel = buf.readInt();
             int fatLevel = buf.readInt();
             int vitaminLevel = buf.readInt();
+            int mineralLevel = buf.readInt();
 
             client.execute(() -> {
                 ((HungerManagerAccess) client.player.getHungerManager()).addNutritionLevel(0, carbohydrateLevel);
                 ((HungerManagerAccess) client.player.getHungerManager()).addNutritionLevel(1, proteinLevel);
                 ((HungerManagerAccess) client.player.getHungerManager()).addNutritionLevel(2, fatLevel);
                 ((HungerManagerAccess) client.player.getHungerManager()).addNutritionLevel(3, vitaminLevel);
+                ((HungerManagerAccess) client.player.getHungerManager()).addNutritionLevel(4, mineralLevel);
             });
         });
 
@@ -49,12 +51,13 @@ public class NutritionClientPacket {
             }
             client.execute(() -> {
                 NutritionMain.NUTRITION_ITEM_MAP.clear();
-                for (int i = 0; i < list.size(); i += 5) {
+                for (int i = 0; i < list.size(); i += 6) {
                     List<Integer> nutritionList = new ArrayList<Integer>();
                     nutritionList.add(list.get(i + 1));
                     nutritionList.add(list.get(i + 2));
                     nutritionList.add(list.get(i + 3));
                     nutritionList.add(list.get(i + 4));
+                    nutritionList.add(list.get(i + 5));
                     NutritionMain.NUTRITION_ITEM_MAP.put(Registries.ITEM.get(list.get(i)), nutritionList);
                 }
             });

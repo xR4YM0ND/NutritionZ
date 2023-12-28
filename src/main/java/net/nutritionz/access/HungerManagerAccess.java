@@ -9,6 +9,4 @@ public interface HungerManagerAccess {
     public void setNutritionLevel(int type, int level);
 
     public int getNutritionLevel(int type);
-
-    public boolean canSprint();
 }
