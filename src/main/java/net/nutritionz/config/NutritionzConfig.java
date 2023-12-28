@@ -18,5 +18,5 @@ public class NutritionzConfig implements ConfigData {
     public String proteinItemId = "minecraft:chicken";
     public String fatItemId = "minecraft:porkchop";
     public String vitaminItemId = "minecraft:apple";
-    public String mineralItemId = "minecraft:iron_ingot";
+    public String mineralItemId = "minecraft:iron_nugget";
 }
