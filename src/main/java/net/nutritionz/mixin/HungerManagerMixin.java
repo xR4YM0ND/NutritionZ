@@ -1,5 +1,6 @@
 package net.nutritionz.mixin;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -30,7 +31,15 @@ public class HungerManagerMixin implements HungerManagerAccess {
     private int fatLevel = NutritionMain.NUTRITION_MAX_VALUES;
     private int vitaminLevel = NutritionMain.NUTRITION_MAX_VALUES;
     private int mineralLevel = NutritionMain.NUTRITION_MAX_VALUES;
-    private Map<Integer, Boolean> effectMap = Map.of(0, false, 1, false, 2, false, 3, false, 4, false);
+    private Map<Integer, Boolean> effectMap = new HashMap<Integer, Boolean>() {
+        {
+            put(0, false);
+            put(1, false);
+            put(2, false);
+            put(3, false);
+            put(4, false);
+        }
+    };
 
     @Shadow
     private int foodTickTimer;
