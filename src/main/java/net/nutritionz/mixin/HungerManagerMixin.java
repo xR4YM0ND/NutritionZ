@@ -74,24 +74,28 @@ public class HungerManagerMixin implements HungerManagerAccess {
             for (int i = 0; i < list.size(); i++) {
                 if (list.get(i) <= NutritionMain.NUTRITION_NEGATIVE_VALUE) {
                     List<Object> negativeEffectList = NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i);
-                    for (int u = 0; u < negativeEffectList.size(); u++) {
-                        if (negativeEffectList.get(u) instanceof StatusEffectInstance) {
-                            player.addStatusEffect((StatusEffectInstance) negativeEffectList.get(u));
-                        } else if (!this.effectMap.get(i) && negativeEffectList.get(u) instanceof Multimap) {
-                            player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) negativeEffectList.get(u));
+                    if (negativeEffectList != null && !negativeEffectList.isEmpty()) {
+                        for (int u = 0; u < negativeEffectList.size(); u++) {
+                            if (negativeEffectList.get(u) instanceof StatusEffectInstance) {
+                                player.addStatusEffect((StatusEffectInstance) negativeEffectList.get(u));
+                            } else if (!this.effectMap.get(i) && negativeEffectList.get(u) instanceof Multimap) {
+                                player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) negativeEffectList.get(u));
+                            }
                         }
+                        this.effectMap.put(i, true);
                     }
-                    this.effectMap.put(i, true);
                 } else if (list.get(i) >= NutritionMain.NUTRITION_POSITIVE_VALUE) {
                     List<Object> positiveEffectList = NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i);
-                    for (int u = 0; u < positiveEffectList.size(); u++) {
-                        if (positiveEffectList.get(u) instanceof StatusEffectInstance) {
-                            player.addStatusEffect((StatusEffectInstance) positiveEffectList.get(u));
-                        } else if (!this.effectMap.get(i) && positiveEffectList.get(u) instanceof Multimap) {
-                            player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(i));
+                    if (positiveEffectList != null && !positiveEffectList.isEmpty()) {
+                        for (int u = 0; u < positiveEffectList.size(); u++) {
+                            if (positiveEffectList.get(u) instanceof StatusEffectInstance) {
+                                player.addStatusEffect((StatusEffectInstance) positiveEffectList.get(u));
+                            } else if (!this.effectMap.get(i) && positiveEffectList.get(u) instanceof Multimap) {
+                                player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(i));
+                            }
                         }
+                        this.effectMap.put(i, true);
                     }
-                    this.effectMap.put(i, true);
                 } else {
                     if (this.effectMap.get(i)) {
                         this.effectMap.put(i, false);
