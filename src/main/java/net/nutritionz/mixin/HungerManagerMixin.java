@@ -91,7 +91,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
                             if (positiveEffectList.get(u) instanceof StatusEffectInstance) {
                                 player.addStatusEffect((StatusEffectInstance) positiveEffectList.get(u));
                             } else if (!this.effectMap.get(i) && positiveEffectList.get(u) instanceof Multimap) {
-                                player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(i));
+                                player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u));
                             }
                         }
                         this.effectMap.put(i, true);
