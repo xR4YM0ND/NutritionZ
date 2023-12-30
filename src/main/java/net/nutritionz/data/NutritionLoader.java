@@ -31,8 +31,8 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
 
     public static final Logger LOGGER = LogManager.getLogger("NutritionZ");
 
-    private final List<String> nutritionList = List.of("carbohydrate", "protein", "fat", "vitamin");
-    private List<Boolean> effectReplaceList = List.of(false, false, false, false);
+    private final List<String> nutritionList = List.of("carbohydrates", "protein", "fat", "vitamins", "minerals");
+    private List<Boolean> effectReplaceList = List.of(false, false, false, false, false);
     // Map to store replacing bools
     private HashMap<Item, Boolean> replaceList = new HashMap<Item, Boolean>();
 
@@ -66,8 +66,8 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
                         replaceList.put(item, true);
                     }
                     List<Integer> nutritionList = new ArrayList<>();
-                    if (jsonObject.has("carbohydrate")) {
-                        nutritionList.add(jsonObject.get("carbohydrate").getAsInt());
+                    if (jsonObject.has("carbohydrates")) {
+                        nutritionList.add(jsonObject.get("carbohydrates").getAsInt());
                     } else {
                         nutritionList.add(0);
                     }
@@ -81,13 +81,13 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
                     } else {
                         nutritionList.add(0);
                     }
-                    if (jsonObject.has("vitamin")) {
-                        nutritionList.add(jsonObject.get("vitamin").getAsInt());
+                    if (jsonObject.has("vitamins")) {
+                        nutritionList.add(jsonObject.get("vitamins").getAsInt());
                     } else {
                         nutritionList.add(0);
                     }
-                    if (jsonObject.has("mineral")) {
-                        nutritionList.add(jsonObject.get("mineral").getAsInt());
+                    if (jsonObject.has("minerals")) {
+                        nutritionList.add(jsonObject.get("minerals").getAsInt());
                     } else {
                         nutritionList.add(0);
                     }
