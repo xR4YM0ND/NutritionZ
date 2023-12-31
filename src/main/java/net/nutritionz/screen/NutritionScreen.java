@@ -73,8 +73,7 @@ public class NutritionScreen extends Screen {
                 if (isPointWithinBounds(27, 36 + extraY, 31, 5, mouseX, mouseY)) {
                     if (NutritionMain.NUTRITION_NEGATIVE_EFFECTS.containsKey(i)) {
                         NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i).forEach(effect -> {
-                            if (effect instanceof StatusEffectInstance) {
-                                StatusEffectInstance statusEffectInstance = (StatusEffectInstance) effect;
+                            if (effect instanceof StatusEffectInstance statusEffectInstance) {
                                 tooltips.add(statusEffectInstance.getEffectType().getName());
                             } else {
                                 Multimap<EntityAttribute, EntityAttributeModifier> map = (Multimap<EntityAttribute, EntityAttributeModifier>) effect;
@@ -89,8 +88,7 @@ public class NutritionScreen extends Screen {
                 } else if (isPointWithinBounds(137, 36 + extraY, 31, 5, mouseX, mouseY)) {
                     if (NutritionMain.NUTRITION_POSITIVE_EFFECTS.containsKey(i)) {
                         NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i).forEach(effect -> {
-                            if (effect instanceof StatusEffectInstance) {
-                                StatusEffectInstance statusEffectInstance = (StatusEffectInstance) effect;
+                            if (effect instanceof StatusEffectInstance statusEffectInstance) {
                                 tooltips.add(statusEffectInstance.getEffectType().getName());
                             } else {
                                 Multimap<EntityAttribute, EntityAttributeModifier> map = (Multimap<EntityAttribute, EntityAttributeModifier>) effect;
@@ -105,14 +103,6 @@ public class NutritionScreen extends Screen {
                 if (!tooltips.isEmpty()) {
                     context.drawTooltip(textRenderer, tooltips, mouseX, mouseY);
                 }
-                // return this.carbohydrateLevel;
-                // case 1:
-                // return this.proteinLevel;
-                // case 2:
-                // return this.fatLevel;
-                // case 3:
-                // return this.vitaminLevel;
-                // context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 221 + extraBarY, 141, 5);
             }
             extraY += 23;
             extraBarY += 10;

@@ -40,6 +40,8 @@ public class HungerManagerMixin implements HungerManagerAccess {
             put(4, false);
         }
     };
+    // Unused
+    private boolean shouldUpdateNutritions = false;
 
     @Shadow
     private int foodTickTimer;
@@ -64,14 +66,10 @@ public class HungerManagerMixin implements HungerManagerAccess {
         decrementNutritionLevel(4, 1);
     }
 
-    @Inject(method = "update", at = @At(value = "FIELD", target = "Lnet/minecraft/entity/player/HungerManager;foodTickTimer:I", ordinal = 3))
+    @Inject(method = "update", at = @At("HEAD"))
     private void updateMixin(PlayerEntity player, CallbackInfo info) {
-        if (this.foodTickTimer >= 60) { // or % 60 == 0
-            // heal player when nutritions are good
-
-            // player.heal(1.0f);
-            // this.addExhaustion(6.0f);
-            // this.foodTickTimer = 0;
+        if (this.foodTickTimer % 5 == 0 && this.shouldUpdateNutritions) {
+            this.shouldUpdateNutritions = false;
         }
     }
 
@@ -85,8 +83,8 @@ public class HungerManagerMixin implements HungerManagerAccess {
                     List<Object> negativeEffectList = NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i);
                     if (negativeEffectList != null && !negativeEffectList.isEmpty()) {
                         for (int u = 0; u < negativeEffectList.size(); u++) {
-                            if (negativeEffectList.get(u) instanceof StatusEffectInstance) {
-                                player.addStatusEffect((StatusEffectInstance) negativeEffectList.get(u));
+                            if (negativeEffectList.get(u) instanceof StatusEffectInstance statusEffectInstance) {
+                                player.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
                             } else if (!this.effectMap.get(i) && negativeEffectList.get(u) instanceof Multimap) {
                                 player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) negativeEffectList.get(u));
                             }
@@ -97,8 +95,8 @@ public class HungerManagerMixin implements HungerManagerAccess {
                     List<Object> positiveEffectList = NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i);
                     if (positiveEffectList != null && !positiveEffectList.isEmpty()) {
                         for (int u = 0; u < positiveEffectList.size(); u++) {
-                            if (positiveEffectList.get(u) instanceof StatusEffectInstance) {
-                                player.addStatusEffect((StatusEffectInstance) positiveEffectList.get(u));
+                            if (positiveEffectList.get(u) instanceof StatusEffectInstance statusEffectInstance) {
+                                player.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
                             } else if (!this.effectMap.get(i) && positiveEffectList.get(u) instanceof Multimap) {
                                 player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u));
                             }
@@ -165,6 +163,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
         } else if (type == 4) {
             this.mineralLevel = (this.mineralLevel + level > NutritionMain.NUTRITION_MAX_VALUES) ? NutritionMain.NUTRITION_MAX_VALUES : (this.mineralLevel + level);
         }
+        this.shouldUpdateNutritions = true;
     }
 
     @Override
@@ -180,6 +179,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
         } else if (type == 4) {
             this.mineralLevel = (this.mineralLevel - level < 0) ? 0 : (this.mineralLevel - level);
         }
+        this.shouldUpdateNutritions = true;
     }
 
     @Override
@@ -192,9 +192,10 @@ public class HungerManagerMixin implements HungerManagerAccess {
             this.fatLevel = level;
         } else if (type == 3) {
             this.vitaminLevel = level;
-        } else if (type == 3) {
+        } else if (type == 4) {
             this.mineralLevel = level;
         }
+        this.shouldUpdateNutritions = true;
     }
 
     @Override
