@@ -8,7 +8,8 @@
 		"ServerPlayerEntityMixin"
 	],
 	"client": [
-		"client.InventoryScreenMixin"
+		"client.InventoryScreenMixin",
+		"client.ItemStackMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
