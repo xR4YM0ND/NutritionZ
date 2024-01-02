@@ -1,5 +1,5 @@
 {
-    "screen.nutritionz": "Nutritions",
+    "screen.nutritionz": "Nutrients",
 
     "text.autoconfig.nutritionz.title": "NutritionZ Config",
     "text.autoconfig.nutritionz.option.maxNutrition": "Max Nutrition",
@@ -18,5 +18,12 @@
     "screen.nutritionz.fat": "Fat",
     "screen.nutritionz.vitamins": "Vitamins",
     "screen.nutritionz.minerals": "Minerals",
-    "screen.nutritionz.nutritionValue": "%s/%s"
+    "screen.nutritionz.nutritionValue": "%s/%s",
+
+    "item.nutritionz.nutrients": "§7Nutrients:",
+    "item.nutritionz.carbohydrates": " %s Carbs",
+    "item.nutritionz.protein": " %s Protein",
+    "item.nutritionz.fat": " %s Fat",
+    "item.nutritionz.vitamins": " %s Vitamins",
+    "item.nutritionz.minerals": " %s Minerals"
 }
