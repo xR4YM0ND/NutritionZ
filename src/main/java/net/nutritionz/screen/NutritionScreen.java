@@ -65,10 +65,10 @@ public class NutritionScreen extends Screen {
             if (this.hungerManagerAccess != null) {
                 if (this.hungerManagerAccess.getNutritionLevel(i) > 0) {
                     context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 211 + extraBarY,
-                            140 * this.hungerManagerAccess.getNutritionLevel(i) / NutritionMain.NUTRITION_MAX_VALUES, 5);
+                            140 * this.hungerManagerAccess.getNutritionLevel(i) / ConfigInit.CONFIG.maxNutrition, 5);
                 }
-                context.drawText(this.textRenderer, Text.translatable("screen.nutritionz.nutritionValue", this.hungerManagerAccess.getNutritionLevel(i), NutritionMain.NUTRITION_MAX_VALUES),
-                        this.x + 127, this.y + 26 + extraY, 0x3F3F3F, false);
+                context.drawText(this.textRenderer, Text.translatable("screen.nutritionz.nutritionValue", this.hungerManagerAccess.getNutritionLevel(i), ConfigInit.CONFIG.maxNutrition), this.x + 127,
+                        this.y + 26 + extraY, 0x3F3F3F, false);
                 List<Text> tooltips = new ArrayList<>();
                 if (isPointWithinBounds(27, 36 + extraY, 31, 5, mouseX, mouseY)) {
                     if (NutritionMain.NUTRITION_NEGATIVE_EFFECTS.containsKey(i)) {

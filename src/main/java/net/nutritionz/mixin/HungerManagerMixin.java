@@ -22,15 +22,16 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.nutritionz.NutritionMain;
 import net.nutritionz.access.HungerManagerAccess;
+import net.nutritionz.init.ConfigInit;
 
 @Mixin(HungerManager.class)
 public class HungerManagerMixin implements HungerManagerAccess {
 
-    private int carbohydrateLevel = NutritionMain.NUTRITION_MAX_VALUES;
-    private int proteinLevel = NutritionMain.NUTRITION_MAX_VALUES;
-    private int fatLevel = NutritionMain.NUTRITION_MAX_VALUES;
-    private int vitaminLevel = NutritionMain.NUTRITION_MAX_VALUES;
-    private int mineralLevel = NutritionMain.NUTRITION_MAX_VALUES;
+    private int carbohydrateLevel = ConfigInit.CONFIG.maxNutrition;
+    private int proteinLevel = ConfigInit.CONFIG.maxNutrition;
+    private int fatLevel = ConfigInit.CONFIG.maxNutrition;
+    private int vitaminLevel = ConfigInit.CONFIG.maxNutrition;
+    private int mineralLevel = ConfigInit.CONFIG.maxNutrition;
     private Map<Integer, Boolean> effectMap = new HashMap<Integer, Boolean>() {
         {
             put(0, false);
@@ -79,7 +80,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
         if (player.getWorld().getTime() % 16 == 0) {
             List<Integer> list = List.of(this.carbohydrateLevel, this.proteinLevel, this.fatLevel, this.vitaminLevel);
             for (int i = 0; i < list.size(); i++) {
-                if (list.get(i) <= NutritionMain.NUTRITION_NEGATIVE_VALUE) {
+                if (list.get(i) <= ConfigInit.CONFIG.negativeNutrition) {
                     List<Object> negativeEffectList = NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i);
                     if (negativeEffectList != null && !negativeEffectList.isEmpty()) {
                         for (int u = 0; u < negativeEffectList.size(); u++) {
@@ -91,7 +92,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
                         }
                         this.effectMap.put(i, true);
                     }
-                } else if (list.get(i) >= NutritionMain.NUTRITION_POSITIVE_VALUE) {
+                } else if (list.get(i) >= ConfigInit.CONFIG.positiveNutrition) {
                     List<Object> positiveEffectList = NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i);
                     if (positiveEffectList != null && !positiveEffectList.isEmpty()) {
                         for (int u = 0; u < positiveEffectList.size(); u++) {
@@ -135,8 +136,6 @@ public class HungerManagerMixin implements HungerManagerAccess {
         this.fatLevel = nbt.getInt("FatLevel");
         this.vitaminLevel = nbt.getInt("VitaminLevel");
         this.mineralLevel = nbt.getInt("MineralLevel");
-        // this.hasNegativeEffects = nbt.getBoolean("HasNegativeEffects");
-        // this.hasPositiveEffects = nbt.getBoolean("HasPositiveEffects");
     }
 
     @Inject(method = "writeNbt", at = @At("TAIL"))
@@ -146,22 +145,20 @@ public class HungerManagerMixin implements HungerManagerAccess {
         nbt.putFloat("FatLevel", this.fatLevel);
         nbt.putFloat("VitaminLevel", this.vitaminLevel);
         nbt.putFloat("MineralLevel", this.mineralLevel);
-        // nbt.putBoolean("HasNegativeEffects", this.hasNegativeEffects);
-        // nbt.putBoolean("HasPositiveEffects", this.hasPositiveEffects);
     }
 
     @Override
     public void addNutritionLevel(int type, int level) {
         if (type == 0) {
-            this.carbohydrateLevel = (this.carbohydrateLevel + level > NutritionMain.NUTRITION_MAX_VALUES) ? NutritionMain.NUTRITION_MAX_VALUES : (this.carbohydrateLevel + level);
+            this.carbohydrateLevel = (this.carbohydrateLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.carbohydrateLevel + level);
         } else if (type == 1) {
-            this.proteinLevel = (this.proteinLevel + level > NutritionMain.NUTRITION_MAX_VALUES) ? NutritionMain.NUTRITION_MAX_VALUES : (this.proteinLevel + level);
+            this.proteinLevel = (this.proteinLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.proteinLevel + level);
         } else if (type == 2) {
-            this.fatLevel = (this.fatLevel + level > NutritionMain.NUTRITION_MAX_VALUES) ? NutritionMain.NUTRITION_MAX_VALUES : (this.fatLevel + level);
+            this.fatLevel = (this.fatLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.fatLevel + level);
         } else if (type == 3) {
-            this.vitaminLevel = (this.vitaminLevel + level > NutritionMain.NUTRITION_MAX_VALUES) ? NutritionMain.NUTRITION_MAX_VALUES : (this.vitaminLevel + level);
+            this.vitaminLevel = (this.vitaminLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.vitaminLevel + level);
         } else if (type == 4) {
-            this.mineralLevel = (this.mineralLevel + level > NutritionMain.NUTRITION_MAX_VALUES) ? NutritionMain.NUTRITION_MAX_VALUES : (this.mineralLevel + level);
+            this.mineralLevel = (this.mineralLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.mineralLevel + level);
         }
         this.shouldUpdateNutritions = true;
     }
