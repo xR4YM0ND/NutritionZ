@@ -76,7 +76,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
     @SuppressWarnings("unchecked")
     @Inject(method = "update", at = @At("TAIL"))
     private void updateNutritionEffectsMixin(PlayerEntity player, CallbackInfo info) {
-        if (player.getWorld().getTime() % 20 == 0) {
+        if (player.getWorld().getTime() % 16 == 0) {
             List<Integer> list = List.of(this.carbohydrateLevel, this.proteinLevel, this.fatLevel, this.vitaminLevel);
             for (int i = 0; i < list.size(); i++) {
                 if (list.get(i) <= NutritionMain.NUTRITION_NEGATIVE_VALUE) {
