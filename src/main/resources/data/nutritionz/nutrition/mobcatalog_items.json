@@ -1,0 +1,16 @@
+{
+    "mobcatalog:crab_leg": {
+        "carbohydrates": 0,
+        "protein": 7,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "mobcatalog:cooked_crab_leg": {
+        "carbohydrates": 0,
+        "protein": 16,
+        "fat": 6,
+        "vitamins": 0,
+        "minerals": 3
+    }
+}
