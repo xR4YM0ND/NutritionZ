@@ -2,23 +2,23 @@
     "carbohydrates": {
         "replace": false,
         "positive": {
-            "generic.max_health": {
+            "generic.attack_speed": {
                 "operation": "ADDITION",
-                "value": 2.0
+                "value": 0.5
             },
-            "minecraft:fire_resistance": {
-                "duration": 309,
-                "amplifier": 0
+            "generic.movement_speed": {
+                "operation": "ADDITION",
+                "value": 0.03
             }
         },
         "negative": {
-            "generic.max_health": {
+            "generic.attack_speed": {
                 "operation": "ADDITION",
-                "value": -2.0
+                "value": -0.5
             },
-            "minecraft:slowness": {
-                "duration": 309,
-                "amplifier": 0
+            "generic.movement_speed": {
+                "operation": "ADDITION",
+                "value": -0.03
             }
         }
     },
@@ -27,21 +27,21 @@
         "positive": {
             "generic.attack_damage": {
                 "operation": "ADDITION",
-                "value": 1.0
+                "value": 2.0
             },
-            "minecraft:haste": {
-                "duration": 309,
-                "amplifier": 0
+            "generic.attack_knockback": {
+                "operation": "ADDITION",
+                "value": 1.0
             }
         },
         "negative": {
             "generic.attack_damage": {
                 "operation": "ADDITION",
-                "value": -1.0
+                "value": -2.0
             },
-            "minecraft:mining_fatigue": {
-                "duration": 309,
-                "amplifier": 0
+            "generic.attack_knockback": {
+                "operation": "ADDITION",
+                "value": -1.0
             }
         }
     },
@@ -52,9 +52,9 @@
                 "operation": "ADDITION",
                 "value": 2.0
             },
-            "generic.knockback_resistance": {
-                "operation": "ADDITION",
-                "value": 0.1
+            "minecraft:regeneration": {
+                "duration": 319,
+                "amplifier": 0
             }
         },
         "negative": {
@@ -62,32 +62,32 @@
                 "operation": "ADDITION",
                 "value": -2.0
             },
-            "generic.knockback_resistance": {
-                "operation": "ADDITION",
-                "value": -0.1
+            "minecraft:weakness": {
+                "duration": 319,
+                "amplifier": 0
             }
         }
     },
     "vitamins": {
         "replace": false,
         "positive": {
-            "generic.attack_speed": {
+            "generic.max_health": {
                 "operation": "ADDITION",
-                "value": 1.0
+                "value": 2.0
             },
-            "generic.movement_speed": {
+            "generic.knockback_resistance": {
                 "operation": "ADDITION",
-                "value": 0.03
+                "value": 0.1
             }
         },
         "negative": {
-            "generic.attack_speed": {
+            "generic.max_health": {
                 "operation": "ADDITION",
-                "value": -1.0
+                "value": -2.0
             },
-            "generic.movement_speed": {
+            "generic.knockback_resistance": {
                 "operation": "ADDITION",
-                "value": -0.03
+                "value": -0.1
             }
         }
     },
@@ -98,9 +98,9 @@
                 "operation": "ADDITION",
                 "value": 1.0
             },
-            "generic.max_absorption": {
-                "operation": "ADDITION",
-                "value": 1.0
+            "minecraft:absorption": {
+                "duration": 319,
+                "amplifier": 0
             }
         },
         "negative": {
@@ -108,9 +108,9 @@
                 "operation": "ADDITION",
                 "value": -1.0
             },
-            "generic.max_absorption": {
-                "operation": "ADDITION",
-                "value": -1.0
+            "minecraft:weakness": {
+                "duration": 319,
+                "amplifier": 0
             }
         }
     }
