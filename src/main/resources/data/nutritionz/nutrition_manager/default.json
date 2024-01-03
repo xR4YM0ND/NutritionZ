@@ -8,7 +8,7 @@
             },
             "generic.movement_speed": {
                 "operation": "ADDITION",
-                "value": 0.03
+                "value": 0.02
             }
         },
         "negative": {
@@ -18,7 +18,7 @@
             },
             "generic.movement_speed": {
                 "operation": "ADDITION",
-                "value": -0.03
+                "value": -0.02
             }
         }
     },
@@ -98,7 +98,7 @@
                 "operation": "ADDITION",
                 "value": 1.0
             },
-            "minecraft:absorption": {
+            "minecraft:wither": {
                 "duration": 319,
                 "amplifier": 0
             }
@@ -108,7 +108,7 @@
                 "operation": "ADDITION",
                 "value": -1.0
             },
-            "minecraft:weakness": {
+            "minecraft:saturation": {
                 "duration": 319,
                 "amplifier": 0
             }

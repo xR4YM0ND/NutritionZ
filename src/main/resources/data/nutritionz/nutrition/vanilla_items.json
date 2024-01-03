@@ -91,11 +91,11 @@
         "minerals": 0
     },
     "minecraft:dried_kelp": {
-        "carbohydrates": 1,
+        "carbohydrates": 0,
         "protein": 1,
-        "fat": 2,
+        "fat": 0,
         "vitamins": 0,
-        "minerals": 1
+        "minerals": 4
     },
     "minecraft:beef": {
         "carbohydrates": 0,
@@ -232,17 +232,17 @@
     },
     "minecraft:rotten_flesh": {
         "carbohydrates": 0,
-        "protein": 10,
-        "fat": 4,
+        "protein": 4,
+        "fat": 2,
         "vitamins": 0,
-        "minerals": 6
+        "minerals": 14
     },
     "minecraft:spider_eye": {
-        "carbohydrates": 1,
-        "protein": 3,
-        "fat": 2,
-        "vitamins": 1,
-        "minerals": 3
+        "carbohydrates": 0,
+        "protein": 2,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 8
     },
     "minecraft:mushroom_stew": {
         "carbohydrates": 7,
