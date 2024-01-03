@@ -1,10 +1,6 @@
 package net.nutritionz.init;
 
-import net.dehydration.api.DehydrationAPI;
 import net.dehydration.api.DrinkEvent;
-import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
@@ -23,10 +19,6 @@ public class EventInit {
         ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
             NutritionServerPacket.writeS2CItemNutritionPacket(handler);
         });
-        // if (FabricLoader.getInstance().isModLoaded("rotten")) {
-        // ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("fleshz_compat"), FabricLoader.getInstance().getModContainer("adventurez").orElseThrow(),
-        // ResourcePackActivationType.DEFAULT_ENABLED);
-        // }
         if (FabricLoader.getInstance().isModLoaded("dehydration")) {
             DrinkEvent.EVENT.register((ItemStack stack, PlayerEntity player) -> {
                 if (!player.getWorld().isClient()) {
@@ -41,7 +33,15 @@ public class EventInit {
                 }
             });
         }
-
+        // datapacks
+        if (FabricLoader.getInstance().isModLoaded("adventurez")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("adventurez_nutrition_compat"), FabricLoader.getInstance().getModContainer("adventurez").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
+        if (FabricLoader.getInstance().isModLoaded("bakery")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("bakery_nutrition_compat"), FabricLoader.getInstance().getModContainer("bakery").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
     }
 
 }
