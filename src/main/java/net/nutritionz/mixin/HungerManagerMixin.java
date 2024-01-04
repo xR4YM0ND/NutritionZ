@@ -77,7 +77,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
     @SuppressWarnings("unchecked")
     @Inject(method = "update", at = @At("TAIL"))
     private void updateNutritionEffectsMixin(PlayerEntity player, CallbackInfo info) {
-        if (!player.isCreative() && player.getWorld().getTime() % 16 == 0) {
+        if (!player.isCreative() && player.getWorld().getTime() % 20 == 0) {
             List<Integer> list = List.of(this.carbohydrateLevel, this.proteinLevel, this.fatLevel, this.vitaminLevel, this.mineralLevel);
             for (int i = 0; i < list.size(); i++) {
                 if (list.get(i) <= ConfigInit.CONFIG.negativeNutrition) {
@@ -85,7 +85,10 @@ public class HungerManagerMixin implements HungerManagerAccess {
                     if (negativeEffectList != null && !negativeEffectList.isEmpty()) {
                         for (int u = 0; u < negativeEffectList.size(); u++) {
                             if (negativeEffectList.get(u) instanceof StatusEffectInstance statusEffectInstance) {
-                                player.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
+                                if (!player.hasStatusEffect(statusEffectInstance.getEffectType())
+                                        || player.getStatusEffect(statusEffectInstance.getEffectType()).getDuration() < statusEffectInstance.getDuration() - 50) {
+                                    player.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
+                                }
                             } else if (!this.effectMap.get(i) && negativeEffectList.get(u) instanceof Multimap) {
                                 player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) negativeEffectList.get(u));
                             }
@@ -97,7 +100,10 @@ public class HungerManagerMixin implements HungerManagerAccess {
                     if (positiveEffectList != null && !positiveEffectList.isEmpty()) {
                         for (int u = 0; u < positiveEffectList.size(); u++) {
                             if (positiveEffectList.get(u) instanceof StatusEffectInstance statusEffectInstance) {
-                                player.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
+                                if (!player.hasStatusEffect(statusEffectInstance.getEffectType())
+                                        || player.getStatusEffect(statusEffectInstance.getEffectType()).getDuration() < statusEffectInstance.getDuration() - 50) {
+                                    player.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
+                                }
                             } else if (!this.effectMap.get(i) && positiveEffectList.get(u) instanceof Multimap) {
                                 player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u));
                             }
