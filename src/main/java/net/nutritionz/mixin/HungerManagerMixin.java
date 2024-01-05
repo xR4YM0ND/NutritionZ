@@ -1,5 +1,6 @@
 package net.nutritionz.mixin;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -13,6 +14,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import net.minecraft.entity.attribute.EntityAttribute;
+import net.minecraft.entity.attribute.EntityAttributeInstance;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.HungerManager;
@@ -20,6 +22,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.network.packet.s2c.play.EntityAttributesS2CPacket;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.nutritionz.NutritionMain;
 import net.nutritionz.access.HungerManagerAccess;
 import net.nutritionz.init.ConfigInit;
@@ -124,6 +128,10 @@ public class HungerManagerMixin implements HungerManagerAccess {
                             if (negativeEffectList.get(u) instanceof Multimap) {
                                 player.getAttributes().removeModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) negativeEffectList.get(u));
                             }
+                        }
+                        Collection<EntityAttributeInstance> collection = player.getAttributes().getAttributesToSend();
+                        if (!collection.isEmpty()) {
+                            ((ServerPlayerEntity) player).networkHandler.sendPacket(new EntityAttributesS2CPacket(player.getId(), collection));
                         }
                     }
                 }
