@@ -82,6 +82,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
     @Inject(method = "update", at = @At("TAIL"))
     private void updateNutritionEffectsMixin(PlayerEntity player, CallbackInfo info) {
         if (!player.isCreative() && player.getWorld().getTime() % 20 == 0) {
+            boolean changedAttributes = false;
             List<Integer> list = List.of(this.carbohydrateLevel, this.proteinLevel, this.fatLevel, this.vitaminLevel, this.mineralLevel);
             for (int i = 0; i < list.size(); i++) {
                 if (list.get(i) <= ConfigInit.CONFIG.negativeNutrition) {
@@ -95,6 +96,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
                                 }
                             } else if (!this.effectMap.get(i) && negativeEffectList.get(u) instanceof Multimap) {
                                 player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) negativeEffectList.get(u));
+                                changedAttributes = true;
                             }
                         }
                         this.effectMap.put(i, true);
@@ -110,6 +112,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
                                 }
                             } else if (!this.effectMap.get(i) && positiveEffectList.get(u) instanceof Multimap) {
                                 player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u));
+                                changedAttributes = true;
                             }
                         }
                         this.effectMap.put(i, true);
@@ -121,19 +124,24 @@ public class HungerManagerMixin implements HungerManagerAccess {
                         for (int u = 0; u < positiveEffectList.size(); u++) {
                             if (positiveEffectList.get(u) instanceof Multimap) {
                                 player.getAttributes().removeModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u));
+                                changedAttributes = true;
                             }
                         }
                         List<Object> negativeEffectList = NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i);
                         for (int u = 0; u < negativeEffectList.size(); u++) {
                             if (negativeEffectList.get(u) instanceof Multimap) {
                                 player.getAttributes().removeModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) negativeEffectList.get(u));
+                                changedAttributes = true;
                             }
                         }
-                        Collection<EntityAttributeInstance> collection = player.getAttributes().getAttributesToSend();
-                        if (!collection.isEmpty()) {
-                            ((ServerPlayerEntity) player).networkHandler.sendPacket(new EntityAttributesS2CPacket(player.getId(), collection));
-                        }
+
                     }
+                }
+            }
+            if (changedAttributes) {
+                Collection<EntityAttributeInstance> collection = player.getAttributes().getAttributesToSend();
+                if (!collection.isEmpty()) {
+                    ((ServerPlayerEntity) player).networkHandler.sendPacket(new EntityAttributesS2CPacket(player.getId(), collection));
                 }
             }
         }
