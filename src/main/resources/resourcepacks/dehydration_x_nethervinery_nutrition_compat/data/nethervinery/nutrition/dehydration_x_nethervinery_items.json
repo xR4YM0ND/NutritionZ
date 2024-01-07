@@ -1,0 +1,51 @@
+{
+    "nethervinery:blazewine_pinot": {
+        "carbohydrates": 3,
+        "protein": 1,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 16
+    },
+    "nethervinery:netherite_nectar": {
+        "carbohydrates": 4,
+        "protein": 2,
+        "fat": 0,
+        "vitamins": 14,
+        "minerals": 20
+    },
+    "nethervinery:ghastly_grenache": {
+        "carbohydrates": 3,
+        "protein": 1,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 16
+    },
+    "nethervinery:lava_fizz": {
+        "carbohydrates": 4,
+        "protein": 2,
+        "fat": 0,
+        "vitamins": 14,
+        "minerals": 20
+    },
+    "nethervinery:nether_fizz": {
+        "carbohydrates": 4,
+        "protein": 2,
+        "fat": 0,
+        "vitamins": 14,
+        "minerals": 20
+    },
+    "nethervinery:improved_lava_fizz": {
+        "carbohydrates": 2,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 6,
+        "minerals": 12
+    },
+    "nethervinery:improved_nether_fizz": {
+        "carbohydrates": 2,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 6,
+        "minerals": 12
+    }
+}
