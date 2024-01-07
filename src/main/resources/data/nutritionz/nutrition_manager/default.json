@@ -14,11 +14,11 @@
         "negative": {
             "generic.attack_speed": {
                 "operation": "ADDITION",
-                "value": -0.5
+                "value": 0.5
             },
             "generic.movement_speed": {
                 "operation": "ADDITION",
-                "value": -0.02
+                "value": 0.02
             }
         }
     },
@@ -37,11 +37,11 @@
         "negative": {
             "generic.attack_damage": {
                 "operation": "ADDITION",
-                "value": -2.0
+                "value": 2.0
             },
             "generic.attack_knockback": {
                 "operation": "ADDITION",
-                "value": -1.0
+                "value": 1.0
             }
         }
     },
@@ -61,11 +61,11 @@
         "negative": {
             "generic.armor": {
                 "operation": "ADDITION",
-                "value": -2.0
+                "value": 2.0
             },
             "generic.knockback_resistance": {
                 "operation": "ADDITION",
-                "value": -0.1
+                "value": 0.1
             }
             
         }
@@ -85,7 +85,7 @@
         "negative": {
             "generic.max_health": {
                 "operation": "ADDITION",
-                "value": -2.0
+                "value": 2.0
             },
             "minecraft:weakness": {
                 "duration": 319,
@@ -108,7 +108,7 @@
         "negative": {
             "generic.armor_toughness": {
                 "operation": "ADDITION",
-                "value": -1.0
+                "value": 1.0
             },
             "minecraft:weakness": {
                 "duration": 319,

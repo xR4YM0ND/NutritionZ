@@ -16,6 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeInstance;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.HungerManager;
 import net.minecraft.entity.player.PlayerEntity;
@@ -123,8 +124,22 @@ public class HungerManagerMixin implements HungerManagerAccess {
                         List<Object> positiveEffectList = NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i);
                         for (int u = 0; u < positiveEffectList.size(); u++) {
                             if (positiveEffectList.get(u) instanceof Multimap) {
-                                player.getAttributes().removeModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u));
-                                changedAttributes = true;
+                                System.out.println("BEFORE:  " + player.getAttributes().getValue(EntityAttributes.GENERIC_ARMOR));
+                                ((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u)).forEach((eattribute, eamodifier) -> {
+                                    if (player.getAttributes().getCustomInstance(eattribute) != null) {
+
+                                        player.getAttributes().getCustomInstance(eattribute).removeModifier(eamodifier);
+                                        System.out.println(eamodifier.getName() + " : " + player.getAttributes().getCustomInstance(eattribute).tryRemoveModifier(eamodifier.getId()) + " : "
+                                                + player.getAttributes().getCustomInstance(eattribute).getModifiers() + " : " + player.getAttributes().getCustomInstance(eattribute).getModifier(eamodifier.getId()) + " : "
+                                                + eamodifier.getId());
+                                    }
+                                });
+                                // System.out.println("BEFORE: "+ player.getAttributes().getCustomInstance(EntityAttributes.GENERIC_ARMOR).getModifiers());
+                                // player.getAttributes().removeModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u));
+                                // System.out.println("AFTER: "+ player.getAttributes().getCustomInstance(EntityAttributes.GENERIC_ARMOR).getModifiers());
+                                // changedAttributes = true;
+                                System.out.println("AFTER:  " + player.getAttributes().getValue(EntityAttributes.GENERIC_ARMOR));
+                                System.out.println("REMOVE"+((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u)).values());
                             }
                         }
                         List<Object> negativeEffectList = NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i);
@@ -134,13 +149,18 @@ public class HungerManagerMixin implements HungerManagerAccess {
                                 changedAttributes = true;
                             }
                         }
-
                     }
                 }
             }
             if (changedAttributes) {
                 Collection<EntityAttributeInstance> collection = player.getAttributes().getAttributesToSend();
                 if (!collection.isEmpty()) {
+                    // collection.stream().forEach(test -> {
+                    //     test.getModifiers().forEach(lol -> {
+                    //         System.out.println(lol.getName() + " : " + lol.getValue());
+                    //     });
+                    // });
+                    // System.out.println("Test: " + player.getAttributes().getValue(EntityAttributes.GENERIC_ARMOR));
                     ((ServerPlayerEntity) player).networkHandler.sendPacket(new EntityAttributesS2CPacket(player.getId(), collection));
                 }
             }
