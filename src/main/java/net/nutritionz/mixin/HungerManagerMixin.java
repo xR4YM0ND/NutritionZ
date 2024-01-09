@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents.Before;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeInstance;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
@@ -20,6 +21,7 @@ import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.HungerManager;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
@@ -83,6 +85,10 @@ public class HungerManagerMixin implements HungerManagerAccess {
     @Inject(method = "update", at = @At("TAIL"))
     private void updateNutritionEffectsMixin(PlayerEntity player, CallbackInfo info) {
         if (!player.isCreative() && player.getWorld().getTime() % 20 == 0) {
+
+            // System.out.println(NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(2));
+            // player.getAttributes().mofi
+
             boolean changedAttributes = false;
             List<Integer> list = List.of(this.carbohydrateLevel, this.proteinLevel, this.fatLevel, this.vitaminLevel, this.mineralLevel);
             for (int i = 0; i < list.size(); i++) {
@@ -112,9 +118,19 @@ public class HungerManagerMixin implements HungerManagerAccess {
                                     player.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
                                 }
                             } else if (!this.effectMap.get(i) && positiveEffectList.get(u) instanceof Multimap) {
+
+                                System.out.println("Before Added attributes: " + player.getAttributeInstance(EntityAttributes.GENERIC_ARMOR).getModifiers() + " : "
+                                        + ((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u)));
                                 player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u));
+                                System.out.println("Added attributes: " + player.getAttributeInstance(EntityAttributes.GENERIC_ARMOR).getModifiers());
+
+                                // player.getAttributes().removeModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u));
+                                // System.out.println("After removed attributes: " + player.getAttributeInstance(EntityAttributes.GENERIC_ARMOR).getModifiers());
                                 changedAttributes = true;
                             }
+
+  //                          [Server thread/INFO] (Minecraft) [STDOUT]: Before Added attributes: [] : {net.minecraft.entity.attribute.ClampedEntityAttribute@553fbe94=[AttributeModifier{amount=2.0, operation=ADDITION, name='attribute.name.generic.armor', id=d5ed1a75-69e5-47f5-95c4-0e8fd02e149e}]}
+//[19:02:24] [Server thread/INFO] (Minecraft) [STDOUT]: Added attributes: [AttributeModifier{amount=2.0, operation=ADDITION, name='attribute.name.generic.armor', id=d5ed1a75-69e5-47f5-95c4-0e8fd02e149e}]
                         }
                         this.effectMap.put(i, true);
                     }
@@ -124,23 +140,30 @@ public class HungerManagerMixin implements HungerManagerAccess {
                         List<Object> positiveEffectList = NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i);
                         for (int u = 0; u < positiveEffectList.size(); u++) {
                             if (positiveEffectList.get(u) instanceof Multimap) {
-                                System.out.println("BEFORE:  " + player.getAttributes().getValue(EntityAttributes.GENERIC_ARMOR));
-                                ((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u)).forEach((eattribute, eamodifier) -> {
-                                    if (player.getAttributes().getCustomInstance(eattribute) != null) {
+                                // System.out.println("BEFORE: " + player.getAttributes().getValue(EntityAttributes.GENERIC_ARMOR));
+                                // ((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u)).forEach((eattribute, eamodifier) -> {
+                                // if (player.getAttributes().getCustomInstance(eattribute) != null) {
 
-                                        player.getAttributes().getCustomInstance(eattribute).removeModifier(eamodifier);
-                                        System.out.println(eamodifier.getName() + " : " + player.getAttributes().getCustomInstance(eattribute).tryRemoveModifier(eamodifier.getId()) + " : "
-                                                + player.getAttributes().getCustomInstance(eattribute).getModifiers() + " : " + player.getAttributes().getCustomInstance(eattribute).getModifier(eamodifier.getId()) + " : "
-                                                + eamodifier.getId());
-                                    }
-                                });
-                                // System.out.println("BEFORE: "+ player.getAttributes().getCustomInstance(EntityAttributes.GENERIC_ARMOR).getModifiers());
-                                // player.getAttributes().removeModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u));
-                                // System.out.println("AFTER: "+ player.getAttributes().getCustomInstance(EntityAttributes.GENERIC_ARMOR).getModifiers());
-                                // changedAttributes = true;
-                                System.out.println("AFTER:  " + player.getAttributes().getValue(EntityAttributes.GENERIC_ARMOR));
-                                System.out.println("REMOVE"+((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u)).values());
-                            }
+                                // player.getAttributes().getCustomInstance(eattribute).removeModifier(eamodifier);
+                                // System.out.println(eamodifier.getName() + " : " + player.getAttributes().getCustomInstance(eattribute).tryRemoveModifier(eamodifier.getId()) + " : "
+                                // + player.getAttributes().getCustomInstance(eattribute).getModifiers() + " : "
+                                // + player.getAttributes().getCustomInstance(eattribute).getModifier(eamodifier.getId()) + " : " + eamodifier.getId());
+                                // }
+                                // });
+                                System.out.println("BEFORE REMOVE: " + player.getAttributes().getCustomInstance(EntityAttributes.GENERIC_ARMOR).getModifiers() + "   :   "
+                                        + (Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u));
+                                player.getAttributes().removeModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u));
+                                System.out.println("AFTER REMOVE: " + player.getAttributes().getCustomInstance(EntityAttributes.GENERIC_ARMOR).getModifiers());
+
+                                changedAttributes = true;
+                                // System.out.println("AFTER: " + player.getAttributes().getValue(EntityAttributes.GENERIC_ARMOR));
+                                // System.out.println("REMOVE" + ((Multimap<EntityAttribute, EntityAttributeModifier>) positiveEffectList.get(u)).values());
+                            } // 30dc89b2-ee07-4319-a9d1-02123c1abf82
+
+                            //Added attributes: [AttributeModifier{amount=2.0, operation=ADDITION, name='attribute.name.generic.armor', id=d5ed1a75-69e5-47f5-95c4-0e8fd02e149e}]
+
+  //                          Before Added attributes: [AttributeModifier{amount=2.0, operation=ADDITION, name='attribute.name.generic.armor', id=d5ed1a75-69e5-47f5-95c4-0e8fd02e149e}] : {net.minecraft.entity.attribute.ClampedEntityAttribute@1d585fb=[AttributeModifier{amount=0.10000000149011612, operation=ADDITION, name='attribute.name.generic.knockback_resistance', id=aeaf4641-0a52-4523-acfe-82758363e6b3}]}
+//[19:00:52] [Server thread/INFO] (Minecraft) [STDOUT]: Added attributes: [AttributeModifier{amount=2.0, operation=ADDITION, name='attribute.name.generic.armor', id=d5ed1a75-69e5-47f5-95c4-0e8fd02e149e}]
                         }
                         List<Object> negativeEffectList = NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i);
                         for (int u = 0; u < negativeEffectList.size(); u++) {
@@ -156,9 +179,9 @@ public class HungerManagerMixin implements HungerManagerAccess {
                 Collection<EntityAttributeInstance> collection = player.getAttributes().getAttributesToSend();
                 if (!collection.isEmpty()) {
                     // collection.stream().forEach(test -> {
-                    //     test.getModifiers().forEach(lol -> {
-                    //         System.out.println(lol.getName() + " : " + lol.getValue());
-                    //     });
+                    // test.getModifiers().forEach(lol -> {
+                    // System.out.println(lol.getName() + " : " + lol.getValue());
+                    // });
                     // });
                     // System.out.println("Test: " + player.getAttributes().getValue(EntityAttributes.GENERIC_ARMOR));
                     ((ServerPlayerEntity) player).networkHandler.sendPacket(new EntityAttributesS2CPacket(player.getId(), collection));
@@ -166,6 +189,12 @@ public class HungerManagerMixin implements HungerManagerAccess {
             }
         }
     }
+
+    //[18:55:26] [Server thread/INFO] (Minecraft) [STDOUT]: Before Added attributes: [] : {net.minecraft.entity.attribute.ClampedEntityAttribute@553fbe94=[AttributeModifier{amount=2.0, operation=ADDITION, name='attribute.name.generic.armor', id=5b57c0c8-c908-46ee-86d0-113b4157f86a}]}
+//[18:55:26] [Server thread/INFO] (Minecraft) [STDOUT]: Added attributes: [AttributeModifier{amount=2.0, operation=ADDITION, name='attribute.name.generic.armor', id=5b57c0c8-c908-46ee-86d0-113b4157f86a}]
+
+//[AttributeModifier{amount=2.0, operation=ADDITION, name='attribute.name.generic.armor', id=5b57c0c8-c908-46ee-86d0-113b4157f86a}]   :   {net.minecraft.entity.attribute.ClampedEntityAttribute@553fbe94=[AttributeModifier{amount=2.0, operation=ADDITION, name='attribute.name.generic.armor', id=d5ed1a75-69e5-47f5-95c4-0e8fd02e149e}]}
+//[18:56:44] [Server thread/INFO] (Minecraft) [STDOUT]: AFTER REMOVE: [AttributeModifier{amount=2.0, operation=ADDITION, name='attribute.name.generic.armor', id=5b57c0c8-c908-46ee-86d0-113b4157f86a}]
 
     @Inject(method = "addExhaustion", at = @At("TAIL"))
     private void addExhaustionMixin(float exhaustion, CallbackInfo info) {
