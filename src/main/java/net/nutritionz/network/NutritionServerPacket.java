@@ -87,7 +87,7 @@ public class NutritionServerPacket {
                     Multimap<EntityAttribute, EntityAttributeModifier> multimap = (Multimap<EntityAttribute, EntityAttributeModifier>) entry.getValue().get(i);
                     multimap.forEach((attribute, modifier) -> {
                         buf.writeIdentifier(Registries.ATTRIBUTE.getId(attribute));
-                        // buf.writeString(modifier.getName());
+                        buf.writeUuid(modifier.getId());
                         buf.writeFloat((float) modifier.getValue());
                         buf.writeString(modifier.getOperation().name());
                         return;

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.UUID;
 
 import com.google.common.collect.LinkedHashMultimap;
 import com.google.common.collect.Multimap;
@@ -84,12 +85,12 @@ public class NutritionClientPacket {
                             objectList.add(new StatusEffectInstance(Registries.STATUS_EFFECT.get(identifier), duration, amplifier, false, false, true));
                         } else {
                             Identifier identifier = buf.readIdentifier();
-                            // String name = buf.readString();
+                            UUID uuid = buf.readUuid();
                             float value = buf.readFloat();
                             String operation = buf.readString();
                             Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers = LinkedHashMultimap.create();
                             attributeModifiers.put(Registries.ATTRIBUTE.get(identifier),
-                                    new EntityAttributeModifier(Registries.ATTRIBUTE.get(identifier).getTranslationKey(), value, Operation.valueOf(operation.toUpperCase())));
+                                    new EntityAttributeModifier(uuid, Registries.ATTRIBUTE.get(identifier).getTranslationKey(), value, Operation.valueOf(operation.toUpperCase())));
                             objectList.add(attributeModifiers);
                         }
 
