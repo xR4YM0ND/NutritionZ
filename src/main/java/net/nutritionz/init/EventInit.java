@@ -35,67 +35,67 @@ public class EventInit {
         }
         // datapacks
         if (FabricLoader.getInstance().isModLoaded("adventurez")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("adventurez_nutrition_compat"), FabricLoader.getInstance().getModContainer("adventurez").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "adventurez_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("bakery")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("bakery_nutrition_compat"), FabricLoader.getInstance().getModContainer("bakery").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "bakery_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("betterend")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("betterend_nutrition_compat"), FabricLoader.getInstance().getModContainer("betterend").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "betterend_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("betternether")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("betternether_nutrition_compat"), FabricLoader.getInstance().getModContainer("betternether").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "betternether_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("candlelight")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("candlelight_nutrition_compat"), FabricLoader.getInstance().getModContainer("candlelight").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "candlelight_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("dehydration")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("dehydration_nutrition_compat"), FabricLoader.getInstance().getModContainer("dehydration").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "dehydration_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("dehydration")&&FabricLoader.getInstance().isModLoaded("meadow")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("dehydration_x_meadow_nutrition_compat"), FabricLoader.getInstance().getModContainer("meadow").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "dehydration_x_meadow_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("dehydration")&&FabricLoader.getInstance().isModLoaded("nethervinery")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("dehydration_x_nethervinery_nutrition_compat"), FabricLoader.getInstance().getModContainer("nethervinery").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "dehydration_x_nethervinery_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("dehydration")&&FabricLoader.getInstance().isModLoaded("vinery")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("dehydration_x_vinery_nutrition_compat"), FabricLoader.getInstance().getModContainer("vinery").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "dehydration_x_vinery_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("herbalbrews")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("herbalbrews_nutrition_compat"), FabricLoader.getInstance().getModContainer("herbalbrews").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "herbalbrews_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("meadow")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("meadow_nutrition_compat"), FabricLoader.getInstance().getModContainer("meadow").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "meadow_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("mobcatalog")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("mobcatalog_nutrition_compat"), FabricLoader.getInstance().getModContainer("mobcatalog").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "mobcatalog_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("naturalist")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("naturalist_nutrition_compat"), FabricLoader.getInstance().getModContainer("naturalist").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "naturalist_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("nethervinery")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nethervinery_nutrition_compat"), FabricLoader.getInstance().getModContainer("nethervinery").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "nethervinery_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("supplementaries")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("supplementaries_nutrition_compat"), FabricLoader.getInstance().getModContainer("supplementaries").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "supplementaries_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("vinery")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("vinery_nutrition_compat"), FabricLoader.getInstance().getModContainer("vinery").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "vinery_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
     }
