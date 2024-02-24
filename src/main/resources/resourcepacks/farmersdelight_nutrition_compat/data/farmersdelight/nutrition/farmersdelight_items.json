@@ -1,0 +1,609 @@
+{
+    "farmersdelight:cabbage": {
+        "carbohydrates": 4,
+        "protein": 1,
+        "fat": 0,
+        "vitamins": 6,
+        "minerals": 2
+    },
+
+    "farmersdelight:cabbage_leaf": {
+        "carbohydrates": 2,
+        "protein": 1,
+        "fat": 0,
+        "vitamins": 3,
+        "minerals": 1
+    },
+
+    "farmersdelight:onion": {
+        "carbohydrates": 5,
+        "protein": 1,
+        "fat": 0,
+        "vitamins": 2,
+        "minerals": 2
+    },
+
+    "farmersdelight:tomato": {
+        "carbohydrates": 4,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 12,
+        "minerals": 4
+    },
+
+    "farmersdelight:tomato_sauce": {
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 20,
+        "minerals": 8
+    },
+
+    "farmersdelight:cod_slice": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    
+    "farmersdelight:cooked_cod_slice": {
+        "carbohydrates": 0,
+        "protein": 8,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 3
+    },
+
+    "farmersdelight:salmon_slice": {
+        "carbohydrates": 0,
+        "protein": 2,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 1
+    },
+
+    "farmersdelight:cooked_salmon_slice": {
+        "carbohydrates": 0,
+        "protein": 5,
+        "fat": 7,
+        "vitamins": 0,
+        "minerals": 3
+    },
+
+    "farmersdelight:milk_bottle": {
+        "carbohydrates": 3,
+        "protein": 2,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 1
+    },
+
+    "farmersdelight:raw_pasta": {
+        "carbohydrates": 10,
+        "protein": 4,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:bacon": {
+        "carbohydrates": 0,
+        "protein": 4,
+        "fat": 4,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:cooked_bacon": {
+        "carbohydrates": 0,
+        "protein": 8,
+        "fat": 12,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:minced_beef": {
+        "carbohydrates": 0,
+        "protein": 4,
+        "fat": 4,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:beef_patty": {
+        "carbohydrates": 0,
+        "protein": 12,
+        "fat": 8,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:chicken_cuts": {
+        "carbohydrates": 0,
+        "protein": 5,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:cooked_chicken_cuts": {
+        "carbohydrates": 0,
+        "protein": 14,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:fried_egg": {
+        "carbohydrates": 0,
+        "protein": 10,
+        "fat": 15,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:mutton_chops": {
+        "carbohydrates": 0,
+        "protein": 4,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:cooked_mutton_chops": {
+        "carbohydrates": 0,
+        "protein": 11,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:wheat_dough": {
+        "carbohydrates": 8,
+        "protein": 2,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:hot_cocoa": {
+        "carbohydrates": 5,
+        "protein": 1,
+        "fat": 4,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:pie_crust": {
+        "carbohydrates": 13,
+        "protein": 6,
+        "fat": 6,
+        "vitamins": 0,
+        "minerals": 1
+    },
+
+    "farmersdelight:melon_juice": {
+        "carbohydrates": 20,
+        "protein": 5,
+        "fat": 5,
+        "vitamins": 18,
+        "minerals": 8
+    },
+
+    "farmersdelight:apple_cider": {
+        "carbohydrates": 18,
+        "protein": 2,
+        "fat": 0,
+        "vitamins": 12,
+        "minerals": 6
+    },
+    
+    "farmersdelight:melon_popsicle": {
+        "carbohydrates": 16,
+        "protein": 4,
+        "fat": 4,
+        "vitamins": 12,
+        "minerals": 5
+    },
+
+    "farmersdelight:beef_stew": {
+        "carbohydrates": 24,
+        "protein": 30,
+        "fat": 18,
+        "vitamins": 3,
+        "minerals": 2
+    },
+
+    "farmersdelight:chicken_soup": {
+        "carbohydrates": 14,
+        "protein": 21,
+        "fat": 4,
+        "vitamins": 10,
+        "minerals": 5
+    },
+
+    "farmersdelight:vegetable_soup": {
+        "carbohydrates": 30,
+        "protein": 10,
+        "fat": 1,
+        "vitamins": 7,
+        "minerals": 5
+    },
+
+    "farmersdelight:fish_stew": {
+        "carbohydrates": 15,
+        "protein": 20,
+        "fat": 5,
+        "vitamins": 22,
+        "minerals": 16
+    },
+
+    "farmersdelight:pumpkin_slice": {
+        "carbohydrates": 5,
+        "protein": 1,
+        "fat": 0,
+        "vitamins": 2,
+        "minerals": 1
+    },
+    
+    "farmersdelight:pumpkin_soup": {
+        "carbohydrates": 12,
+        "protein": 4,
+        "fat": 0,
+        "vitamins": 4,
+        "minerals": 2
+    },
+
+    "farmersdelight:baked_cod_stew": {
+        "carbohydrates": 25,
+        "protein": 23,
+        "fat": 18,
+        "vitamins": 12,
+        "minerals": 8
+    },
+
+    "farmersdelight:noodle_soup": {
+        "carbohydrates": 12,
+        "protein": 28,
+        "fat": 30,
+        "vitamins": 0,
+        "minerals": 4
+    },
+
+    "farmersdelight:bone_broth": {
+        "carbohydrates": 8,
+        "protein": 2,
+        "fat": 2,
+        "vitamins": 3,
+        "minerals": 8
+    },
+
+    "farmersdelight:cabbage_rolls": {
+        "carbohydrates": 10,
+        "protein": 17,
+        "fat": 14,
+        "vitamins": 6,
+        "minerals": 3
+    },
+
+    "farmersdelight:cooked_rice": {
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 3,
+        "minerals": 0
+    },
+
+    "farmersdelight:fried_rice": {
+        "carbohydrates": 20,
+        "protein": 20,
+        "fat": 15,
+        "vitamins": 5,
+        "minerals": 4
+    },
+
+    "farmersdelight:mushroom_rice": {
+        "carbohydrates": 35,
+        "protein": 15,
+        "fat": 15,
+        "vitamins": 3,
+        "minerals": 4
+    },
+
+    "farmersdelight:dog_food": {
+        "carbohydrates": 12,
+        "protein": 22,
+        "fat": 9,
+        "vitamins": 3,
+        "minerals": 18
+    },
+
+    "farmersdelight:dumplings": {
+        "carbohydrates": 15,
+        "protein": 32,
+        "fat": 21,
+        "vitamins": 7,
+        "minerals": 4
+    },
+
+    "farmersdelight:glow_berry_custard": {
+        "carbohydrates": 17,
+        "protein": 10,
+        "fat": 12,
+        "vitamins": 3,
+        "minerals": 3
+    },
+
+    "farmersdelight:pasta_with_meatballs": {
+        "carbohydrates": 18,
+        "protein": 16,
+        "fat": 9,
+        "vitamins": 20,
+        "minerals": 8
+    },
+
+    "farmersdelight:pasta_with_mutton_chop": {
+        "carbohydrates": 20,
+        "protein": 12,
+        "fat": 5,
+        "vitamins": 20,
+        "minerals": 8
+    },
+
+    "farmersdelight:ratatouille": {
+        "carbohydrates": 22,
+        "protein": 8,
+        "fat": 1,
+        "vitamins": 15,
+        "minerals": 2
+    },
+
+    "farmersdelight:squid_ink_pasta": {
+        "carbohydrates": 14,
+        "protein": 12,
+        "fat": 3,
+        "vitamins": 13,
+        "minerals": 9
+    },
+
+    "farmersdelight:vegetable_noodles": {
+        "carbohydrates": 24,
+        "protein": 9,
+        "fat": 8,
+        "vitamins": 18,
+        "minerals": 6
+    },
+
+    "farmersdelight:bacon_and_eggs": {
+        "carbohydrates": 36,
+        "protein": 54,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:bacon_sandwich": {
+        "carbohydrates": 24,
+        "protein": 13,
+        "fat": 13,
+        "vitamins": 14,
+        "minerals": 6
+    },
+
+    "farmersdelight:barbecue_stick": {
+        "carbohydrates": 12,
+        "protein": 20,
+        "fat": 11,
+        "vitamins": 14,
+        "minerals": 6
+    },
+
+    "farmersdelight:chicken_sandwich": {
+        "carbohydrates": 27,
+        "protein": 24,
+        "fat": 5,
+        "vitamins": 3,
+        "minerals": 3
+    },
+
+    "farmersdelight:chocolate_pie_slice": {
+        "carbohydrates": 7,
+        "protein": 2,
+        "fat": 26,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:cod_roll": {
+        "carbohydrates": 7,
+        "protein": 6,
+        "fat": 1,
+        "vitamins": 3,
+        "minerals": 2
+    },
+
+    "farmersdelight:salmon_roll": {
+        "carbohydrates": 7,
+        "protein": 5,
+        "fat": 2,
+        "vitamins": 3,
+        "minerals": 2
+    },
+
+    "farmersdelight:kelp_roll": {
+        "carbohydrates": 26,
+        "protein": 16,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 14
+    },
+
+    "farmersdelight:kelp_roll_slice": {
+        "carbohydrates": 9,
+        "protein": 6,
+        "fat": 0,
+        "vitamins": 3,
+        "minerals": 5
+    },
+
+    "farmersdelight:egg_sandwich": {
+        "carbohydrates": 20,
+        "protein": 24,
+        "fat": 32,
+        "vitamins": 0,
+        "minerals": 1
+    },
+
+    "farmersdelight:fruit_salad": {
+        "carbohydrates": 31,
+        "protein": 4,
+        "fat": 2,
+        "vitamins": 26,
+        "minerals": 6
+    },
+
+    "farmersdelight:grilled_salmon": {
+        "carbohydrates": 12,
+        "protein": 12,
+        "fat": 14,
+        "vitamins": 14,
+        "minerals": 11
+    },
+
+    "farmersdelight:hamburger": {
+        "carbohydrates": 12,
+        "protein": 18,
+        "fat": 9,
+        "vitamins": 10,
+        "minerals": 6
+    },
+
+    "farmersdelight:honey_cookie": {
+        "carbohydrates": 4,
+        "protein": 1,
+        "fat": 3,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:honey_glazed_ham": {
+        "carbohydrates": 15,
+        "protein": 10,
+        "fat": 12,
+        "vitamins": 7,
+        "minerals": 1
+    },
+
+    "farmersdelight:mixed_salad": {
+        "carbohydrates": 10,
+        "protein": 2,
+        "fat": 0,
+        "vitamins": 16,
+        "minerals": 5
+    },
+
+    "farmersdelight:mutton_wrap": {
+        "carbohydrates": 19,
+        "protein": 4,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 1
+    },
+
+    "farmersdelight:nether_salad": {
+        "carbohydrates": 5,
+        "protein": 2,
+        "fat": 0,
+        "vitamins": 9,
+        "minerals": 20
+    },
+
+    "farmersdelight:roasted_mutton_chops": {
+        "carbohydrates": 18,
+        "protein": 17,
+        "fat": 5,
+        "vitamins": 16,
+        "minerals": 4
+    },
+
+    "farmersdelight:smoked_ham": {
+        "carbohydrates": 0,
+        "protein": 32,
+        "fat": 48,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:steak_and_potatoes": {
+        "carbohydrates": 35,
+        "protein": 34,
+        "fat": 16,
+        "vitamins": 5,
+        "minerals": 2
+    },
+
+    "farmersdelight:stuffed_potato": {
+        "carbohydrates": 24,
+        "protein": 30,
+        "fat": 22,
+        "vitamins": 0,
+        "minerals": 1
+    },
+
+    "farmersdelight:sweet_berry_cookie": {
+        "carbohydrates": 2,
+        "protein": 0,
+        "fat": 3,
+        "vitamins": 2,
+        "minerals": 1
+    },
+
+    "farmersdelight:sweet_berry_cheesecake_slice": {
+        "carbohydrates": 11,
+        "protein": 3,
+        "fat": 6,
+        "vitamins": 9,
+        "minerals": 2
+    },
+
+    "farmersdelight:cake_slice": {
+        "carbohydrates": 1,
+        "protein": 1,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "farmersdelight:apple_pie_slice": {
+        "carbohydrates": 14,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 5,
+        "minerals": 1
+    },
+
+    "farmersdelight:roast_chicken": {
+        "carbohydrates": 86,
+        "protein": 50,
+        "fat": 10,
+        "vitamins": 8,
+        "minerals": 7
+    },
+
+    "farmersdelight:stuffed_pumpkin": {
+        "carbohydrates": 16,
+        "protein": 3,
+        "fat": 1,
+        "vitamins": 4,
+        "minerals": 1
+    },
+
+    "farmersdelight:shepherds_pie": {
+        "carbohydrates": 15,
+        "protein": 19,
+        "fat": 12,
+        "vitamins": 1,
+        "minerals": 1
+    }
+}
