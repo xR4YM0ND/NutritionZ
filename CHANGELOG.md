@@ -3,4 +3,5 @@
 ### Changed:
 - 
 ### Added:
-- Added farmes delight compat
+- Added Farmer's Delight compat
+- Added Expanded Delight compat
