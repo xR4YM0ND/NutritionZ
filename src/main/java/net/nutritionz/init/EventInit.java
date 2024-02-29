@@ -70,6 +70,10 @@ public class EventInit {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "dehydration_x_vinery_nutrition_compat"),
                     FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(), ResourcePackActivationType.DEFAULT_ENABLED);
         }
+        if (FabricLoader.getInstance().isModLoaded("farmersdelight")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "farmersdelight_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
         if (FabricLoader.getInstance().isModLoaded("herbalbrews")) {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "herbalbrews_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
