@@ -1,0 +1,281 @@
+{
+    "expandeddelight:asparagus": {
+        "carbohydrates": 1,
+        "protein": 3,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 6
+    },
+
+    "expandeddelight:asparagus_soup": {
+        "carbohydrates": 5,
+        "protein": 4,
+        "fat": 0,
+        "vitamins": 6,
+        "minerals": 8
+    },
+
+    "expandeddelight:asparagus_soup_creamy": {
+        "carbohydrates": 17,
+        "protein": 12,
+        "fat": 20,
+        "vitamins": 6,
+        "minerals": 1
+    },
+
+    "expandeddelight:asparagus_and_bacon_cheesy": {
+        "carbohydrates": 6,
+        "protein": 20,
+        "fat": 20,
+        "vitamins": 2,
+        "minerals": 8
+    },
+
+    "expandeddelight:sweet_potato": {
+        "carbohydrates": 6,
+        "protein": 0,
+        "fat": 1,
+        "vitamins": 3,
+        "minerals": 1
+    },
+
+    "expandeddelight:baked_sweet_potato": {
+        "carbohydrates": 25,
+        "protein": 0,
+        "fat": 5,
+        "vitamins": 3,
+        "minerals": 1
+    },
+
+    "expandeddelight:sweet_potato_salad": {
+        "carbohydrates": 20,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 13,
+        "minerals": 10
+    },
+
+    "expandeddelight:chili_pepper": {
+        "carbohydrates": 7,
+        "protein": 2,
+        "fat": 1,
+        "vitamins": 3,
+        "minerals": 1
+    },
+
+    "expandeddelight:peperonata": {
+        "carbohydrates": 30,
+        "protein": 9,
+        "fat": 2,
+        "vitamins": 20,
+        "minerals": 8
+    },
+
+    "expandeddelight:peanut": {
+        "carbohydrates": 3,
+        "protein": 8,
+        "fat": 10,
+        "vitamins": 4,
+        "minerals": 1
+    },
+
+    "expandeddelight:peanut_butter": {
+        "carbohydrates": 10,
+        "protein": 18,
+        "fat": 25,
+        "vitamins": 8,
+        "minerals": 1
+    },
+
+    "expandeddelight:peanut_butter_sandwich": {
+        "carbohydrates": 29,
+        "protein": 22,
+        "fat": 26,
+        "vitamins": 8,
+        "minerals": 2
+    },
+
+    "expandeddelight:peanut_butter_honey_sandwich": {
+        "carbohydrates": 60,
+        "protein": 23,
+        "fat": 26,
+        "vitamins": 8,
+        "minerals": 2
+    },
+
+    "expandeddelight:peanut_salad": {
+        "carbohydrates": 11,
+        "protein": 9,
+        "fat": 10,
+        "vitamins": 22,
+        "minerals": 7
+    },
+
+    "expandeddelight:peanut_honey_soup": {
+        "carbohydrates": 40,
+        "protein": 19,
+        "fat": 25,
+        "vitamins": 8,
+        "minerals": 1
+    },
+
+    "expandeddelight:sweet_berry_jelly_sandwich": {
+        "carbohydrates": 47,
+        "protein": 22,
+        "fat": 26,
+        "vitamins": 14,
+        "minerals": 3
+    },
+
+    "expandeddelight:glow_berry_jelly_sandwich": {
+        "carbohydrates": 47,
+        "protein": 23,
+        "fat": 25,
+        "vitamins": 11,
+        "minerals": 4
+    },
+
+    "expandeddelight:cheese_wheel": {
+        "carbohydrates": 0,
+        "protein": 32,
+        "fat": 64,
+        "vitamins": 0,
+        "minerals": 20
+    },
+
+    "expandeddelight:cheese_slice": {
+        "carbohydrates": 0,
+        "protein": 8,
+        "fat": 17,
+        "vitamins": 0,
+        "minerals": 5
+    },
+
+    "expandeddelight:cheese_sandwich": {
+        "carbohydrates": 20,
+        "protein": 12,
+        "fat": 18,
+        "vitamins": 0,
+        "minerals": 6
+    },
+
+    "expandeddelight:grilled_cheese": {
+        "carbohydrates": 20,
+        "protein": 16,
+        "fat": 22,
+        "vitamins": 0,
+        "minerals": 6
+    },
+
+    "expandeddelight:mac_and_cheese": {
+        "carbohydrates": 22,
+        "protein": 20,
+        "fat": 38,
+        "vitamins": 0,
+        "minerals": 10
+    },
+
+    "expandeddelight:sweet_roll": {
+        "carbohydrates": 31,
+        "protein": 5,
+        "fat": 6,
+        "vitamins": 2,
+        "minerals": 6
+    },
+
+    "expandeddelight:berry_sweet_roll": {
+        "carbohydrates": 34,
+        "protein": 5,
+        "fat": 6,
+        "vitamins": 8,
+        "minerals": 7
+    },
+
+    "expandeddelight:glow_berry_sweet_roll": {
+        "carbohydrates": 34,
+        "protein": 6,
+        "fat": 6,
+        "vitamins": 5,
+        "minerals": 9
+    },
+
+    "expandeddelight:cinnamon_rice": {
+        "carbohydrates": 30,
+        "protein": 6,
+        "fat": 1,
+        "vitamins": 5,
+        "minerals": 5
+    },
+
+    "expandeddelight:cinnamon_apples": {
+        "carbohydrates": 32,
+        "protein": 2,
+        "fat": 1,
+        "vitamins": 8,
+        "minerals": 6
+    },
+
+    "expandeddelight:chocolate_cookie": {
+        "carbohydrates": 1,
+        "protein": 0,
+        "fat": 4,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "expandeddelight:sugar_cookie": {
+        "carbohydrates": 4,
+        "protein": 0,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 0
+    },
+
+    "expandeddelight:snickerdoodle": {
+        "carbohydrates": 2,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 1,
+        "minerals": 2
+    },
+
+    "expandeddelight:apple_juice": {
+        "carbohydrates": 27,
+        "protein": 1,
+        "fat": 0,
+        "vitamins": 6,
+        "minerals": 1
+    },
+
+    "expandeddelight:sweet_berry_juice": {
+        "carbohydrates": 18,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 6,
+        "minerals": 1
+    },
+
+    "expandeddelight:glow_berry_juice": {
+        "carbohydrates": 18,
+        "protein": 1,
+        "fat": 0,
+        "vitamins": 3,
+        "minerals": 3
+    },
+
+    "expandeddelight:sweet_berry_jelly": {
+        "carbohydrates": 18,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 6,
+        "minerals": 1
+    },
+
+    "expandeddelight:glow_berry_jelly": {
+        "carbohydrates": 18,
+        "protein": 1,
+        "fat": 0,
+        "vitamins": 3,
+        "minerals": 3
+    }
+}
