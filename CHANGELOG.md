@@ -6,5 +6,5 @@
 ### Added:
 - [Let's Do] Beachparty `1.1.4` compat
 - [Let's Do] Brewery `1.1.5` compat
-- Expanded Delight compat
-- Farmer's Delight compat
+- Expanded Delight compat (thx illustietor)
+- Farmer's Delight compat (thx illustietor)
