@@ -10,13 +10,13 @@
         "carbohydrates": 0,
         "protein": 0,
         "fat": 0,
-        "vitamins": 4,
-        "minerals": 1
+        "vitamins": 12,
+        "minerals": 3
     },
     "candlelight:mozzarella": {
         "carbohydrates": 0,
-        "protein": 7,
-        "fat": 28,
+        "protein": 5,
+        "fat": 20,
         "vitamins": 0,
         "minerals": 0
     },
@@ -188,18 +188,18 @@
         "vitamins": 15,
         "minerals": 0
     },
-    "candlelight:pizza_slice": {
-        "carbohydrates": 15,
-        "protein": 5,
-        "fat": 5,
+    "candlelight:chocolate": {
+        "carbohydrates": 8,
+        "protein": 2,
+        "fat": 10,
         "vitamins": 0,
         "minerals": 0
     },
-    "candlelight:chocolate": {
-        "carbohydrates": 4,
-        "protein": 1,
+    "candlelight:tropical_fish_supreme": {
+        "carbohydrates": 5,
+        "protein": 10,
         "fat": 5,
-        "vitamins": 0,
-        "minerals": 0
+        "vitamins": 5,
+        "minerals": 5
     }
 }

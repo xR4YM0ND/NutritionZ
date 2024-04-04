@@ -42,12 +42,20 @@ public class EventInit {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "bakery_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
+        if (FabricLoader.getInstance().isModLoaded("beachparty")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "beachparty_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
         if (FabricLoader.getInstance().isModLoaded("betterend")) {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "betterend_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("betternether")) {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "betternether_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
+        if (FabricLoader.getInstance().isModLoaded("brewery")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "brewery_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("candlelight")) {

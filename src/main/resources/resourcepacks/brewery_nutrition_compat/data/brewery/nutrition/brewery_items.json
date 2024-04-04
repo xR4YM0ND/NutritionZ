@@ -1,0 +1,142 @@
+{
+    "brewery:hops": {
+        "carbohydrates": 4,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 8,
+        "minerals": 8
+    },
+    "brewery:barley": {
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 5,
+        "minerals": 5
+    },
+    "brewery:corn": {
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 5,
+        "minerals": 5
+    },
+    "brewery:beer_wheat": {
+        "carbohydrates": 3,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 3,
+        "minerals": 4
+    },
+    "brewery:beer_barley": {
+        "carbohydrates": 3,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 3,
+        "minerals": 4
+    },
+    "brewery:beer_hops": {
+        "carbohydrates": 2,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 4,
+        "minerals": 4
+    },
+    "brewery:beer_haley": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 3,
+        "minerals": 7
+    },
+    "brewery:whiskey_jojannik": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "brewery:whiskey_lilitusinglemalt": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "brewery:whiskey_cristelwalker": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "brewery:whiskey_maggoallan": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "brewery:whiskey_carrasconlabel": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "brewery:pork_knuckle": {
+        "carbohydrates": 5,
+        "protein": 15,
+        "fat": 15,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "brewery:fried_chicken": {
+        "carbohydrates": 5,
+        "protein": 15,
+        "fat": 15,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "brewery:half_chicken": {
+        "carbohydrates": 10,
+        "protein": 20,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "brewery:sausage": {
+        "carbohydrates": 5,
+        "protein": 15,
+        "fat": 15,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "brewery:mashed_potatoes": {
+        "carbohydrates": 25,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "brewery:potato_salad": {
+        "carbohydrates": 15,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 5
+    },
+    "brewery:dumplings": {
+        "carbohydrates": 15,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 5
+    },
+    "brewery:pretzel": {
+        "carbohydrates": 15,
+        "protein": 3,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 2
+    }
+}

@@ -1,38 +1,45 @@
 {
     "bakery:bread": {
-        "carbohydrates": 23,
-        "protein": 5,
+        "carbohydrates": 19,
+        "protein": 4,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "bakery:bread_crate": {
+        "carbohydrates": 19,
+        "protein": 4,
         "fat": 1,
         "vitamins": 0,
         "minerals": 1
     },
     "bakery:strawberry_cake": {
-        "carbohydrates": 14,
-        "protein": 3,
-        "fat": 12,
-        "vitamins": 8,
-        "minerals": 3
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 10,
+        "vitamins": 5,
+        "minerals": 0
     },
     "bakery:sweetberry_cake": {
-        "carbohydrates": 14,
-        "protein": 3,
-        "fat": 12,
-        "vitamins": 8,
-        "minerals": 3
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 10,
+        "vitamins": 5,
+        "minerals": 0
     },
     "bakery:chocolate_cake": {
-        "carbohydrates": 16,
-        "protein": 4,
-        "fat": 20,
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 10,
         "vitamins": 0,
         "minerals": 0
     },
     "bakery:pudding": {
-        "carbohydrates": 22,
-        "protein": 6,
+        "carbohydrates": 5,
+        "protein": 10,
         "fat": 10,
         "vitamins": 0,
-        "minerals": 2
+        "minerals": 0
     },
     "bakery:bundt_cake": {
         "carbohydrates": 12,
@@ -63,9 +70,16 @@
         "minerals": 3
     },
     "bakery:chocolate_tart": {
-        "carbohydrates": 16,
-        "protein": 4,
-        "fat": 20,
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "bakery:chocolate_gateau": {
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 10,
         "vitamins": 0,
         "minerals": 0
     }
