@@ -1,0 +1,149 @@
+{
+    "beachparty:coconut_open": {
+        "carbohydrates": 1,
+        "protein": 2,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 2
+    },
+    "beachparty:coconut_cocktail": {
+        "carbohydrates": 0,
+        "protein": 1,
+        "fat": 8,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "beachparty:sweetberries_cocktail": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 0
+    },
+    "beachparty:cocoa_cocktail": {
+        "carbohydrates": 5,
+        "protein": 0,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "beachparty:pumpkin_cocktail": {
+        "carbohydrates": 4,
+        "protein": 2,
+        "fat": 4,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "beachparty:melon_cocktail": {
+        "carbohydrates": 4,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 5,
+        "minerals": 1
+    },
+    "beachparty:honey_cocktail": {
+        "carbohydrates": 9,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "beachparty:sweetberry_milkshake": {
+        "carbohydrates": 4,
+        "protein": 2,
+        "fat": 10,
+        "vitamins": 8,
+        "minerals": 1
+    },
+    "beachparty:coconut_milkshake": {
+        "carbohydrates": 1,
+        "protein": 2,
+        "fat": 20,
+        "vitamins": 0,
+        "minerals": 2
+    },
+    "beachparty:chocolate_milkshake": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "beachparty:refreshing_drink": {
+        "carbohydrates": 5,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 15,
+        "minerals": 5
+    },
+    "beachparty:sweetberry_icecream": {
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 25,
+        "minerals": 5
+    },
+    "beachparty:coconut_icecream": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 25,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "beachparty:chocolate_icecream": {
+        "carbohydrates": 25,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 15
+    },
+    "beachparty:icecream_coconut": {
+        "carbohydrates": 2,
+        "protein": 3,
+        "fat": 17,
+        "vitamins": 0,
+        "minerals": 3
+    },
+    "beachparty:icecream_cactus": {
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 5,
+        "minerals": 10
+    },
+    "beachparty:icecream_chocolate": {
+        "carbohydrates": 15,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "beachparty:icecream_sweetberries": {
+        "carbohydrates": 8,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 12,
+        "minerals": 5
+    },
+    "beachparty:icecream_melon": {
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 5
+    },
+    "beachparty:raw_mussel_meat": {
+        "carbohydrates": 3,
+        "protein": 9,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "beachparty:cooked_mussel_meat": {
+        "carbohydrates": 8,
+        "protein": 25,
+        "fat": 4,
+        "vitamins": 0,
+        "minerals": 3
+    }
+}
