@@ -134,6 +134,11 @@ public class NutritionScreen extends Screen {
         return super.keyPressed(keyCode, scanCode, modifiers);
     }
 
+    @Override
+    public boolean shouldPause() {
+        return false;
+    }
+
     private boolean isPointWithinBounds(int x, int y, int width, int height, double pointX, double pointY) {
         int i = this.x;
         int j = this.y;
