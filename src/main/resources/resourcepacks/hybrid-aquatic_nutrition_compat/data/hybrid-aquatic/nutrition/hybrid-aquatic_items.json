@@ -1,0 +1,212 @@
+{
+    "hybrid-aquatic:raw_fish_meat": {
+        "carbohydrates": 0,
+        "protein": 5,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:cooked_fish_meat": {
+        "carbohydrates": 0,
+        "protein": 10,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:raw_fish_steak": {
+        "carbohydrates": 0,
+        "protein": 12,
+        "fat": 8,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:cooked_fish_steak": {
+        "carbohydrates": 0,
+        "protein": 25,
+        "fat": 15,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:raw_tentacle": {
+        "carbohydrates": 0,
+        "protein": 4,
+        "fat": 6,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:cooked_tentacle": {
+        "carbohydrates": 0,
+        "protein": 8,
+        "fat": 12,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:raw_crab": {
+        "carbohydrates": 0,
+        "protein": 7,
+        "fat": 3,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:cooked_crab": {
+        "carbohydrates": 0,
+        "protein": 21,
+        "fat": 9,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:raw_lobster": {
+        "carbohydrates": 0,
+        "protein": 8,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:cooked_lobster": {
+        "carbohydrates": 0,
+        "protein": 32,
+        "fat": 8,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:cooked_shrimp": {
+        "carbohydrates": 0,
+        "protein": 20,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:cooked_crayfish": {
+        "carbohydrates": 0,
+        "protein": 24,
+        "fat": 6,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:tiger_barb": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:oscar": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:cowfish": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:unicorn_fish": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:lionfish": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:blue_spotted_stingray": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:piranha": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:anglerfish": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:barreleye": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:blue_tang": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:clownfish": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:needlefish": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:moray_eel": {
+        "carbohydrates": 0,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:triggerfish": {
+        "carbohydrates": 0,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:opah": {
+        "carbohydrates": 0,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:rockfish": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:mahi_mahi": {
+        "carbohydrates": 0,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "hybrid-aquatic:yellowfin_tuna": {
+        "carbohydrates": 0,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    }
+}

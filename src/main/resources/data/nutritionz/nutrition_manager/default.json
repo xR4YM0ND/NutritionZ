@@ -79,7 +79,7 @@
             },
             "minecraft:regeneration": {
                 "duration": 319,
-                "amplifier": 1
+                "amplifier": 0
             }
         },
         "negative": {
@@ -100,7 +100,7 @@
                 "operation": "ADDITION",
                 "value": 1.0
             },
-            "minecraft:absorption": {
+            "minecraft:haste": {
                 "duration": 319,
                 "amplifier": 0
             }
@@ -110,7 +110,7 @@
                 "operation": "ADDITION",
                 "value": 1.0
             },
-            "minecraft:weakness": {
+            "minecraft:mining_fatigue": {
                 "duration": 319,
                 "amplifier": 0
             }

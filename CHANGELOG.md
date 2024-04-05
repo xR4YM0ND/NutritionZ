@@ -1,10 +1,8 @@
-### Fixed:
-- [Let's Do] Bakery `1.1.8` compat
-- [Let's Do] Candlelight `1.2.10` compat
-- [Let's Do] Vinery `1.4.14` compat
-- [Let's Do] HerbalBrews `1.0.6` compat
+### Changed:
+- Vitamins Buff `regeneration 2` -> `regeneration 1`
+- Minerals Buff `absorption` -> `haste`
+- Minerals Debuff `weakness` -> `mining_fatigue`
 ### Added:
-- [Let's Do] Beachparty `1.1.4` compat
-- [Let's Do] Brewery `1.1.5` compat
-- Expanded Delight compat (thx illustietor)
-- Farmer's Delight compat (thx illustietor)
+- Hybrid Aquatic `1.2.2` compat
+- Regions Unexplored `0.5.5` compat
+- German lang file

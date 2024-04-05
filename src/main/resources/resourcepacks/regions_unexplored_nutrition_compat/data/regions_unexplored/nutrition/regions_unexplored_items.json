@@ -1,0 +1,30 @@
+{
+    "regions_unexplored:haning_earlight_fruit": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 15,
+        "minerals": 15
+    },
+    "regions_unexplored:salmonberry": {
+        "carbohydrates": 0,
+        "protein": 5,
+        "fat": 5,
+        "vitamins": 5,
+        "minerals": 0
+    },
+    "regions_unexplored:meadow_sage": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 8,
+        "minerals": 2
+    },
+    "regions_unexplored:duskmelon_slice": {
+        "carbohydrates": 0,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 10
+    }
+}

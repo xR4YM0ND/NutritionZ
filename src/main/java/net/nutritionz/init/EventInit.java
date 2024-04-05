@@ -90,6 +90,10 @@ public class EventInit {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "herbalbrews_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
+        if (FabricLoader.getInstance().isModLoaded("hybrid-aquatic")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "hybrid-aquatic_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
         if (FabricLoader.getInstance().isModLoaded("meadow")) {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "meadow_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
@@ -104,6 +108,10 @@ public class EventInit {
         }
         if (FabricLoader.getInstance().isModLoaded("nethervinery")) {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "nethervinery_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
+        if (FabricLoader.getInstance().isModLoaded("regions_unexplored")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "regions_unexplored_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("supplementaries")) {
