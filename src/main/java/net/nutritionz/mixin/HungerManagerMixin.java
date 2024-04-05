@@ -30,11 +30,11 @@ import net.nutritionz.init.ConfigInit;
 @Mixin(HungerManager.class)
 public class HungerManagerMixin implements HungerManagerAccess {
 
-    private int carbohydrateLevel = ConfigInit.CONFIG.maxNutrition;
-    private int proteinLevel = ConfigInit.CONFIG.maxNutrition;
-    private int fatLevel = ConfigInit.CONFIG.maxNutrition;
-    private int vitaminLevel = ConfigInit.CONFIG.maxNutrition;
-    private int mineralLevel = ConfigInit.CONFIG.maxNutrition;
+    private int carbohydrateLevel = ConfigInit.CONFIG.maxNutrition / 2;
+    private int proteinLevel = ConfigInit.CONFIG.maxNutrition / 2;
+    private int fatLevel = ConfigInit.CONFIG.maxNutrition / 2;
+    private int vitaminLevel = ConfigInit.CONFIG.maxNutrition / 2;
+    private int mineralLevel = ConfigInit.CONFIG.maxNutrition / 2;
     private Map<Integer, Boolean> effectMap = new HashMap<Integer, Boolean>() {
         {
             put(0, false);
