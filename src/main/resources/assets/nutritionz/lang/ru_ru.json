@@ -1,0 +1,29 @@
+{
+    "screen.nutritionz": "Нутриенты",
+
+    "text.autoconfig.nutritionz.title": "NutritionZ Настройки",
+    "text.autoconfig.nutritionz.option.maxNutrition": "Максимум Нутриентов",
+    "text.autoconfig.nutritionz.option.negativeNutrition": "Значение Плохого Питания",
+    "text.autoconfig.nutritionz.option.positiveNutrition": "Значение Хорошего Питание",
+    "text.autoconfig.nutritionz.option.posX": "Позиция GUI по X",
+    "text.autoconfig.nutritionz.option.posY": "Позиция GUI по Y",
+    "text.autoconfig.nutritionz.option.carbohydrateItemId": "ID Предмета для Углеводов",
+    "text.autoconfig.nutritionz.option.proteinItemId": "ID Предмета для Белков",
+    "text.autoconfig.nutritionz.option.fatItemId": "ID Предмета для Жиров",
+    "text.autoconfig.nutritionz.option.vitaminItemId": "ID Предмета для Витаминов",
+    "text.autoconfig.nutritionz.option.mineralItemId": "ID Предмета для Минералов",
+
+    "screen.nutritionz.carbohydrates": "Углеводы",
+    "screen.nutritionz.protein": "Белки",
+    "screen.nutritionz.fat": "Жиры",
+    "screen.nutritionz.vitamins": "Витамины",
+    "screen.nutritionz.minerals": "Минералы",
+    "screen.nutritionz.nutritionValue": "%s/%s",
+
+    "item.nutritionz.nutrients": "§7Нутриенты:",
+    "item.nutritionz.carbohydrates": " %s Углеводы",
+    "item.nutritionz.protein": " %s Белки",
+    "item.nutritionz.fat": " %s Жиры",
+    "item.nutritionz.vitamins": " %s Витамины",
+    "item.nutritionz.minerals": " %s Минералы"
+}
