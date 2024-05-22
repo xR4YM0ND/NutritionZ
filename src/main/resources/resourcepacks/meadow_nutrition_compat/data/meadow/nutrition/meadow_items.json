@@ -83,25 +83,25 @@
         "vitamins": 0,
         "minerals": 5
     },
-    "meadow:raw_bear_meat": {
+    "meadow:raw_buffalo_meat": {
         "carbohydrates": 0,
-        "protein": 8,
-        "fat": 7,
+        "protein": 6,
+        "fat": 4,
         "vitamins": 0,
         "minerals": 0
     },
-    "meadow:cooked_bear_meat": {
+    "meadow:cooked_buffalo_meat": {
         "carbohydrates": 0,
-        "protein": 24,
-        "fat": 21,
+        "protein": 17,
+        "fat": 13,
         "vitamins": 0,
         "minerals": 0
     },
-    "meadow:ham_cheese": {
-        "carbohydrates": 0,
+    "meadow:sausage_with_cheese": {
+        "carbohydrates": 12,
         "protein": 11,
         "fat": 17,
         "vitamins": 0,
-        "minerals": 12
+        "minerals": 0
     }
 }
