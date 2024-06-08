@@ -74,7 +74,7 @@
         "protein": 10,
         "fat": 5,
         "vitamins": 0,
-        "minerals": 5
+        "minerals": 0
     },
     "bakery:strawberry_cake_slice": {
         "carbohydrates": 10,

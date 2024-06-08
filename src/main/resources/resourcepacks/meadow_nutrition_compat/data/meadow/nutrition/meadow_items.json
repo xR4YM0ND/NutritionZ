@@ -64,14 +64,14 @@
     },
     "meadow:cheese_sandwich": {
         "carbohydrates": 10,
-        "protein": 5,
+        "protein": 10,
         "fat": 10,
         "vitamins": 0,
         "minerals": 5
     },
     "meadow:cheese_roll": {
         "carbohydrates": 10,
-        "protein": 5,
+        "protein": 10,
         "fat": 10,
         "vitamins": 0,
         "minerals": 5
@@ -92,8 +92,8 @@
     },
     "meadow:cooked_buffalo_meat": {
         "carbohydrates": 0,
-        "protein": 17,
-        "fat": 13,
+        "protein": 25,
+        "fat": 15,
         "vitamins": 0,
         "minerals": 0
     },
