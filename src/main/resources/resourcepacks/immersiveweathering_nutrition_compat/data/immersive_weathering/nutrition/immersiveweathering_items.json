@@ -1,0 +1,23 @@
+{
+    "immersive_weathering:moss_clump": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "immersive_weathering:golden_moss_clump": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 20
+    },
+    "immersive_weathering:enchanted_golden_moss_clump": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 30
+    }
+}

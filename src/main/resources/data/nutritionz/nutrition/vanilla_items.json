@@ -1,24 +1,24 @@
 {
     "minecraft:apple": {
-        "carbohydrates": 12,
-        "protein": 1,
+        "carbohydrates": 0,
+        "protein": 0,
         "fat": 0,
-        "vitamins": 6,
-        "minerals": 1
+        "vitamins": 15,
+        "minerals": 5
     },
     "minecraft:golden_apple": {
-        "carbohydrates": 12,
-        "protein": 1,
+        "carbohydrates": 0,
+        "protein": 0,
         "fat": 0,
-        "vitamins": 6,
-        "minerals": 1
+        "vitamins": 15,
+        "minerals": 5
     },
     "minecraft:enchanted_golden_apple": {
-        "carbohydrates": 12,
-        "protein": 1,
+        "carbohydrates": 0,
+        "protein": 0,
         "fat": 0,
-        "vitamins": 6,
-        "minerals": 1
+        "vitamins": 15,
+        "minerals": 5
     },
     "minecraft:melon_slice": {
         "carbohydrates": 4,
