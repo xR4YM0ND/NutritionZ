@@ -109,6 +109,10 @@ public class EventInit {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "moredelight_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
+        if (FabricLoader.getInstance().isModLoaded("natures_delight")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "natures_delight_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
         if (FabricLoader.getInstance().isModLoaded("nethersdelight")) {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "nethersdelight_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
@@ -155,8 +159,20 @@ public class EventInit {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "biomemakeover_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
+        if (FabricLoader.getInstance().isModLoaded("bountifulfares")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "bountifulfares_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
+        if (FabricLoader.getInstance().isModLoaded("culinaire")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "culinaire_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
         if (FabricLoader.getInstance().isModLoaded("dehydration")) {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "dehydration_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
+        if (FabricLoader.getInstance().isModLoaded("exlinefishing")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "exlinefishing_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("fishofthieves")) {
@@ -169,6 +185,10 @@ public class EventInit {
         }
         if (FabricLoader.getInstance().isModLoaded("immersive_weathering")) {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "immersiveweathering_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
+        if (FabricLoader.getInstance().isModLoaded("livingthings")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "livingthings_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("mobcatalog")) {

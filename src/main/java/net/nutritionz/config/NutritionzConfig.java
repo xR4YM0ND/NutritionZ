@@ -8,9 +8,9 @@ import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 @Config.Gui.Background("minecraft:textures/block/stone.png")
 public class NutritionzConfig implements ConfigData {
 
-    public int maxNutrition = 100;
-    public int negativeNutrition = 10;
-    public int positiveNutrition = 90;
+    public int maxNutrition = 300;
+    public int negativeNutrition = 30;
+    public int positiveNutrition = 270;
     public int posX = 162;
     public int posY = 5;
     @Comment("Used for the nutrition gui")

@@ -1,0 +1,128 @@
+{
+    "bountifulfares:apple_block": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 15,
+        "minerals": 5
+    },
+    "bountifulfares:orange_block": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 15,
+        "minerals": 5
+    },
+    "bountifulfares:lemon_block": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 10
+    },
+    "bountifulfares:plum_block": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 20,
+        "minerals": 0
+    },
+    "bountifulfares:golden_apple_block": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 15,
+        "minerals": 5
+    },
+    "bountifulfares:hoary_apple_block": {
+        "carbohydrates": 5,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 5
+    },
+    "bountifulfares:artisan_bread": {
+        "carbohydrates": 10,
+        "protein": 3,
+        "fat": 2,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "bountifulfares:apple_pie": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 0
+    },
+    "bountifulfares:orange_pie": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 0
+    },
+    "bountifulfares:lemon_pie": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 5,
+        "minerals": 5
+    },
+    "bountifulfares:plum_pie": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 0
+    },
+    "bountifulfares:hoary_pie": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 0
+    },
+    "bountifulfares:passion_fruit_tart": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 0
+    },
+    "bountifulfares:elderberry_tart": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 5,
+        "minerals": 5
+    },
+    "bountifulfares:glow_berry_tart": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 5,
+        "minerals": 5
+    },
+    "bountifulfares:sweet_berry_tart": {
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "bountifulfares:lapisberry_tart": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "bountifulfares:cocoa_cake": {
+        "carbohydrates": 5,
+        "protein": 2,
+        "fat": 3,
+        "vitamins": 0,
+        "minerals": 0
+    }
+}
