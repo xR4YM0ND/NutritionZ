@@ -1,17 +1,17 @@
 {
-    "bakery:strawberry": {
-        "carbohydrates": 1,
-        "protein": 0,
-        "fat": 0,
-        "vitamins": 3,
-        "minerals": 1
-    },
-    "bakery:oat": {
+    "bakery:cake_dough": {
         "carbohydrates": 3,
-        "protein": 1,
-        "fat": 0,
+        "protein": 2,
+        "fat": 3,
         "vitamins": 0,
-        "minerals": 1
+        "minerals": 2
+    },
+    "bakery:sweet_dough": {
+        "carbohydrates": 4,
+        "protein": 1,
+        "fat": 3,
+        "vitamins": 0,
+        "minerals": 2
     },
     "bakery:croissant": {
         "carbohydrates": 8,
@@ -62,20 +62,6 @@
         "vitamins": 0,
         "minerals": 1
     },
-    "bakery:vegetable_sandwich": {
-        "carbohydrates": 10,
-        "protein": 5,
-        "fat": 0,
-        "vitamins": 5,
-        "minerals": 5
-    },
-    "bakery:sandwich": {
-        "carbohydrates": 10,
-        "protein": 10,
-        "fat": 5,
-        "vitamins": 0,
-        "minerals": 0
-    },
     "bakery:strawberry_cake_slice": {
         "carbohydrates": 10,
         "protein": 0,
@@ -119,18 +105,18 @@
         "minerals": 0
     },
     "bakery:apple_pie_slice": {
-        "carbohydrates": 12,
+        "carbohydrates": 8,
         "protein": 3,
         "fat": 6,
-        "vitamins": 4,
+        "vitamins": 8,
         "minerals": 0
     },
     "bakery:glowberry_pie_slice": {
-        "carbohydrates": 12,
+        "carbohydrates": 8,
         "protein": 2,
         "fat": 5,
-        "vitamins": 3,
-        "minerals": 3
+        "vitamins": 5,
+        "minerals": 5
     },
     "bakery:chocolate_tart_slice": {
         "carbohydrates": 10,
@@ -222,5 +208,40 @@
         "fat": 5,
         "vitamins": 0,
         "minerals": 0
+    },
+    "bakery:sandwich": {
+        "carbohydrates": 10,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 5,
+        "minerals": 5
+    },
+    "bakery:vegetable_sandwich": {
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 25,
+        "minerals": 5
+    },
+    "bakery:grilled_salmon_sandwich": {
+        "carbohydrates": 10,
+        "protein": 8,
+        "fat": 2,
+        "vitamins": 5,
+        "minerals": 5
+    },
+    "bakery:grilled_bacon_sandwich": {
+        "carbohydrates": 10,
+        "protein": 15,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "bakery:bread_with_jam": {
+        "carbohydrates": 15,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
     }
 }

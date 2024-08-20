@@ -7,11 +7,11 @@
         "minerals": 0
     },
     "vinery:rotten_cherry": {
-        "carbohydrates": 7,
-        "protein": 1,
+        "carbohydrates": 0,
+        "protein": 0,
         "fat": 0,
-        "vitamins": 2,
-        "minerals": 0
+        "vitamins": 0,
+        "minerals": 10
     },
     "vinery:red_grape": {
         "carbohydrates": 2,

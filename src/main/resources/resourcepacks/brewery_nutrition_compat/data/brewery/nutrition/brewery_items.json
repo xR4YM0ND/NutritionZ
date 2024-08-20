@@ -6,20 +6,6 @@
         "vitamins": 8,
         "minerals": 8
     },
-    "brewery:barley": {
-        "carbohydrates": 10,
-        "protein": 0,
-        "fat": 0,
-        "vitamins": 5,
-        "minerals": 5
-    },
-    "brewery:corn": {
-        "carbohydrates": 10,
-        "protein": 0,
-        "fat": 0,
-        "vitamins": 5,
-        "minerals": 5
-    },
     "brewery:beer_wheat": {
         "carbohydrates": 3,
         "protein": 0,
@@ -39,6 +25,20 @@
         "protein": 0,
         "fat": 0,
         "vitamins": 4,
+        "minerals": 4
+    },
+    "brewery:beer_nettle": {
+        "carbohydrates": 3,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 4,
+        "minerals": 3
+    },
+    "brewery:beer_oat": {
+        "carbohydrates": 4,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 2,
         "minerals": 4
     },
     "brewery:beer_haley": {
@@ -83,6 +83,34 @@
         "vitamins": 0,
         "minerals": 10
     },
+    "brewery:whiskey_ak": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "brewery:whiskey_highland_hearth": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "brewery:whiskey_smokey_reverie": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "brewery:whiskey_jamesons_malt": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
     "brewery:pork_knuckle": {
         "carbohydrates": 5,
         "protein": 15,
@@ -95,6 +123,13 @@
         "protein": 15,
         "fat": 15,
         "vitamins": 0,
+        "minerals": 5
+    },
+    "brewery:dumplings": {
+        "carbohydrates": 15,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 10,
         "minerals": 5
     },
     "brewery:half_chicken": {
@@ -112,21 +147,14 @@
         "minerals": 5
     },
     "brewery:mashed_potatoes": {
-        "carbohydrates": 25,
+        "carbohydrates": 10,
         "protein": 5,
         "fat": 0,
         "vitamins": 0,
-        "minerals": 10
-    },
-    "brewery:potato_salad": {
-        "carbohydrates": 15,
-        "protein": 5,
-        "fat": 0,
-        "vitamins": 10,
         "minerals": 5
     },
-    "brewery:dumplings": {
-        "carbohydrates": 15,
+    "brewery:potato_salad": {
+        "carbohydrates": 20,
         "protein": 5,
         "fat": 0,
         "vitamins": 10,

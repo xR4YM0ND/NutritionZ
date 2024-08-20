@@ -110,7 +110,7 @@
                 "operation": "ADDITION",
                 "value": 1.0
             },
-            "minecraft:mining_fatigue": {
+            "minecraft:nausea": {
                 "duration": 319,
                 "amplifier": 0
             }
