@@ -110,9 +110,9 @@
                 "operation": "ADDITION",
                 "value": 1.0
             },
-            "minecraft:nausea": {
+            "minecraft:unluck": {
                 "duration": 319,
-                "amplifier": 0
+                "amplifier": 1
             }
         }
     }
