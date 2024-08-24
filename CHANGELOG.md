@@ -1,5 +1,4 @@
 ### Changed:
-- No pause nutrition screen
-- Starter nutritions set to half
+- Updated to mc 1.21
 ### Added:
 - 

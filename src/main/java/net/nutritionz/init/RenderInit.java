@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 @Environment(EnvType.CLIENT)
 public class RenderInit {
 
-    public static final Identifier NUTRITION_ICONS = new Identifier("nutritionz", "textures/gui/icons.png");
+    public static final Identifier NUTRITION_ICONS = Identifier.of("nutritionz", "textures/gui/icons.png");
 
     public static void init() {
         HudRenderCallback.EVENT.register((context, tickDelta) -> {

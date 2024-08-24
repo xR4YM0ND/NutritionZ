@@ -14,5 +14,4 @@ public class NutritionClient implements ClientModInitializer {
         RenderInit.init();
         NutritionClientPacket.init();
     }
-
 }

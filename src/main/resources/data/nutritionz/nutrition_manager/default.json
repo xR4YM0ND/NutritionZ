@@ -3,21 +3,21 @@
         "replace": false,
         "positive": {
             "generic.attack_speed": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 0.5
             },
             "generic.movement_speed": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 0.02
             }
         },
         "negative": {
             "generic.attack_speed": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 0.5
             },
             "generic.movement_speed": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 0.02
             }
         }
@@ -26,21 +26,21 @@
         "replace": false,
         "positive": {
             "generic.attack_damage": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 2.0
             },
             "generic.attack_knockback": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 1.0
             }
         },
         "negative": {
             "generic.attack_damage": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 2.0
             },
             "generic.attack_knockback": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 1.0
             }
         }
@@ -49,22 +49,22 @@
         "replace": false,
         "positive": {
             "generic.armor": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 2.0
             },
             "generic.knockback_resistance": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 0.1
             }
             
         },
         "negative": {
             "generic.armor": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 2.0
             },
             "generic.knockback_resistance": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 0.1
             }
             
@@ -74,7 +74,7 @@
         "replace": false,
         "positive": {
             "generic.max_health": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 2.0
             },
             "minecraft:regeneration": {
@@ -84,7 +84,7 @@
         },
         "negative": {
             "generic.max_health": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 2.0
             },
             "minecraft:weakness": {
@@ -97,7 +97,7 @@
         "replace": false,
         "positive": {
             "generic.armor_toughness": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 1.0
             },
             "minecraft:haste": {
@@ -107,7 +107,7 @@
         },
         "negative": {
             "generic.armor_toughness": {
-                "operation": "ADDITION",
+                "operation": "ADD_VALUE",
                 "value": 1.0
             },
             "minecraft:mining_fatigue": {

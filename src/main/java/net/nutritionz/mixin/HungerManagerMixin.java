@@ -7,6 +7,8 @@ import java.util.Map;
 
 import com.google.common.collect.Multimap;
 
+import net.minecraft.component.type.FoodComponent;
+import net.minecraft.registry.entry.RegistryEntry;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -50,17 +52,6 @@ public class HungerManagerMixin implements HungerManagerAccess {
     @Shadow
     private int foodTickTimer;
 
-    @Inject(method = "eat", at = @At("TAIL"))
-    private void eatMixin(Item item, ItemStack stack, CallbackInfo info) {
-        if (NutritionMain.NUTRITION_ITEM_MAP.containsKey(item)) {
-            for (int i = 0; i < NutritionMain.NUTRITION_ITEM_MAP.get(item).size(); i++) {
-                if (NutritionMain.NUTRITION_ITEM_MAP.get(item).get(i) > 0) {
-                    addNutritionLevel(i, NutritionMain.NUTRITION_ITEM_MAP.get(item).get(i));
-                }
-            }
-        }
-    }
-
     @Inject(method = "update", at = @At(value = "INVOKE_ASSIGN", target = "Ljava/lang/Math;max(II)I", ordinal = 0))
     private void updateNutritionMixin(PlayerEntity player, CallbackInfo info) {
         decrementNutritionLevel(0, 1);
@@ -93,8 +84,8 @@ public class HungerManagerMixin implements HungerManagerAccess {
                                         || player.getStatusEffect(statusEffectInstance.getEffectType()).getDuration() < statusEffectInstance.getDuration() - 50) {
                                     player.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
                                 }
-                            } else if (!this.effectMap.get(i) && negativeEffectList.get(u) instanceof Multimap) {
-                                player.getAttributes().addTemporaryModifiers((Multimap<EntityAttribute, EntityAttributeModifier>) negativeEffectList.get(u));
+                            } else if (!this.effectMap.get(i) && negativeEffectList.get(u) instanceof Multimap multimap) {
+                                player.getAttributes().addTemporaryModifiers(multimap);
                                 changedAttributes = true;
                             }
                         }

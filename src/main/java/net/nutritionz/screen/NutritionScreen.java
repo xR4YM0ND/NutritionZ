@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.google.common.collect.Multimap;
 
+import net.minecraft.registry.entry.RegistryEntry;
 import org.jetbrains.annotations.Nullable;
 
 import net.fabricmc.api.EnvType;
@@ -29,9 +30,9 @@ public class NutritionScreen extends Screen {
 
     private int x;
     private int y;
-    private final List<ItemStack> nutritionItems = List.of(new ItemStack(Registries.ITEM.get(new Identifier(ConfigInit.CONFIG.carbohydrateItemId))),
-            new ItemStack(Registries.ITEM.get(new Identifier(ConfigInit.CONFIG.proteinItemId))), new ItemStack(Registries.ITEM.get(new Identifier(ConfigInit.CONFIG.fatItemId))),
-            new ItemStack(Registries.ITEM.get(new Identifier(ConfigInit.CONFIG.vitaminItemId))), new ItemStack(Registries.ITEM.get(new Identifier(ConfigInit.CONFIG.mineralItemId))));
+    private final List<ItemStack> nutritionItems = List.of(new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.carbohydrateItemId))),
+            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.proteinItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.fatItemId))),
+            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.vitaminItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.mineralItemId))));
     private final List<Text> nutritionTexts = List.of(Text.translatable("screen.nutritionz.carbohydrates"), Text.translatable("screen.nutritionz.protein"), Text.translatable("screen.nutritionz.fat"),
             Text.translatable("screen.nutritionz.vitamins"), Text.translatable("screen.nutritionz.minerals"));
     @Nullable
@@ -52,7 +53,7 @@ public class NutritionScreen extends Screen {
     @SuppressWarnings("unchecked")
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        this.renderBackground(context);
+        super.render(context, mouseX, mouseY, delta);
 
         context.drawTexture(RenderInit.NUTRITION_ICONS, this.x, this.y, 0, 0, 176, 142);
         context.drawText(this.textRenderer, this.title, this.x + 176 / 2 - this.textRenderer.getWidth(this.title) / 2, this.y + 7, 0x3F3F3F, false);
@@ -74,11 +75,11 @@ public class NutritionScreen extends Screen {
                     if (NutritionMain.NUTRITION_NEGATIVE_EFFECTS.containsKey(i)) {
                         NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i).forEach(effect -> {
                             if (effect instanceof StatusEffectInstance statusEffectInstance) {
-                                tooltips.add(statusEffectInstance.getEffectType().getName());
+                                tooltips.add(statusEffectInstance.getEffectType().value().getName());
                             } else {
-                                Multimap<EntityAttribute, EntityAttributeModifier> map = (Multimap<EntityAttribute, EntityAttributeModifier>) effect;
+                                Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> map = (Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier>) effect;
                                 map.forEach((attribute, modifier) -> {
-                                    tooltips.add(Text.translatable(attribute.getTranslationKey()));
+                                    tooltips.add(Text.translatable(attribute.value().getTranslationKey()));
                                     return;
                                 });
                             }
@@ -89,11 +90,11 @@ public class NutritionScreen extends Screen {
                     if (NutritionMain.NUTRITION_POSITIVE_EFFECTS.containsKey(i)) {
                         NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i).forEach(effect -> {
                             if (effect instanceof StatusEffectInstance statusEffectInstance) {
-                                tooltips.add(statusEffectInstance.getEffectType().getName());
+                                tooltips.add(statusEffectInstance.getEffectType().value().getName());
                             } else {
-                                Multimap<EntityAttribute, EntityAttributeModifier> map = (Multimap<EntityAttribute, EntityAttributeModifier>) effect;
+                                Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> map = (Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier>) effect;
                                 map.forEach((attribute, modifier) -> {
-                                    tooltips.add(Text.translatable(attribute.getTranslationKey()));
+                                    tooltips.add(Text.translatable(attribute.value().getTranslationKey()));
                                     return;
                                 });
                             }
@@ -112,7 +113,6 @@ public class NutritionScreen extends Screen {
         } else {
             context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 5, this.y + 5, 176, 0, 11, 10);
         }
-        super.render(context, mouseX, mouseY, delta);
     }
 
     @Override
