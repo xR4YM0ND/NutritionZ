@@ -1,25 +1,4 @@
 {
-    "candlelight:tomato": {
-        "carbohydrates": 4,
-        "protein": 0,
-        "fat": 0,
-        "vitamins": 12,
-        "minerals": 4
-    },
-    "candlelight:lettuce": {
-        "carbohydrates": 0,
-        "protein": 0,
-        "fat": 0,
-        "vitamins": 12,
-        "minerals": 3
-    },
-    "candlelight:mozzarella": {
-        "carbohydrates": 0,
-        "protein": 5,
-        "fat": 20,
-        "vitamins": 0,
-        "minerals": 0
-    },
     "candlelight:tomato_soup": {
         "carbohydrates": 10,
         "protein": 0,
@@ -41,12 +20,12 @@
         "vitamins": 3,
         "minerals": 1
     },
-    "candlelight:pasta": {
-        "carbohydrates": 23,
-        "protein": 9,
-        "fat": 13,
-        "vitamins": 4,
-        "minerals": 1
+    "candlelight:pasta_with_mozzarella": {
+        "carbohydrates": 20,
+        "protein": 5,
+        "fat": 20,
+        "vitamins": 0,
+        "minerals": 5
     },
     "candlelight:bolognese": {
         "carbohydrates": 5,
@@ -62,144 +41,158 @@
         "vitamins": 15,
         "minerals": 2
     },
-    "candlelight:lettuce_salad": {
-        "carbohydrates": 4,
-        "protein": 4,
-        "fat": 4,
-        "vitamins": 10,
-        "minerals": 3
-    },
-    "candlelight:beef_tartare": {
+    "candlelight:salad": {
         "carbohydrates": 0,
-        "protein": 24,
-        "fat": 16,
+        "protein": 4,
+        "fat": 8,
+        "vitamins": 8,
+        "minerals": 5
+    },
+    "candlelight:chocolate_mousse": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 8,
+        "vitamins": 0,
+        "minerals": 2
+    },
+    "candlelight:mozzarella": {
+        "carbohydrates": 0,
+        "protein": 5,
+        "fat": 20,
         "vitamins": 0,
         "minerals": 0
     },
-    "candlelight:cooked_beef": {
+    "candlelight:beef_tartare": {
+        "carbohydrates": 5,
+        "protein": 20,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "candlelight:pasta_with_bolognese": {
+        "carbohydrates": 10,
+        "protein": 10,
+        "fat": 10,
+        "vitamins": 5,
+        "minerals": 0
+    },
+    "candlelight:pasta_with_lettuce": {
+        "carbohydrates": 15,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 15,
+        "minerals": 5
+    },
+    "candlelight:omelet": {
+        "carbohydrates": 5,
+        "protein": 10,
+        "fat": 10,
+        "vitamins": 5,
+        "minerals": 10
+    },
+    "candlelight:fresh_garden_salad": {
+        "carbohydrates": 5,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 20,
+        "minerals": 5
+    },
+    "candlelight:harvest_plate": {
+        "carbohydrates": 5,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 15,
+        "minerals": 5
+    },
+    "candlelight:beef_with_mushroom_in_wine_and_potatoes": {
+        "carbohydrates": 5,
+        "protein": 20,
+        "fat": 10,
+        "vitamins": 5,
+        "minerals": 10
+    },
+    "candlelight:tomato_mozzarella_salad": {
         "carbohydrates": 0,
-        "protein": 24,
-        "fat": 16,
+        "protein": 0,
+        "fat": 15,
+        "vitamins": 10,
+        "minerals": 0
+    },
+    "candlelight:pork_ribs": {
+        "carbohydrates": 5,
+        "protein": 20,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "candlelight:khinkali": {
+        "carbohydrates": 10,
+        "protein": 15,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "candlelight:roastbeef_with_glazed_carrots": {
+        "carbohydrates": 5,
+        "protein": 15,
+        "fat": 5,
+        "vitamins": 15,
+        "minerals": 10
+    },
+    "candlelight:roasted_lamb_with_lettuce": {
+        "carbohydrates": 0,
+        "protein": 15,
+        "fat": 10,
+        "vitamins": 10,
+        "minerals": 5
+    },
+    "candlelight:tropical_fish_supreme": {
+        "carbohydrates": 0,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 10,
+        "minerals": 5
+    },
+    "candlelight:fillet_steak": {
+        "carbohydrates": 0,
+        "protein": 20,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "candlelight:salmon_on_white_wine": {
+        "carbohydrates": 0,
+        "protein": 15,
+        "fat": 10,
         "vitamins": 0,
         "minerals": 0
     },
     "candlelight:chicken_alfredo": {
-        "carbohydrates": 14,
-        "protein": 18,
-        "fat": 3,
-        "vitamins": 0,
-        "minerals": 0
-    },
-    "candlelight:lettuce_beef": {
-        "carbohydrates": 0,
-        "protein": 18,
-        "fat": 12,
-        "vitamins": 10,
-        "minerals": 0
-    },
-    "candlelight:lettuce_tomato": {
-        "carbohydrates": 16,
-        "protein": 0,
-        "fat": 0,
-        "vitamins": 20,
-        "minerals": 4
-    },
-    "candlelight:salmon_wine": {
-        "carbohydrates": 0,
-        "protein": 10,
-        "fat": 10,
+        "carbohydrates": 15,
+        "protein": 15,
+        "fat": 5,
         "vitamins": 0,
         "minerals": 5
     },
-    "candlelight:veggie_plate": {
-        "carbohydrates": 14,
-        "protein": 0,
-        "fat": 0,
-        "vitamins": 16,
+    "candlelight:chicken_with_vegetables": {
+        "carbohydrates": 0,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 10,
         "minerals": 5
-    },
-    "candlelight:pork_ribs": {
-        "carbohydrates": 12,
-        "protein": 12,
-        "fat": 10,
-        "vitamins": 0,
-        "minerals": 1
-    },
-    "candlelight:pasta_bolognese": {
-        "carbohydrates": 10,
-        "protein": 10,
-        "fat": 8,
-        "vitamins": 5,
-        "minerals": 2
-    },
-    "candlelight:pasta_lettuce": {
-        "carbohydrates": 10,
-        "protein": 0,
-        "fat": 10,
-        "vitamins": 10,
-        "minerals": 0
-    },
-    "candlelight:pancake": {
-        "carbohydrates": 15,
-        "protein": 10,
-        "fat": 25,
-        "vitamins": 0,
-        "minerals": 0
-    },
-    "candlelight:fricasse": {
-        "carbohydrates": 15,
-        "protein": 20,
-        "fat": 15,
-        "vitamins": 0,
-        "minerals": 0
-    },
-    "candlelight:chicken": {
-        "carbohydrates": 0,
-        "protein": 13,
-        "fat": 4,
-        "vitamins": 13,
-        "minerals": 0
-    },
-    "candlelight:tomato_mozzarella_salad": {
-        "carbohydrates": 0,
-        "protein": 2,
-        "fat": 18,
-        "vitamins": 10,
-        "minerals": 0
     },
     "candlelight:lasagne": {
-        "carbohydrates": 10,
+        "carbohydrates": 15,
         "protein": 10,
-        "fat": 20,
-        "vitamins": 10,
-        "minerals": 0
-    },
-    "candlelight:roastbeef_carrots": {
-        "carbohydrates": 10,
-        "protein": 14,
-        "fat": 8,
-        "vitamins": 6,
-        "minerals": 2
+        "fat": 10,
+        "vitamins": 5,
+        "minerals": 10
     },
     "candlelight:beef_wellington": {
         "carbohydrates": 10,
-        "protein": 15,
-        "fat": 10,
-        "vitamins": 15,
-        "minerals": 0
-    },
-    "candlelight:chocolate": {
-        "carbohydrates": 8,
-        "protein": 2,
-        "fat": 10,
-        "vitamins": 0,
-        "minerals": 0
-    },
-    "candlelight:tropical_fish_supreme": {
-        "carbohydrates": 5,
         "protein": 10,
-        "fat": 5,
-        "vitamins": 5,
-        "minerals": 5
+        "fat": 10,
+        "vitamins": 10,
+        "minerals": 10
     }
 }

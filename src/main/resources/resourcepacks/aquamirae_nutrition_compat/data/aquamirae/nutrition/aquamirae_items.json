@@ -1,0 +1,58 @@
+{
+    "aquamirae:fin": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "aquamirae:esca": {
+        "carbohydrates": 0,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 15
+    },
+    "aquamirae:sharp_bones": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "aquamirae:sea_casserole": {
+        "carbohydrates": 0,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 5,
+        "minerals": 10
+    },
+    "aquamirae:spinefish": {
+        "carbohydrates": 0,
+        "protein": 3,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 2
+    },
+    "aquamirae:cooked_spinefish": {
+        "carbohydrates": 0,
+        "protein": 15,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 15
+    },
+    "aquamirae:sea_stew": {
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 35
+    },
+    "aquamirae:poseidons_breakfast": {
+        "carbohydrates": 20,
+        "protein": 20,
+        "fat": 20,
+        "vitamins": 20,
+        "minerals": 20
+    }
+}

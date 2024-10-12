@@ -1,0 +1,317 @@
+{
+    "culturaldelights:avocado": {
+        "carbohydrates": 1,
+        "protein": 0,
+        "fat": 15,
+        "vitamins": 2,
+        "minerals": 2
+    },
+    "culturaldelights:cut_avocado": {
+        "carbohydrates": 1,
+        "protein": 0,
+        "fat": 7,
+        "vitamins": 1,
+        "minerals": 1
+    },
+    "culturaldelights:cucumber": {
+        "carbohydrates": 3,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 7,
+        "minerals": 0
+    },
+    "culturaldelights:pickle": {
+        "carbohydrates": 5,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 5
+    },
+    "culturaldelights:cut_cucumber": {
+        "carbohydrates": 1,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 4,
+        "minerals": 0
+    },
+    "culturaldelights:cut_pickle": {
+        "carbohydrates": 2,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 5,
+        "minerals": 3
+    },
+    "culturaldelights:eggplant": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 5
+    },
+    "culturaldelights:cut_eggplant": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 3,
+        "minerals": 2
+    },
+    "culturaldelights:smoked_eggplant": {
+        "carbohydrates": 20,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 5
+    },
+    "culturaldelights:smoked_tomato": {
+        "carbohydrates": 8,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 2
+    },
+    "culturaldelights:smoked_corn": {
+        "carbohydrates": 15,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "culturaldelights:smoked_cut_eggplant": {
+        "carbohydrates": 10,
+        "protein": 3,
+        "fat": 0,
+        "vitamins": 5,
+        "minerals": 2
+    },
+    "culturaldelights:smoked_white_eggplant": {
+        "carbohydrates": 5,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 5,
+        "minerals": 5
+    },
+    "culturaldelights:white_eggplant": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 3,
+        "minerals": 2
+    },
+    "culturaldelights:corn_cob": {
+        "carbohydrates": 6,
+        "protein": 2,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 2
+    },
+    "culturaldelights:squid": {
+        "carbohydrates": 0,
+        "protein": 8,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "culturaldelights:cooked_squid": {
+        "carbohydrates": 0,
+        "protein": 24,
+        "fat": 3,
+        "vitamins": 0,
+        "minerals": 3
+    },
+    "culturaldelights:glow_squid": {
+        "carbohydrates": 0,
+        "protein": 5,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 4
+    },
+    "culturaldelights:raw_calamari": {
+        "carbohydrates": 0,
+        "protein": 4,
+        "fat": 1,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "culturaldelights:cooked_calamari": {
+        "carbohydrates": 0,
+        "protein": 12,
+        "fat": 3,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "culturaldelights:popcorn": {
+        "carbohydrates": 3,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 2
+    },
+    "culturaldelights:corn_dough": {
+        "carbohydrates": 3,
+        "protein": 1,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "culturaldelights:tortilla": {
+        "carbohydrates": 15,
+        "protein": 3,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 2
+    },
+    "culturaldelights:tortilla_chips": {
+        "carbohydrates": 8,
+        "protein": 1,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 1
+    },
+    "culturaldelights:elote": {
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "culturaldelights:hearty_salad": {
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 20,
+        "minerals": 5
+    },
+    "culturaldelights:beef_burrito": {
+        "carbohydrates": 20,
+        "protein": 15,
+        "fat": 30,
+        "vitamins": 5,
+        "minerals": 0
+    },
+    "culturaldelights:mutton_sandwich": {
+        "carbohydrates": 5,
+        "protein": 30,
+        "fat": 5,
+        "vitamins": 5,
+        "minerals": 5
+    },
+    "culturaldelights:fried_eggplant_pasta": {
+        "carbohydrates": 25,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 30,
+        "minerals": 5
+    },
+    "culturaldelights:eggplant_burger": {
+        "carbohydrates": 20,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 35,
+        "minerals": 5
+    },
+    "culturaldelights:avocado_toast": {
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 0
+    },
+    "culturaldelights:creamed_corn": {
+        "carbohydrates": 10,
+        "protein": 15,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "culturaldelights:chicken_taco": {
+        "carbohydrates": 10,
+        "protein": 15,
+        "fat": 5,
+        "vitamins": 15,
+        "minerals": 5
+    },
+    "culturaldelights:spicy_curry": {
+        "carbohydrates": 15,
+        "protein": 15,
+        "fat": 5,
+        "vitamins": 5,
+        "minerals": 20
+    },
+    "culturaldelights:pork_wrap": {
+        "carbohydrates": 10,
+        "protein": 10,
+        "fat": 10,
+        "vitamins": 15,
+        "minerals": 5
+    },
+    "culturaldelights:fish_taco": {
+        "carbohydrates": 10,
+        "protein": 15,
+        "fat": 5,
+        "vitamins": 15,
+        "minerals": 5
+    },
+    "culturaldelights:midori_roll": {
+        "carbohydrates": 20,
+        "protein": 0,
+        "fat": 15,
+        "vitamins": 15,
+        "minerals": 20
+    },
+    "culturaldelights:midori_roll_slice": {
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 7,
+        "vitamins": 8,
+        "minerals": 10
+    },
+    "culturaldelights:egg_roll": {
+        "carbohydrates": 5,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "culturaldelights:chicken_roll": {
+        "carbohydrates": 20,
+        "protein": 20,
+        "fat": 10,
+        "vitamins": 10,
+        "minerals": 20
+    },
+    "culturaldelights:chicken_roll_slice": {
+        "carbohydrates": 10,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 5,
+        "minerals": 10
+    },
+    "culturaldelights:pufferfish_roll": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 25
+    },
+    "culturaldelights:tropical_roll": {
+        "carbohydrates": 10,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "culturaldelights:rice_ball": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "culturaldelights:calamari_roll": {
+        "carbohydrates": 10,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 10
+    }
+}

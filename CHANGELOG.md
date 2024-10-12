@@ -1,4 +1,3 @@
-### Changed:
-- Updated to mc 1.21
-### Added:
-- 
+## Changed:
+
+- Updated to mc `1.21.1`

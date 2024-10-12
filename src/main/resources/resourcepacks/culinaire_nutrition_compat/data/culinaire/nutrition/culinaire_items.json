@@ -1,0 +1,135 @@
+{
+    "culinaire:lettuce": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 8,
+        "minerals": 2
+    },
+    "culinaire:tomato": {
+        "carbohydrates": 2,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 3
+    },
+    "culinaire:chouquette": {
+        "carbohydrates": 15,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "culinaire:dark_chocolate_bar": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "culinaire:milk_chocolate_bar": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "culinaire:white_chocolate_bar": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "culinaire:dark_chocolate_pie": {
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 15,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "culinaire:milk_chocolate_pie": {
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 15,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "culinaire:white_chocolate_pie": {
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 15,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "culinaire:marshmallow": {
+        "carbohydrates": 5,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "culinaire:marshmallow_on_a_stick": {
+        "carbohydrates": 5,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "culinaire:toasty_marshmallow_on_a_stick": {
+        "carbohydrates": 15,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "culinaire:golden_marshmallow_on_a_stick": {
+        "carbohydrates": 15,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "culinaire:burnt_marshmallow_on_a_stick": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "culinaire:apple_pie": {
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 5,
+        "vitamins": 20,
+        "minerals": 0
+    },
+    "culinaire:sweet_berry_pie": {
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 5,
+        "vitamins": 5,
+        "minerals": 10
+    },
+    "culinaire:salad": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 10,
+        "vitamins": 20,
+        "minerals": 10
+    },
+    "culinaire:mashed_potatoes": {
+        "carbohydrates": 35,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "culinaire:cheese": {
+        "carbohydrates": 0,
+        "protein": 6,
+        "fat": 19,
+        "vitamins": 0,
+        "minerals": 0
+    }
+}

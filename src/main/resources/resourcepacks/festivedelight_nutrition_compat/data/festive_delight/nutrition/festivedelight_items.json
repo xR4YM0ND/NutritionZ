@@ -1,0 +1,58 @@
+{
+    "festive_delight:festive_chiken": {
+        "carbohydrates": 30,
+        "protein": 20,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "festive_delight:gingerbread_cookie_star": {
+        "carbohydrates": 3,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 2
+    },
+    "festive_delight:gingerbread_cookie_creeper": {
+        "carbohydrates": 3,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 2
+    },
+    "festive_delight:gingerbread_cookie_block": {
+        "carbohydrates": 3,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 2
+    },
+    "festive_delight:gingerbread_man": {
+        "carbohydrates": 10,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "festive_delight:gingerbread": {
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "festive_delight:sugar_cane": {
+        "carbohydrates": 15,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "festive_delight:salmon_verrines": {
+        "carbohydrates": 0,
+        "protein": 10,
+        "fat": 10,
+        "vitamins": 10,
+        "minerals": 5
+    }
+}

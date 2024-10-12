@@ -1,0 +1,65 @@
+{
+    "natures_delight:manakish_slice": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "natures_delight:alfredo_pasta": {
+        "carbohydrates": 20,
+        "protein": 15,
+        "fat": 10,
+        "vitamins": 5,
+        "minerals": 10
+    },
+    "natures_delight:turnip_tagine": {
+        "carbohydrates": 15,
+        "protein": 5,
+        "fat": 10,
+        "vitamins": 20,
+        "minerals": 10
+    },
+    "natures_delight:coconut_sauce": {
+        "carbohydrates": 0,
+        "protein": 5,
+        "fat": 15,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "natures_delight:sweet_and_savory_saute": {
+        "carbohydrates": 20,
+        "protein": 10,
+        "fat": 20,
+        "vitamins": 10,
+        "minerals": 10
+    },
+    "natures_delight:fafaru": {
+        "carbohydrates": 20,
+        "protein": 10,
+        "fat": 20,
+        "vitamins": 10,
+        "minerals": 10
+    },
+    "natures_delight:coconut_pancakes": {
+        "carbohydrates": 10,
+        "protein": 10,
+        "fat": 30,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "natures_delight:coconut_bread": {
+        "carbohydrates": 10,
+        "protein": 10,
+        "fat": 20,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "natures_delight:cocada": {
+        "carbohydrates": 5,
+        "protein": 5,
+        "fat": 15,
+        "vitamins": 0,
+        "minerals": 0
+    }
+}

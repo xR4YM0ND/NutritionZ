@@ -187,5 +187,19 @@
         "fat": 5,
         "vitamins": 5,
         "minerals": 20
+    },
+    "vinery:lamroc_wine": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 30
+    },
+    "vinery:count_roleester_shiraz": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 30
     }
 }

@@ -1,0 +1,30 @@
+{
+    "create:bar_of_chocolate": {
+        "carbohydrates": 20,
+        "protein": 5,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "create:sweet_roll": {
+        "carbohydrates": 15,
+        "protein": 5,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "create:chocolate_glazed_berries": {
+        "carbohydrates": 15,
+        "protein": 5,
+        "fat": 5,
+        "vitamins": 10,
+        "minerals": 0
+    },
+    "create:honeyed_apple": {
+        "carbohydrates": 20,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 20,
+        "minerals": 0
+    }
+}
