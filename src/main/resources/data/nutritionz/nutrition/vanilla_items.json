@@ -278,5 +278,12 @@
         "fat": 0,
         "vitamins": 0,
         "minerals": 0
+    },
+    "minecraft:ominous_bottle": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
     }
 }

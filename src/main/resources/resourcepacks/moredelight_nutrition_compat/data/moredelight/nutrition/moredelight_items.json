@@ -11,14 +11,28 @@
         "protein": 15,
         "fat": 5,
         "vitamins": 0,
-        "minerals": 0
+        "minerals": 5
+    },
+    "moredelight:cooked_rice_with_milk_cream_and_chicken_cuts": {
+        "carbohydrates": 20,
+        "protein": 30,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 10
     },
     "moredelight:cooked_rice_with_milk_cream_and_beef": {
         "carbohydrates": 20,
-        "protein": 20,
+        "protein": 30,
         "fat": 10,
         "vitamins": 0,
-        "minerals": 0
+        "minerals": 10
+    },
+    "moredelight:cooked_rice_with_milk_cream_and_porkchop": {
+        "carbohydrates": 20,
+        "protein": 30,
+        "fat": 10,
+        "vitamins": 0,
+        "minerals": 10
     },
     "moredelight:mashed_potatoes": {
         "carbohydrates": 25,
@@ -76,6 +90,27 @@
         "vitamins": 20,
         "minerals": 5
     },
+    "moredelight:simple_hamburger": {
+        "carbohydrates": 10,
+        "protein": 20,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "moredelight:hamburger_with_egg": {
+        "carbohydrates": 10,
+        "protein": 20,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "moredelight:loaded_hamburger": {
+        "carbohydrates": 15,
+        "protein": 30,
+        "fat": 10,
+        "vitamins": 10,
+        "minerals": 10
+    },
     "moredelight:chocolate_popsicle": {
         "carbohydrates": 10,
         "protein": 0,
@@ -87,6 +122,20 @@
         "carbohydrates": 15,
         "protein": 15,
         "fat": 15,
+        "vitamins": 5,
+        "minerals": 5
+    },
+    "moredelight:steak_sandwich": {
+        "carbohydrates": 15,
+        "protein": 15,
+        "fat": 10,
+        "vitamins": 5,
+        "minerals": 5
+    },
+    "moredelight:porkchop_sandwich": {
+        "carbohydrates": 15,
+        "protein": 15,
+        "fat": 10,
         "vitamins": 5,
         "minerals": 5
     },

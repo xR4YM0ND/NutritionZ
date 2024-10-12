@@ -7,11 +7,11 @@
         "minerals": 0
     },
     "the_bumblezone:royal_jelly_bottle": {
-        "carbohydrates": 20,
+        "carbohydrates": 15,
         "protein": 0,
         "fat": 0,
         "vitamins": 10,
-        "minerals": 40
+        "minerals": 35
     },
     "the_bumblezone:bee_soup": {
         "carbohydrates": 30,
