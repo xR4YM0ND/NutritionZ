@@ -12,9 +12,9 @@ import net.nutritionz.network.NutritionServerPacket;
 
 public class NutritionMain implements ModInitializer {
 
-    public static final HashMap<Item, List<Integer>> NUTRITION_ITEM_MAP = new HashMap<Item, List<Integer>>();
-    public static final HashMap<Integer, List<Object>> NUTRITION_POSITIVE_EFFECTS = new HashMap<Integer, List<Object>>();
-    public static final HashMap<Integer, List<Object>> NUTRITION_NEGATIVE_EFFECTS = new HashMap<Integer, List<Object>>();
+    public static final HashMap<Item, List<Integer>> NUTRITION_ITEM_MAP = new HashMap<>();
+    public static final HashMap<Integer, List<Object>> NUTRITION_POSITIVE_EFFECTS = new HashMap<>();
+    public static final HashMap<Integer, List<Object>> NUTRITION_NEGATIVE_EFFECTS = new HashMap<>();
 
     @Override
     public void onInitialize() {

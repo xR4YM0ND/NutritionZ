@@ -5,7 +5,9 @@ import java.util.List;
 
 import com.google.common.collect.Multimap;
 
+import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.sound.SoundEvents;
 import org.jetbrains.annotations.Nullable;
 
 import net.fabricmc.api.EnvType;
@@ -118,6 +120,7 @@ public class NutritionScreen extends Screen {
     @Override
     public boolean mouseClicked(double mouseX, double mouseY, int button) {
         if (isPointWithinBounds(5, 5, 11, 10, mouseX, mouseY)) {
+            this.client.getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_BUTTON_CLICK, 1.0F));
             this.client.setScreen(new InventoryScreen(this.client.player));
             return true;
         }

@@ -1,16 +1,16 @@
 {
-	"required": true,
-	"package": "net.nutritionz.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-	  "HungerManagerMixin",
-      "PlayerEntityMixin"
-	],
-	"client": [
-		"client.InventoryScreenMixin",
-		"client.ItemStackMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+  "required": true,
+  "package": "net.nutritionz.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "HungerManagerMixin",
+    "ItemStackMixin"
+  ],
+  "client": [
+    "client.InventoryScreenMixin",
+    "client.ItemStackMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }

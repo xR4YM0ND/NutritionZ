@@ -1,5 +1,7 @@
 package net.nutritionz.mixin.client;
 
+import net.minecraft.client.sound.PositionedSoundInstance;
+import net.minecraft.sound.SoundEvents;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -30,6 +32,7 @@ public abstract class InventoryScreenMixin extends AbstractInventoryScreen<Playe
     @Inject(method = "mouseClicked", at = @At("HEAD"), cancellable = true)
     private void mouseClickedMixin(double mouseX, double mouseY, int button, CallbackInfoReturnable<Boolean> info) {
         if (this.client != null && this.focusedSlot == null && this.isPointWithinBounds(ConfigInit.CONFIG.posX, ConfigInit.CONFIG.posY, 9, 9, (double) mouseX, (double) mouseY)) {
+            this.client.getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_BUTTON_CLICK, 1.0F));
             NutritionClientPacket.writeC2SNutritionPacket();
             this.client.setScreen(new NutritionScreen(Text.translatable("screen.nutritionz")));
             info.setReturnValue(true);

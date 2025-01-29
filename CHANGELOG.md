@@ -1,4 +1,3 @@
 ## Changed:
-
-- Updated to mc `1.21.1`
-- fixed & removed old datapacks
+- Added button click sound
+- Fixed nutrition values for non food items

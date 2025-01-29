@@ -1,43 +1,43 @@
 package net.nutritionz.mixin;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import com.google.common.collect.Multimap;
-
-import net.minecraft.component.type.FoodComponent;
-import net.minecraft.registry.entry.RegistryEntry;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeInstance;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.HungerManager;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.packet.s2c.play.EntityAttributesS2CPacket;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.nutritionz.NutritionMain;
 import net.nutritionz.access.HungerManagerAccess;
 import net.nutritionz.init.ConfigInit;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Mixin(HungerManager.class)
 public class HungerManagerMixin implements HungerManagerAccess {
 
+    @Unique
     private int carbohydrateLevel = ConfigInit.CONFIG.maxNutrition / 2;
+    @Unique
     private int proteinLevel = ConfigInit.CONFIG.maxNutrition / 2;
+    @Unique
     private int fatLevel = ConfigInit.CONFIG.maxNutrition / 2;
+    @Unique
     private int vitaminLevel = ConfigInit.CONFIG.maxNutrition / 2;
+    @Unique
     private int mineralLevel = ConfigInit.CONFIG.maxNutrition / 2;
-    private Map<Integer, Boolean> effectMap = new HashMap<Integer, Boolean>() {
+    @Unique
+    private final Map<Integer, Boolean> effectMap = new HashMap<>() {
         {
             put(0, false);
             put(1, false);
@@ -162,15 +162,15 @@ public class HungerManagerMixin implements HungerManagerAccess {
     @Override
     public void addNutritionLevel(int type, int level) {
         if (type == 0) {
-            this.carbohydrateLevel = (this.carbohydrateLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.carbohydrateLevel + level);
+            this.carbohydrateLevel = Math.min(this.carbohydrateLevel + level, ConfigInit.CONFIG.maxNutrition);
         } else if (type == 1) {
-            this.proteinLevel = (this.proteinLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.proteinLevel + level);
+            this.proteinLevel = Math.min(this.proteinLevel + level, ConfigInit.CONFIG.maxNutrition);
         } else if (type == 2) {
-            this.fatLevel = (this.fatLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.fatLevel + level);
+            this.fatLevel = Math.min(this.fatLevel + level, ConfigInit.CONFIG.maxNutrition);
         } else if (type == 3) {
-            this.vitaminLevel = (this.vitaminLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.vitaminLevel + level);
+            this.vitaminLevel = Math.min(this.vitaminLevel + level, ConfigInit.CONFIG.maxNutrition);
         } else if (type == 4) {
-            this.mineralLevel = (this.mineralLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.mineralLevel + level);
+            this.mineralLevel = Math.min(this.mineralLevel + level, ConfigInit.CONFIG.maxNutrition);
         }
         this.shouldUpdateNutritions = true;
     }
@@ -178,15 +178,15 @@ public class HungerManagerMixin implements HungerManagerAccess {
     @Override
     public void decrementNutritionLevel(int type, int level) {
         if (type == 0) {
-            this.carbohydrateLevel = (this.carbohydrateLevel - level < 0) ? 0 : (this.carbohydrateLevel - level);
+            this.carbohydrateLevel = Math.max(this.carbohydrateLevel - level, 0);
         } else if (type == 1) {
-            this.proteinLevel = (this.proteinLevel - level < 0) ? 0 : (this.proteinLevel - level);
+            this.proteinLevel = Math.max(this.proteinLevel - level, 0);
         } else if (type == 2) {
-            this.fatLevel = (this.fatLevel - level < 0) ? 0 : (this.fatLevel - level);
+            this.fatLevel = Math.max(this.fatLevel - level, 0);
         } else if (type == 3) {
-            this.vitaminLevel = (this.vitaminLevel - level < 0) ? 0 : (this.vitaminLevel - level);
+            this.vitaminLevel = Math.max(this.vitaminLevel - level, 0);
         } else if (type == 4) {
-            this.mineralLevel = (this.mineralLevel - level < 0) ? 0 : (this.mineralLevel - level);
+            this.mineralLevel = Math.max(this.mineralLevel - level, 0);
         }
         this.shouldUpdateNutritions = true;
     }
@@ -209,20 +209,14 @@ public class HungerManagerMixin implements HungerManagerAccess {
 
     @Override
     public int getNutritionLevel(int type) {
-        switch (type) {
-        case 0:
-            return this.carbohydrateLevel;
-        case 1:
-            return this.proteinLevel;
-        case 2:
-            return this.fatLevel;
-        case 3:
-            return this.vitaminLevel;
-        case 4:
-            return this.mineralLevel;
-        default:
-            return 0;
-        }
+        return switch (type) {
+            case 0 -> this.carbohydrateLevel;
+            case 1 -> this.proteinLevel;
+            case 2 -> this.fatLevel;
+            case 3 -> this.vitaminLevel;
+            case 4 -> this.mineralLevel;
+            default -> 0;
+        };
     }
 
 }
