@@ -33,9 +33,9 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
     public static final Logger LOGGER = LogManager.getLogger("NutritionZ");
 
     private final List<String> nutritionList = List.of("carbohydrates", "protein", "fat", "vitamins", "minerals");
-    private List<Boolean> effectReplaceList = List.of(false, false, false, false, false);
+    private final List<Boolean> effectReplaceList = List.of(false, false, false, false, false);
     // Map to store replacing bools
-    private HashMap<Item, Boolean> replaceList = new HashMap<Item, Boolean>();
+    private final HashMap<Item, Boolean> replaceList = new HashMap<Item, Boolean>();
 
     @Override
     public Identifier getFabricId() {
@@ -50,9 +50,7 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
                 InputStream stream = resourceRef.getInputStream();
                 JsonObject data = JsonParser.parseReader(new InputStreamReader(stream)).getAsJsonObject();
 
-                Iterator<String> iterator = data.keySet().iterator();
-                while (iterator.hasNext()) {
-                    String itemId = iterator.next();
+                for (String itemId : data.keySet()) {
                     if (Registries.ITEM.get(Identifier.of(itemId)).toString().equals("air")) {
                         LOGGER.info("{} is not a valid item identifier", itemId);
                         continue;
