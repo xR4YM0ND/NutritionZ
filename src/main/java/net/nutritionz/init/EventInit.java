@@ -34,6 +34,10 @@ public class EventInit {
             });
         }
         // datapacks
+        if (ConfigInit.CONFIG.vanillaMinecraftDefaultDatapack) {
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "vanilla_minecraft_nutrition_datapack"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
         if (FabricLoader.getInstance().isModLoaded("adventurez") && ConfigInit.CONFIG.adventurezDefaultCompat) {
             ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "adventurez_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
@@ -58,7 +62,7 @@ public class EventInit {
             ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "dehydration_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
-        if (FabricLoader.getInstance().isModLoaded("dehydration") && FabricLoader.getInstance().isModLoaded("vinery") && ConfigInit.CONFIG.vineryDefaultCompat) {
+        if (FabricLoader.getInstance().isModLoaded("dehydration") && FabricLoader.getInstance().isModLoaded("vinery") && ConfigInit.CONFIG.dehydrationDefaultCompat && ConfigInit.CONFIG.vineryDefaultCompat) {
             ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "dehydration_x_vinery_nutrition_compat"),
                     FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(), ResourcePackActivationType.DEFAULT_ENABLED);
         }
@@ -107,5 +111,4 @@ public class EventInit {
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
     }
-
 }

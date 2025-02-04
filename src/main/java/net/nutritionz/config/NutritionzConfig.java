@@ -20,7 +20,9 @@ public class NutritionzConfig implements ConfigData {
     public String fatItemId = "minecraft:porkchop";
     public String vitaminItemId = "minecraft:apple";
     public String mineralItemId = "minecraft:iron_nugget";
-
+    @Comment("Disable default vanilla & modded datapacks below")
+    @ConfigEntry.Gui.RequiresRestart
+    public boolean vanillaMinecraftDefaultDatapack = true;
     @ConfigEntry.Gui.RequiresRestart
     public boolean adventurezDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
