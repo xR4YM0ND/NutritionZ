@@ -1,0 +1,72 @@
+{
+    "netherdepthsupgrade:lava_pufferfish": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "netherdepthsupgrade:obsidianfish": {
+        "carbohydrates": 0,
+        "protein": 5,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "netherdepthsupgrade:searing_cod": {
+        "carbohydrates": 0,
+        "protein": 5,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "netherdepthsupgrade:bonefish": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "netherdepthsupgrade:wither_bonefish": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "netherdepthsupgrade:blazefish": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 10
+    },
+    "netherdepthsupgrade:magmacubefish": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "netherdepthsupgrade:glowdine": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "netherdepthsupgrade:fortress_grouper": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    },
+    "netherdepthsupgrade:eyeball_fish": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 5
+    }
+}

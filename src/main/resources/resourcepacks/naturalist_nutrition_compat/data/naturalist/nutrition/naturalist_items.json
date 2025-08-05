@@ -1,4 +1,18 @@
 {
+    "naturalist:bushmeat": {
+        "carbohydrates": 0,
+        "protein": 10,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "naturalist:cooked_bushmeat": {
+        "carbohydrates": 0,
+        "protein": 25,
+        "fat": 15,
+        "vitamins": 0,
+        "minerals": 0
+    },
     "naturalist:cooked_egg": {
         "carbohydrates": 0,
         "protein": 10,

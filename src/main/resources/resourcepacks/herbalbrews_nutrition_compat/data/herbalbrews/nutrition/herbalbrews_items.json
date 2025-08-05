@@ -110,47 +110,5 @@
         "fat": 1,
         "vitamins": 0,
         "minerals": 3
-    },
-    "herbalbrews:armor_flask": {
-        "carbohydrates": 0,
-        "protein": 0,
-        "fat": 0,
-        "vitamins": 0,
-        "minerals": 20
-    },
-    "herbalbrews:armor_flask_big": {
-        "carbohydrates": 0,
-        "protein": 0,
-        "fat": 0,
-        "vitamins": 0,
-        "minerals": 20
-    },
-    "herbalbrews:damage_flask": {
-        "carbohydrates": 0,
-        "protein": 0,
-        "fat": 0,
-        "vitamins": 0,
-        "minerals": 20
-    },
-    "herbalbrews:damage_flask_big": {
-        "carbohydrates": 0,
-        "protein": 0,
-        "fat": 0,
-        "vitamins": 0,
-        "minerals": 20
-    },
-    "herbalbrews:feral_flask": {
-        "carbohydrates": 0,
-        "protein": 0,
-        "fat": 0,
-        "vitamins": 0,
-        "minerals": 20
-    },
-    "herbalbrews:feral_flask_big": {
-        "carbohydrates": 0,
-        "protein": 0,
-        "fat": 0,
-        "vitamins": 0,
-        "minerals": 20
     }
 }

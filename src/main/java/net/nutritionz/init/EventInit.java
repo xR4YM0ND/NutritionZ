@@ -76,6 +76,10 @@ public class EventInit {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "herbalbrews_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
+        if (FabricLoader.getInstance().isModLoaded("lilis_lucky_lures")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "lilis_lucky_lures_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
         if (FabricLoader.getInstance().isModLoaded("meadow")) {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "meadow_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
@@ -155,6 +159,10 @@ public class EventInit {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "adventurez_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
+        if (FabricLoader.getInstance().isModLoaded("amarite")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "amarite_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
         if (FabricLoader.getInstance().isModLoaded("aquamirae")) {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "aquamirae_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
@@ -215,6 +223,10 @@ public class EventInit {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "natures_spirit_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
+        if (FabricLoader.getInstance().isModLoaded("netherdepthsupgrade")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "netherdepthsupgrade_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
         if (FabricLoader.getInstance().isModLoaded("promenade")) {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "promenade_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
@@ -237,6 +249,10 @@ public class EventInit {
         }
         if (FabricLoader.getInstance().isModLoaded("the_bumblezone")) {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "thebumblezone_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
+        if (FabricLoader.getInstance().isModLoaded("tide")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("nutritionz", "tide_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("wilderwild")) {
