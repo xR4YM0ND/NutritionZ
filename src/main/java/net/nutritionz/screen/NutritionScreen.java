@@ -12,6 +12,7 @@ import org.jetbrains.annotations.Nullable;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.minecraft.client.gl.RenderPipelines;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.ingame.InventoryScreen;
@@ -21,6 +22,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.text.Text;
+import net.minecraft.util.Colors;
 import net.minecraft.util.Identifier;
 import net.nutritionz.NutritionMain;
 import net.nutritionz.access.HungerManagerAccess;
@@ -32,10 +34,14 @@ public class NutritionScreen extends Screen {
 
     private int x;
     private int y;
-    private final List<ItemStack> nutritionItems = List.of(new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.carbohydrateItemId))),
-            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.proteinItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.fatItemId))),
-            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.vitaminItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.mineralItemId))));
-    private final List<Text> nutritionTexts = List.of(Text.translatable("screen.nutritionz.carbohydrates"), Text.translatable("screen.nutritionz.protein"), Text.translatable("screen.nutritionz.fat"),
+    private final List<ItemStack> nutritionItems = List.of(
+            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.carbohydrateItemId))),
+            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.proteinItemId))),
+            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.fatItemId))),
+            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.vitaminItemId))),
+            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.mineralItemId))));
+    private final List<Text> nutritionTexts = List.of(Text.translatable("screen.nutritionz.carbohydrates"),
+            Text.translatable("screen.nutritionz.protein"), Text.translatable("screen.nutritionz.fat"),
             Text.translatable("screen.nutritionz.vitamins"), Text.translatable("screen.nutritionz.minerals"));
     @Nullable
     private HungerManagerAccess hungerManagerAccess = null;
@@ -49,7 +55,9 @@ public class NutritionScreen extends Screen {
         super.init();
         this.x = this.width / 2 - (176 / 2);
         this.y = this.height / 2 - (141 / 2);
-        this.hungerManagerAccess = this.client != null && this.client.player != null ? (HungerManagerAccess) this.client.player.getHungerManager() : null;
+        this.hungerManagerAccess = this.client != null && this.client.player != null
+                ? (HungerManagerAccess) this.client.player.getHungerManager()
+                : null;
     }
 
     @SuppressWarnings("unchecked")
@@ -57,21 +65,33 @@ public class NutritionScreen extends Screen {
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
         super.render(context, mouseX, mouseY, delta);
 
-        context.drawTexture(RenderInit.NUTRITION_ICONS, this.x, this.y, 0, 0, 176, 142);
-        context.drawText(this.textRenderer, this.title, this.x + 176 / 2 - this.textRenderer.getWidth(this.title) / 2, this.y + 7, 0x3F3F3F, false);
+        context.drawTexture(RenderPipelines.GUI_TEXTURED, RenderInit.NUTRITION_ICONS, this.x, this.y, 0, 0, 176, 142,
+                256, 256);
+        context.drawText(this.textRenderer, this.title, this.x + 176 / 2 - this.textRenderer.getWidth(this.title) / 2,
+                this.y + 7, Colors.DARK_GRAY, false);
+
         int extraY = 0;
         int extraBarY = 0;
         for (int i = 0; i < this.nutritionItems.size(); i++) {
             context.drawItem(this.nutritionItems.get(i), this.x + 7, this.y + 25 + extraY);
-            context.drawText(this.textRenderer, this.nutritionTexts.get(i), this.x + 28, this.y + 26 + extraY, 0x3F3F3F, false);
-            context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 206 + extraBarY, 141, 5);
+            context.drawText(this.textRenderer, this.nutritionTexts.get(i), this.x + 28, this.y + 26 + extraY,
+                    Colors.DARK_GRAY,
+                    false);
+            context.drawTexture(RenderPipelines.GUI_TEXTURED, RenderInit.NUTRITION_ICONS,
+                    this.x + 27, this.y + 36 + extraY,
+                    0, 206 + extraBarY, 141, 5, 256, 256);
             if (this.hungerManagerAccess != null) {
                 if (this.hungerManagerAccess.getNutritionLevel(i) > 0) {
-                    context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 211 + extraBarY,
-                            140 * this.hungerManagerAccess.getNutritionLevel(i) / ConfigInit.CONFIG.maxNutrition, 5);
+                    context.drawTexture(RenderPipelines.GUI_TEXTURED, RenderInit.NUTRITION_ICONS,
+                            this.x + 27, this.y + 36 + extraY, 0, 211 + extraBarY,
+                            140 * this.hungerManagerAccess.getNutritionLevel(i) / ConfigInit.CONFIG.maxNutrition, 5,
+                            256, 256);
                 }
-                context.drawText(this.textRenderer, Text.translatable("screen.nutritionz.nutritionValue", this.hungerManagerAccess.getNutritionLevel(i), ConfigInit.CONFIG.maxNutrition), this.x + 127,
-                        this.y + 26 + extraY, 0x3F3F3F, false);
+                context.drawText(this.textRenderer,
+                        Text.translatable("screen.nutritionz.nutritionValue",
+                                this.hungerManagerAccess.getNutritionLevel(i), ConfigInit.CONFIG.maxNutrition),
+                        this.x + 127,
+                        this.y + 26 + extraY, Colors.DARK_GRAY, false);
                 List<Text> tooltips = new ArrayList<>();
                 if (isPointWithinBounds(27, 36 + extraY, 31, 5, mouseX, mouseY)) {
                     if (NutritionMain.NUTRITION_NEGATIVE_EFFECTS.containsKey(i)) {
@@ -111,9 +131,13 @@ public class NutritionScreen extends Screen {
             extraBarY += 10;
         }
         if (isPointWithinBounds(5, 5, 11, 10, mouseX, mouseY)) {
-            context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 5, this.y + 5, 187, 0, 11, 10);
+            context.drawTexture(RenderPipelines.GUI_TEXTURED, RenderInit.NUTRITION_ICONS, this.x + 5, this.y + 5,
+                    187, 0,
+                    11, 10, 256, 256);
         } else {
-            context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 5, this.y + 5, 176, 0, 11, 10);
+            context.drawTexture(RenderPipelines.GUI_TEXTURED, RenderInit.NUTRITION_ICONS, this.x + 5, this.y + 5,
+                    176, 0,
+                    11, 10, 256, 256);
         }
     }
 
@@ -145,7 +169,8 @@ public class NutritionScreen extends Screen {
     private boolean isPointWithinBounds(int x, int y, int width, int height, double pointX, double pointY) {
         int i = this.x;
         int j = this.y;
-        return (pointX -= (double) i) >= (double) (x - 1) && pointX < (double) (x + width + 1) && (pointY -= (double) j) >= (double) (y - 1) && pointY < (double) (y + height + 1);
+        return (pointX -= (double) i) >= (double) (x - 1) && pointX < (double) (x + width + 1)
+                && (pointY -= (double) j) >= (double) (y - 1) && pointY < (double) (y + height + 1);
     }
 
 }

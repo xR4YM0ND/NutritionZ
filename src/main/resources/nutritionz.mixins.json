@@ -7,8 +7,7 @@
     "ItemStackMixin"
   ],
   "client": [
-    "client.InventoryScreenMixin",
-    "client.ItemStackMixin"
+    "client.InventoryScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

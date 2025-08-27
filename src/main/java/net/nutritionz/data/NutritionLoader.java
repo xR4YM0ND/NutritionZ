@@ -4,7 +4,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 
 import com.google.common.collect.LinkedHashMultimap;
@@ -130,25 +129,32 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
         });
     }
 
-    private static void processEffects(JsonObject effectsJsonObject, HashMap<Integer, List<Object>> nutritionEffectsMap, int i) {
+    private static void processEffects(JsonObject effectsJsonObject, HashMap<Integer, List<Object>> nutritionEffectsMap,
+            int i) {
         List<Object> list = new ArrayList<Object>();
 
         for (String effectId : effectsJsonObject.keySet()) {
             Identifier effectIdentifier = Identifier.of(effectId);
 
-            if (!Registries.STATUS_EFFECT.containsId(effectIdentifier) && !Registries.ATTRIBUTE.containsId(effectIdentifier)) {
+            if (!Registries.STATUS_EFFECT.containsId(effectIdentifier)
+                    && !Registries.ATTRIBUTE.containsId(effectIdentifier)) {
                 LOGGER.info("{} is not a valid status effect identifier nor attribute identifier", effectIdentifier);
                 continue;
             }
 
             JsonObject effectJsonObject = effectsJsonObject.get(effectId).getAsJsonObject();
             if (Registries.STATUS_EFFECT.containsId(effectIdentifier)) {
-                list.add(new StatusEffectInstance(Registries.STATUS_EFFECT.getEntry(effectIdentifier).get(), effectJsonObject.get("duration").getAsInt(),
-                        effectJsonObject.has("amplifier") ? effectJsonObject.get("amplifier").getAsInt() : 0, false, false, true));
+                list.add(new StatusEffectInstance(Registries.STATUS_EFFECT.getEntry(effectIdentifier).get(),
+                        effectJsonObject.get("duration").getAsInt(),
+                        effectJsonObject.has("amplifier") ? effectJsonObject.get("amplifier").getAsInt() : 0, false,
+                        false, true));
             } else {
-                Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> attributeModifiers = LinkedHashMultimap.create();
-                attributeModifiers.put(Registries.ATTRIBUTE.getEntry(effectIdentifier).get(), new EntityAttributeModifier(effectIdentifier,
-                        effectJsonObject.get("value").getAsFloat(), Operation.valueOf(effectJsonObject.get("operation").getAsString().toUpperCase())));
+                Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> attributeModifiers = LinkedHashMultimap
+                        .create();
+                attributeModifiers.put(Registries.ATTRIBUTE.getEntry(effectIdentifier).get(),
+                        new EntityAttributeModifier(effectIdentifier,
+                                effectJsonObject.get("value").getAsFloat(),
+                                Operation.valueOf(effectJsonObject.get("operation").getAsString().toUpperCase())));
                 list.add(attributeModifiers);
             }
         }
