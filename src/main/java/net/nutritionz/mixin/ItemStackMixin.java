@@ -15,13 +15,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class ItemStackMixin {
 
     @Inject(method = "finishUsing", at = @At("HEAD"))
-    private void finishUsingMixin(World world, LivingEntity user, CallbackInfoReturnable<ItemStack> info) {
+    private void finishUsingMixin(World world, LivingEntity user,
+            CallbackInfoReturnable<ItemStack> info) {
         if (user instanceof ServerPlayerEntity serverPlayerEntity) {
             ItemStack stack = (ItemStack) (Object) this;
             if (NutritionMain.NUTRITION_ITEM_MAP.containsKey(stack.getItem())) {
                 for (int i = 0; i < NutritionMain.NUTRITION_ITEM_MAP.get(stack.getItem()).size(); i++) {
                     if (NutritionMain.NUTRITION_ITEM_MAP.get(stack.getItem()).get(i) > 0) {
-                        ((HungerManagerAccess) serverPlayerEntity.getHungerManager()).addNutritionLevel(i, NutritionMain.NUTRITION_ITEM_MAP.get(stack.getItem()).get(i));
+                        ((HungerManagerAccess) serverPlayerEntity.getHungerManager()).addNutritionLevel(i,
+                                NutritionMain.NUTRITION_ITEM_MAP.get(stack.getItem()).get(i));
                     }
                 }
             }

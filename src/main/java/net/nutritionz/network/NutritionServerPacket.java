@@ -38,8 +38,12 @@ public class NutritionServerPacket {
         });
     }
 
-    public static void writeS2CNutritionPacket(ServerPlayerEntity serverPlayerEntity, HungerManagerAccess hungerManagerAccess) {
-        ServerPlayNetworking.send(serverPlayerEntity, new NutritionPacket(hungerManagerAccess.getNutritionLevel(0), hungerManagerAccess.getNutritionLevel(1), hungerManagerAccess.getNutritionLevel(2), hungerManagerAccess.getNutritionLevel(3), hungerManagerAccess.getNutritionLevel(4)));
+    public static void writeS2CNutritionPacket(ServerPlayerEntity serverPlayerEntity,
+            HungerManagerAccess hungerManagerAccess) {
+        ServerPlayNetworking.send(serverPlayerEntity,
+                new NutritionPacket(hungerManagerAccess.getNutritionLevel(0), hungerManagerAccess.getNutritionLevel(1),
+                        hungerManagerAccess.getNutritionLevel(2), hungerManagerAccess.getNutritionLevel(3),
+                        hungerManagerAccess.getNutritionLevel(4)));
     }
 
     public static void writeS2CItemNutritionPacket(ServerPlayerEntity serverPlayerEntity) {
@@ -63,7 +67,7 @@ public class NutritionServerPacket {
         List<String> positiveAttributeOperations = new ArrayList<>();
 
         for (Map.Entry<Integer, List<Object>> entry : NutritionMain.NUTRITION_POSITIVE_EFFECTS.entrySet()) {
-            int effectCount  = 0;
+            int effectCount = 0;
             int attributeCount = 0;
             for (Object object : entry.getValue()) {
                 if (object instanceof StatusEffectInstance statusEffectInstance) {
@@ -94,7 +98,7 @@ public class NutritionServerPacket {
         List<String> negativeAttributeOperations = new ArrayList<>();
 
         for (Map.Entry<Integer, List<Object>> entry : NutritionMain.NUTRITION_NEGATIVE_EFFECTS.entrySet()) {
-            int effectCount  = 0;
+            int effectCount = 0;
             int attributeCount = 0;
             for (Object object : entry.getValue()) {
                 if (object instanceof StatusEffectInstance statusEffectInstance) {
@@ -116,7 +120,10 @@ public class NutritionServerPacket {
             negativeEffectCount.add(attributeCount);
         }
 
-        ServerPlayNetworking.send(serverPlayerEntity, new NutritionEffectPacket(positiveEffectCount, positiveEffectIds, positiveEffectDurations, positiveEffectAmplifiers, positiveAttributeIds, positiveAttributeValues, positiveAttributeOperations, negativeEffectCount, negativeEffectIds, negativeEffectDurations, negativeEffectAmplifiers, negativeAttributeIds, negativeAttributeValues, negativeAttributeOperations));
+        ServerPlayNetworking.send(serverPlayerEntity, new NutritionEffectPacket(positiveEffectCount, positiveEffectIds,
+                positiveEffectDurations, positiveEffectAmplifiers, positiveAttributeIds, positiveAttributeValues,
+                positiveAttributeOperations, negativeEffectCount, negativeEffectIds, negativeEffectDurations,
+                negativeEffectAmplifiers, negativeAttributeIds, negativeAttributeValues, negativeAttributeOperations));
     }
 
 }
