@@ -1,4 +1,4 @@
-package net.nutritionz.init;
+package net.nutritionz.init.dehydration;
 
 import net.dehydration.api.DrinkEvent;
 import net.minecraft.entity.player.PlayerEntity;
@@ -8,7 +8,7 @@ import net.nutritionz.NutritionMain;
 import net.nutritionz.access.HungerManagerAccess;
 
 public class DehydrationEventInit {
-    static void init() {
+    public static void init() {
         DrinkEvent.EVENT.register((ItemStack stack, PlayerEntity player) -> {
             if (!player.getWorld().isClient()) {
                 Item item = stack.getItem();

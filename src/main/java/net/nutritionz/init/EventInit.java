@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.util.Identifier;
+import net.nutritionz.init.dehydration.DehydrationEventInit;
 import net.nutritionz.network.NutritionServerPacket;
 
 public class EventInit {
