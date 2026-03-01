@@ -43,5 +43,8 @@
     "item.nutritionz.protein": " %s Protein",
     "item.nutritionz.fat": " %s Fat",
     "item.nutritionz.vitamins": " %s Vitamins",
-    "item.nutritionz.minerals": " %s Minerals"
+    "item.nutritionz.minerals": " %s Minerals",
+
+    "category.nutritionz.keybind": "NutritionZ",
+    "key.nutritionz.opennutritionscreen": "Nutrition Screen"
 }
