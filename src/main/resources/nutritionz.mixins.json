@@ -3,6 +3,7 @@
   "package": "net.nutritionz.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "CakeBlockMixin",
     "HungerManagerMixin",
     "ItemStackMixin"
   ],
