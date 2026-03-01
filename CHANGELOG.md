@@ -5,3 +5,5 @@
 - Button click sound
 - Config option for default datapacks
 - Croptopia `3.0.9` compat
+## Changed:
+- Added screen key

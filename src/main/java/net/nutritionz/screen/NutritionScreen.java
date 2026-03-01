@@ -8,6 +8,7 @@ import com.google.common.collect.Multimap;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.SoundEvents;
+import net.nutritionz.init.KeyInit;
 import org.jetbrains.annotations.Nullable;
 
 import net.fabricmc.api.EnvType;
@@ -130,6 +131,10 @@ public class NutritionScreen extends Screen {
     @Override
     public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
         if (this.client.options.inventoryKey.matchesKey(keyCode, scanCode)) {
+            this.close();
+            return true;
+        }
+        if (KeyInit.screenKey.matchesKey(keyCode, scanCode)) {
             this.close();
             return true;
         }
