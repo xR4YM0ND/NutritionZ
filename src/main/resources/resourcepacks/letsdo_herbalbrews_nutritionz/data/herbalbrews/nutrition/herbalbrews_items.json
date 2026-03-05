@@ -1,0 +1,107 @@
+{
+  "herbalbrews:yerba_mate_leaf": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 0
+  },
+  "herbalbrews:rooibos_leaf": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 0
+  },
+  "herbalbrews:coffee_beans": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "herbalbrews:dried_green_tea": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 3,
+    "minerals": 2
+  },
+  "herbalbrews:dried_black_tea": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 2,
+    "minerals": 3
+  },
+  "herbalbrews:dried_oolong_tea": {
+    "carbohydrates": 1,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 2,
+    "minerals": 2
+  },
+  "herbalbrews:green_tea": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 0
+  },
+  "herbalbrews:black_tea": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 7,
+    "minerals": 3
+  },
+  "herbalbrews:hibiscus_tea": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 6,
+    "minerals": 4
+  },
+  "herbalbrews:lavender_tea": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "herbalbrews:coffee": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "herbalbrews:milk_coffee": {
+    "carbohydrates": 0,
+    "protein": 2,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 6
+  },
+  "herbalbrews:rooibos_tea": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 8,
+    "minerals": 2
+  },
+  "herbalbrews:oolong_tea": {
+    "carbohydrates": 2,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 4,
+    "minerals": 4
+  },
+  "herbalbrews:yerba_mate_tea": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 4,
+    "minerals": 6
+  }
+}

@@ -33,9 +33,9 @@ public class NutritionScreen extends Screen {
 
     private int x;
     private int y;
-    private final List<ItemStack> nutritionItems = List.of(new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.carbohydrateItemId))),
-            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.proteinItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.fatItemId))),
-            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.vitaminItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.mineralItemId))));
+    private final List<ItemStack> nutritionItems = List.of(new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.icons.carbohydrateItemId))),
+            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.icons.proteinItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.icons.fatItemId))),
+            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.icons.vitaminItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.icons.mineralItemId))));
     private final List<Text> nutritionTexts = List.of(Text.translatable("screen.nutritionz.carbohydrates"), Text.translatable("screen.nutritionz.protein"), Text.translatable("screen.nutritionz.fat"),
             Text.translatable("screen.nutritionz.vitamins"), Text.translatable("screen.nutritionz.minerals"));
     @Nullable

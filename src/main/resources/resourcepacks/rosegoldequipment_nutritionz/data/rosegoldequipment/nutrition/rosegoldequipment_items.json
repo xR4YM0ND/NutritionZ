@@ -1,0 +1,65 @@
+{
+  "rosegoldequipment:rose_gilded_beetroot": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 15
+  },
+  "rosegoldequipment:rose_gilded_mushroom": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "rosegoldequipment:rosey_beetroot_stew": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 30,
+    "minerals": 20
+  },
+  "rosegoldequipment:rose_mushroom_omelette": {
+    "carbohydrates": 5,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "rosegoldequipment:rose_mushroom_partial": {
+    "carbohydrates": 5,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "rosegoldequipment:rose_mushroom_crumbs": {
+    "carbohydrates": 5,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "rosegoldequipment:rose_gilded_cookie": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "rosegoldequipment:rose_full_jelly": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "rosegoldequipment:rose_half_jelly": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 20
+  }
+}

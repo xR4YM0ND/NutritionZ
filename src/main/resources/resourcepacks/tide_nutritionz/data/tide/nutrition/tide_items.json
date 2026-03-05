@@ -1,0 +1,730 @@
+{
+  "tide:rainbow_trout": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:brook_trout": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:largemouth_bass": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:smallmouth_bass": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:white_crappie": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:black_crappie": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:yellow_perch": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:carp": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:pike": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:guppy": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:bluegill": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:catfish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:walleye": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:arapaima": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tide:mirage_catfish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:sand_tiger_shark": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tide:slimy_salmon": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:frostbite_flounder": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:sturgeon": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:blossom_bass": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:spore_stalker": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:mooneye": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:bull_shark": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tide:ocean_perch": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:red_snapper": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:flounder": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:anchovy": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:tuna": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:mackerel": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:snook": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:angelfish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:mahi_mahi": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 20,
+    "minerals": 0
+  },
+  "tide:sailfish": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tide:swordfish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "tide:manta_ray": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "tide:neptune_koi": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:pluto_snail": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:sun_emblem": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:saturn_cuttlefish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:marstilus": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:uranias_pisces": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tide:great_white_shark": {
+    "carbohydrates": 0,
+    "protein": 25,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:coelacanth": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "tide:cave_eel": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:cave_crawler": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:deep_grouper": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:shadow_snapper": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:glowfish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:anglerfish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:abyss_angler": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:iron_tetra": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tide:lapis_lanternfish": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tide:crystal_shrimp": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:dripstone_darter": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:luminescent_jellyfish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:crystalline_carp": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:gilded_minnow": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tide:bedrock_tetra": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tide:chasm_eel": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:echo_snapper": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:windbass": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:devils_hole_pupfish": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tide:midas_fish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:incandescent_larva": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tide:bedrock_bug": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tide:sleepy_carp": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:blue_neonfish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:judgment_fish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:deep_blue": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:nephrosilu": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:vengeance": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:pentapus": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:darkness_eater": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "tide:shadow_shark": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tide:alpha_fish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tide:magma_mackerel": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:ember_koi": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:ash_perch": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:obsidian_pike": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:volcano_tuna": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:inferno_guppy": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tide:warped_guppy": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tide:crimson_fangjaw": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:soulscale": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:witherfin": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tide:blazing_swordfish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "tide:pale_clubfish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:amber_rockfish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:enderfin": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:chorus_cod": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:ender_glider": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:endergazer": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:violet_carp": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:red_40": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:dutchman_sock": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tide:elytrout": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:mantyvern": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tide:snatcher_squid": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "tide:voidseeker": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "tide:dragon_fish": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tide:cooked_fish": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tide:grilled_tuna": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "tide:fish_slice": {
+    "carbohydrates": 0,
+    "protein": 3,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tide:cooked_fish_slice": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  }
+}

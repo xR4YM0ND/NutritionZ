@@ -1,0 +1,107 @@
+{
+  "meadow:cheese_slice": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 20,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "meadow:sheep_cheese_slice": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "meadow:grain_cheese_slice": {
+    "carbohydrates": 5,
+    "protein": 5,
+    "fat": 10,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "meadow:amethyst_cheese_slice": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "meadow:buffalo_cheese_slice": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "meadow:goat_cheese_slice": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "meadow:warped_cheese_slice": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 15,
+    "minerals": 5
+  },
+  "meadow:cheesecake_slice": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "meadow:cheese_tart_slice": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "meadow:cheese_sandwich": {
+    "carbohydrates": 10,
+    "protein": 5,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "meadow:cheese_roll": {
+    "carbohydrates": 10,
+    "protein": 5,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "meadow:cheese_stick": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "meadow:raw_buffalo_meat": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "meadow:cooked_buffalo_meat": {
+    "carbohydrates": 0,
+    "protein": 30,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "meadow:sausage_with_cheese": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 10
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "lilis_lucky_lures:uncooked_cod_meal": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "lilis_lucky_lures:cooked_cod_meal": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "lilis_lucky_lures:salmon_rolls": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 20,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "lilis_lucky_lures:uncooked_tropical_fish": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "lilis_lucky_lures:grilled_tropical_fish": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "lilis_lucky_lures:uncooked_puffer_plater": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "lilis_lucky_lures:puffer_plater": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 15
+  }
+}

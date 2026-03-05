@@ -1,0 +1,65 @@
+{
+  "farmz:glistering_glow_berries": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 10
+  },
+  "farmz:baked_golden_potato": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 20
+  },
+  "farmz:golden_potato": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "farmz:golden_beetroot": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "farmz:glistering_sweet_berries": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "farmz:golden_chorus_fruit": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 20
+  },
+  "farmz:golden_bread": {
+    "carbohydrates": 30,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "farmz:golden_cookie": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "farmz:golden_beetroot_soup": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 25
+  }
+}
