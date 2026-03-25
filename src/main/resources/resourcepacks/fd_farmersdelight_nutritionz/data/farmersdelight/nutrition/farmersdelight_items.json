@@ -27,6 +27,34 @@
         "vitamins": 0,
         "minerals": 0
     },
+    "farmersdelight:milk_bottle": {
+        "carbohydrates": 3,
+        "protein": 2,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "farmersdelight:hot_cocoa": {
+        "carbohydrates": 10,
+        "protein": 2,
+        "fat": 5,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "farmersdelight:apple_cider": {
+        "carbohydrates": 12,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 12,
+        "minerals": 6
+    },
+    "farmersdelight:melon_juice": {
+        "carbohydrates": 5,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 15,
+        "minerals": 5
+    },
     "farmersdelight:tomato_sauce": {
         "carbohydrates": 6,
         "protein": 0,
