@@ -115,6 +115,8 @@ public class NutritionzConfig implements ConfigData {
     @ConfigEntry.Gui.RequiresRestart
     public boolean rosegoldequipmentDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
+    public boolean scorchfulDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
     public boolean thebumblezoneDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
     public boolean tideDefaultCompat = true;

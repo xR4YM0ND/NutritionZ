@@ -159,6 +159,10 @@ public class EventInit {
             ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "rosegoldequipment_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
+        if (FabricLoader.getInstance().isModLoaded("scorchful") && ConfigInit.CONFIG.misc.scorchfulDefaultCompat) {
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "scorchful_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
         if (FabricLoader.getInstance().isModLoaded("the_bumblezone") && ConfigInit.CONFIG.misc.thebumblezoneDefaultCompat) {
             ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "thebumblezone_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
