@@ -3,6 +3,7 @@ package net.nutritionz.data;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -33,7 +34,8 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
     public static final Logger LOGGER = LogManager.getLogger("NutritionZ");
 
     private final List<String> nutritionList = List.of("carbohydrates", "protein", "fat", "vitamins", "minerals");
-    private final List<Boolean> effectReplaceList = List.of(false, false, false, false, false);
+    private final List<Boolean> effectReplaceList = new ArrayList<>(Arrays.asList(false, false, false, false, false));
+    //private final List<Boolean> effectReplaceList = List.of(false, false, false, false, false);
     // Map to store replacing bools
     private final HashMap<Item, Boolean> replaceList = new HashMap<Item, Boolean>();
 
