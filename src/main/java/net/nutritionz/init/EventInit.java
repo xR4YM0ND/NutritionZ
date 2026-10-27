@@ -41,6 +41,10 @@ public class EventInit {
         }
         
         // Lets Do Compat
+        if (FabricLoader.getInstance().isModLoaded("alpinewhispers") && ConfigInit.CONFIG.letsdo.letsdoAlpineWhispersDefaultCompat) {
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "letsdo_alpinewhispers_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
         if (FabricLoader.getInstance().isModLoaded("bakery") && ConfigInit.CONFIG.letsdo.letsdoBakeryDefaultCompat) {
             ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "letsdo_bakery_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
@@ -167,8 +171,16 @@ public class EventInit {
             ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "tide_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
+        if (FabricLoader.getInstance().isModLoaded("untamed") && ConfigInit.CONFIG.misc.untamedDefaultCompat) {
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "untamed_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
         if (FabricLoader.getInstance().isModLoaded("wilderwild") && ConfigInit.CONFIG.misc.wilderwildDefaultCompat) {
             ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "wilderwild_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+                    ResourcePackActivationType.DEFAULT_ENABLED);
+        }
+        if (FabricLoader.getInstance().isModLoaded("yungscavebiomes") && ConfigInit.CONFIG.misc.yungsCaveBiomesDefaultCompat) {
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "yungscavebiomes_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
     }

@@ -62,6 +62,8 @@ public class NutritionzConfig implements ConfigData {
 
   public static class LetsDoCategory {
     @ConfigEntry.Gui.RequiresRestart
+    public boolean letsdoAlpineWhispersDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
     public boolean letsdoBakeryDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
     public boolean letsdoBeachpartyDefaultCompat = true;
@@ -119,7 +121,11 @@ public class NutritionzConfig implements ConfigData {
     @ConfigEntry.Gui.RequiresRestart
     public boolean tideDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
+    public boolean untamedDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
     public boolean wilderwildDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
+    public boolean yungsCaveBiomesDefaultCompat = true;
   }
 
 }

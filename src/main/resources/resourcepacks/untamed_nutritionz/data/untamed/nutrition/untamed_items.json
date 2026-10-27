@@ -1,0 +1,156 @@
+{
+  "untamed:cooked_hyena": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "untamed:raw_hyena": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 3
+  },
+  "untamed:cooked_panther": {
+    "carbohydrates": 0,
+    "protein": 13,
+    "fat": 7,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "untamed:raw_panther": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "untamed:cooked_vulture": {
+  "carbohydrates": 0,
+  "protein": 10,
+  "fat": 0,
+  "vitamins": 0,
+  "minerals": 10
+},
+  "untamed:raw_vulture": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "untamed:cooked_bison": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "untamed:raw_bison": {
+    "carbohydrates": 0,
+    "protein": 8,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "untamed:cooked_buffalo": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "untamed:raw_buffalo": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "untamed:cooked_bear": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "untamed:raw_bear": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "untamed:cooked_kiwi": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "untamed:raw_kiwi": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 3
+  },
+  "untamed:cooked_octopus": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "untamed:raw_octopus": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "untamed:cooked_capybara": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "untamed:raw_capybara": {
+    "carbohydrates": 0,
+    "protein": 3,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "untamed:cooked_rhino": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "untamed:raw_rhino": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "untamed:cooked_lion": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "untamed:raw_lion": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 2
+  }
+}

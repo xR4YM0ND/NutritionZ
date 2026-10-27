@@ -107,51 +107,51 @@
     "brewery:pork_knuckle": {
         "carbohydrates": 5,
         "protein": 10,
-        "fat": 10,
+        "fat": 5,
         "vitamins": 0,
-        "minerals": 5
+        "minerals": 0
     },
     "brewery:fried_chicken": {
         "carbohydrates": 5,
         "protein": 10,
-        "fat": 10,
+        "fat": 0,
+        "vitamins": 0,
+        "minerals": 0
+    },
+    "brewery:dumplings": {
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 0,
         "vitamins": 0,
         "minerals": 5
     },
-    "brewery:dumplings": {
-        "carbohydrates": 15,
-        "protein": 5,
-        "fat": 0,
-        "vitamins": 5,
-        "minerals": 5
-    },
     "brewery:half_chicken": {
-        "carbohydrates": 10,
-        "protein": 15,
-        "fat": 5,
+        "carbohydrates": 0,
+        "protein": 8,
+        "fat": 2,
         "vitamins": 0,
         "minerals": 0
     },
     "brewery:sausage": {
         "carbohydrates": 0,
-        "protein": 15,
+        "protein": 25,
         "fat": 15,
-        "vitamins": 0,
-        "minerals": 0
+        "vitamins": 10,
+        "minerals": 10
     },
     "brewery:mashed_potatoes": {
         "carbohydrates": 5,
         "protein": 5,
         "fat": 0,
         "vitamins": 0,
-        "minerals": 5
+        "minerals": 0
     },
     "brewery:potato_salad": {
-        "carbohydrates": 15,
-        "protein": 5,
+        "carbohydrates": 5,
+        "protein": 0,
         "fat": 0,
         "vitamins": 5,
-        "minerals": 5
+        "minerals": 0
     },
     "brewery:pretzel": {
         "carbohydrates": 10,

@@ -41,6 +41,7 @@
     "text.autoconfig.nutritionz.option.fd.fdOceansdelightDefaultCompat": "Ocean's Delight",
     "text.autoconfig.nutritionz.option.fd.fdUbesdelightDefaultCompat": "Ube's Delight",
     "text.autoconfig.nutritionz.option.letsdo": "Let's Do - Default Compats",
+    "text.autoconfig.nutritionz.option.letsdo.letsdoAlpineWhispersBakeryDefaultCompat": "Alpine Whispers",
     "text.autoconfig.nutritionz.option.letsdo.letsdoBakeryDefaultCompat": "Bakery",
     "text.autoconfig.nutritionz.option.letsdo.letsdoBeachpartyDefaultCompat": "Beachparty",
     "text.autoconfig.nutritionz.option.letsdo.letsdoBreweryDefaultCompat": "Brewery",
@@ -67,6 +68,8 @@
     "text.autoconfig.nutritionz.option.misc.rosegoldequipmentDefaultCompat": "Rose Gold Equipment",
     "text.autoconfig.nutritionz.option.misc.thebumblezoneDefaultCompat": "The Bumblezone",
     "text.autoconfig.nutritionz.option.misc.tideDefaultCompat": "Tide",
+    "text.autoconfig.nutritionz.option.misc.untamedDefaultCompat": "Untamed",
     "text.autoconfig.nutritionz.option.misc.wilderwildDefaultCompat": "Wilder Wild",
+    "text.autoconfig.nutritionz.option.misc.yungsCaveBiomesDefaultCompat": "YUNG's Cave Biomes",
     "text.autoconfig.nutritionz.option.minecraftDefaultCompat": "Minecraft"
 }
