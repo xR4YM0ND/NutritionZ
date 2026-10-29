@@ -1,16 +1,12 @@
 package net.nutritionz.init;
 
-import net.dehydration.api.DrinkEvent;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
-import net.nutritionz.NutritionMain;
-import net.nutritionz.access.HungerManagerAccess;
 import net.nutritionz.network.NutritionServerPacket;
 
 public class EventInit {
@@ -29,7 +25,7 @@ public class EventInit {
             }
         });
         // datapacks
-        if (ConfigInit.CONFIG.vanillaMinecraftDefaultDatapack) {
+        if (ConfigInit.CONFIG.minecraftDefaultCompat) {
             ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "vanilla_minecraft_nutrition_datapack"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
