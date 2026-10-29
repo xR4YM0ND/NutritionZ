@@ -4,12 +4,9 @@ import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
-import net.fabricmc.loader.api.FabricLoader;
-import net.nutritionz.config.NutritionzConfig.LetsDoCategory;
-import net.nutritionz.config.NutritionzConfig.MISCCategory;
 
 @Config(name = "nutritionz")
-// @Config.Gui.Background("minecraft:textures/block/stone.png")
+@Config.Gui.Background("minecraft:textures/block/stone.png")
 public class NutritionzConfig implements ConfigData {
 
   @ConfigEntry.Category("general")
@@ -29,9 +26,13 @@ public class NutritionzConfig implements ConfigData {
 
   public static class Icons {
     public String carbohydrateItemId = "minecraft:sugar";
+    @ConfigSync.ClientOnly
     public String proteinItemId = "minecraft:chicken";
+    @ConfigSync.ClientOnly
     public String fatItemId = "minecraft:porkchop";
+    @ConfigSync.ClientOnly
     public String vitaminItemId = "minecraft:apple";
+    @ConfigSync.ClientOnly
     public String mineralItemId = "minecraft:iron_nugget";
   }
 
@@ -128,4 +129,16 @@ public class NutritionzConfig implements ConfigData {
     public boolean yungsCaveBiomesDefaultCompat = true;
   }
 
+
+    @Override
+    public void validatePostLoad() {
+        this.maxNutrition = Math.max(1, this.maxNutrition);
+        this.negativeNutrition = Math.clamp(this.negativeNutrition, 0, this.maxNutrition);
+        this.positiveNutrition = Math.clamp(this.positiveNutrition, this.negativeNutrition, this.maxNutrition);
+    }
+
+    @Override
+    public void updateConfig(ConfigData data) {
+        ConfigInit.CONFIG = (NutritionzConfig) data;
+    }
 }
