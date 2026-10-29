@@ -14,11 +14,11 @@
         "negative": {
             "generic.attack_speed": {
                 "operation": "ADD_VALUE",
-                "value": 0.5
+                "value": -0.5
             },
             "generic.movement_speed": {
                 "operation": "ADD_VALUE",
-                "value": 0.02
+                "value": -0.02
             }
         }
     },
@@ -37,11 +37,11 @@
         "negative": {
             "generic.attack_damage": {
                 "operation": "ADD_VALUE",
-                "value": 2.0
+                "value": -2.0
             },
             "generic.attack_knockback": {
                 "operation": "ADD_VALUE",
-                "value": 1.0
+                "value": -1.0
             }
         }
     },
@@ -56,18 +56,16 @@
                 "operation": "ADD_VALUE",
                 "value": 0.1
             }
-            
         },
         "negative": {
             "generic.armor": {
                 "operation": "ADD_VALUE",
-                "value": 2.0
+                "value": -2.0
             },
             "generic.knockback_resistance": {
                 "operation": "ADD_VALUE",
-                "value": 0.1
+                "value": -0.1
             }
-            
         }
     },
     "vitamins": {
@@ -85,7 +83,7 @@
         "negative": {
             "generic.max_health": {
                 "operation": "ADD_VALUE",
-                "value": 2.0
+                "value": -2.0
             },
             "minecraft:weakness": {
                 "duration": 319,
@@ -108,7 +106,7 @@
         "negative": {
             "generic.armor_toughness": {
                 "operation": "ADD_VALUE",
-                "value": 1.0
+                "value": -1.0
             },
             "minecraft:mining_fatigue": {
                 "duration": 319,
