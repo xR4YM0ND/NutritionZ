@@ -2,8 +2,7 @@ package net.nutritionz.util;
 
 import java.util.List;
 
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.util.InputUtil;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ScreenTexts;
 import net.minecraft.text.Text;
@@ -16,7 +15,7 @@ public class NutritionUtil {
             "item.nutritionz.minerals");
 
     public static void addNutritionToolTip(ItemStack stack, List<Text> list) {
-        if (InputUtil.isKeyPressed(MinecraftClient.getInstance().getWindow().getHandle(), 340) && NutritionMain.NUTRITION_ITEM_MAP.containsKey(stack.getItem())) {
+        if (Screen.hasShiftDown() && NutritionMain.NUTRITION_ITEM_MAP.containsKey(stack.getItem())) {
             List<Integer> nutritionList = NutritionMain.NUTRITION_ITEM_MAP.get(stack.getItem());
 
             boolean hasNutritions = false;
