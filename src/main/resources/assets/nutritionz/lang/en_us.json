@@ -7,6 +7,10 @@
     "screen.nutritionz.vitamins": "Vitamins",
     "screen.nutritionz.minerals": "Minerals",
     "screen.nutritionz.nutritionValue": "%s/%s",
+    "screen.nutritionz.negativeEffects": "Deficient (0-%s)",
+    "screen.nutritionz.positiveEffects": "Well Fed (%s-%s)",
+    "screen.nutritionz.active": " - Active",
+    "screen.nutritionz.noEffects": "No effects",
 
     "item.nutritionz.nutrients": "§7Nutrients:",
     "item.nutritionz.carbohydrates": " %s Carbs",

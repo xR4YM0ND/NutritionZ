@@ -2,7 +2,6 @@ package net.nutritionz.network;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import com.google.common.collect.Multimap;
 
@@ -17,6 +16,7 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 import net.nutritionz.NutritionMain;
 import net.nutritionz.access.HungerManagerAccess;
+import net.nutritionz.api.NutritionType;
 import net.nutritionz.network.packet.NutritionEffectPacket;
 import net.nutritionz.network.packet.NutritionItemPacket;
 import net.nutritionz.network.packet.NutritionPacket;
@@ -62,10 +62,10 @@ public class NutritionServerPacket {
         List<Float> positiveAttributeValues = new ArrayList<>();
         List<String> positiveAttributeOperations = new ArrayList<>();
 
-        for (Map.Entry<Integer, List<Object>> entry : NutritionMain.NUTRITION_POSITIVE_EFFECTS.entrySet()) {
-            int effectCount  = 0;
+        for (int i = 0; i < NutritionType.values().length; i++) {
+            int effectCount = 0;
             int attributeCount = 0;
-            for (Object object : entry.getValue()) {
+            for (Object object : NutritionMain.NUTRITION_POSITIVE_EFFECTS.getOrDefault(i, List.of())) {
                 if (object instanceof StatusEffectInstance statusEffectInstance) {
                     positiveEffectIds.add(Registries.STATUS_EFFECT.getId(statusEffectInstance.getEffectType().value()));
                     positiveEffectDurations.add(statusEffectInstance.getDuration());
@@ -78,7 +78,7 @@ public class NutritionServerPacket {
                         positiveAttributeValues.add((float) modifier.value());
                         positiveAttributeOperations.add(modifier.operation().name());
                     });
-                    attributeCount++;
+                    attributeCount += multimap.size();
                 }
             }
             positiveEffectCount.add(effectCount);
@@ -93,10 +93,10 @@ public class NutritionServerPacket {
         List<Float> negativeAttributeValues = new ArrayList<>();
         List<String> negativeAttributeOperations = new ArrayList<>();
 
-        for (Map.Entry<Integer, List<Object>> entry : NutritionMain.NUTRITION_NEGATIVE_EFFECTS.entrySet()) {
-            int effectCount  = 0;
+        for (int i = 0; i < NutritionType.values().length; i++) {
+            int effectCount = 0;
             int attributeCount = 0;
-            for (Object object : entry.getValue()) {
+            for (Object object : NutritionMain.NUTRITION_NEGATIVE_EFFECTS.getOrDefault(i, List.of())) {
                 if (object instanceof StatusEffectInstance statusEffectInstance) {
                     negativeEffectIds.add(Registries.STATUS_EFFECT.getId(statusEffectInstance.getEffectType().value()));
                     negativeEffectDurations.add(statusEffectInstance.getDuration());
@@ -109,7 +109,7 @@ public class NutritionServerPacket {
                         negativeAttributeValues.add((float) modifier.value());
                         negativeAttributeOperations.add(modifier.operation().name());
                     });
-                    attributeCount++;
+                    attributeCount += multimap.size();
                 }
             }
             negativeEffectCount.add(effectCount);

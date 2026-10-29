@@ -3,7 +3,6 @@ package net.nutritionz.data;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -28,16 +27,11 @@ import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
 import net.nutritionz.NutritionMain;
+import net.nutritionz.api.NutritionType;
 
 public class NutritionLoader implements SimpleSynchronousResourceReloadListener {
 
     public static final Logger LOGGER = LogManager.getLogger("NutritionZ");
-
-    private final List<String> nutritionList = List.of("carbohydrates", "protein", "fat", "vitamins", "minerals");
-    private final List<Boolean> effectReplaceList = new ArrayList<>(Arrays.asList(false, false, false, false, false));
-    //private final List<Boolean> effectReplaceList = List.of(false, false, false, false, false);
-    // Map to store replacing bools
-    private final HashMap<Item, Boolean> replaceList = new HashMap<Item, Boolean>();
 
     @Override
     public Identifier getFabricId() {
@@ -46,6 +40,11 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
 
     @Override
     public void reload(ResourceManager manager) {
+        Map<Item, List<Integer>> itemMap = new HashMap<>();
+        Set<Item> replacedItems = new HashSet<>();
+        Map<Integer, List<Object>> positiveEffects = new HashMap<>();
+        Map<Integer, List<Object>> negativeEffects = new HashMap<>();
+        boolean[] replacedEffects = new boolean[NutritionType.values().length];
 
         manager.findResources("nutrition", id -> id.getPath().endsWith(".json")).forEach((id, resourceRef) -> {
             try {
@@ -101,35 +100,40 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
         });
 
         manager.findResources("nutrition_manager", id -> id.getPath().endsWith(".json")).forEach((id, resourceRef) -> {
-            try {
-                InputStream stream = resourceRef.getInputStream();
+            try (InputStream stream = resourceRef.getInputStream()) {
                 JsonObject data = JsonParser.parseReader(new InputStreamReader(stream)).getAsJsonObject();
 
-                for (int i = 0; i < nutritionList.size(); i++) {
-                    if (data.has(nutritionList.get(i))) {
-                        JsonObject jsonObject = data.getAsJsonObject(nutritionList.get(i));
+                for (NutritionType type : NutritionType.values()) {
+                    int i = type.getIndex();
+                    if (!data.has(type.getId()) || replacedEffects[i]) {
+                        continue;
+                    }
+                    JsonObject jsonObject = data.getAsJsonObject(type.getId());
 
-                        if (this.effectReplaceList.get(i)) {
-                            continue;
-                        }
-                        if (JsonHelper.getBoolean(jsonObject, "replace", false)) {
-                            this.effectReplaceList.set(i, true);
-                        }
+                    if (JsonHelper.getBoolean(jsonObject, "replace", false)) {
+                        replacedEffects[i] = true;
+                        positiveEffects.remove(i);
+                        negativeEffects.remove(i);
+                    }
 
-                        if (jsonObject.has("positive")) {
-                            JsonObject positiveJsonObject = jsonObject.getAsJsonObject("positive");
-                            processEffects(positiveJsonObject, NutritionMain.NUTRITION_POSITIVE_EFFECTS, i);
-                        }
-                        if (jsonObject.has("negative")) {
-                            JsonObject negativeJsonObject = jsonObject.getAsJsonObject("negative");
-                            processEffects(negativeJsonObject, NutritionMain.NUTRITION_NEGATIVE_EFFECTS, i);
-                        }
+                    if (jsonObject.has("positive")) {
+                        processEffects(jsonObject.getAsJsonObject("positive"), positiveEffects.computeIfAbsent(i, key -> new ArrayList<>()), type, true, id);
+                    }
+                    if (jsonObject.has("negative")) {
+                        processEffects(jsonObject.getAsJsonObject("negative"), negativeEffects.computeIfAbsent(i, key -> new ArrayList<>()), type, false, id);
                     }
                 }
             } catch (Exception e) {
                 LOGGER.error("Error occurred while loading resource {}. {}", id.toString(), e.toString());
             }
         });
+
+        NutritionMain.NUTRITION_ITEM_MAP.clear();
+        NutritionMain.NUTRITION_ITEM_MAP.putAll(itemMap);
+        NutritionMain.NUTRITION_POSITIVE_EFFECTS.clear();
+        NutritionMain.NUTRITION_POSITIVE_EFFECTS.putAll(positiveEffects);
+        NutritionMain.NUTRITION_NEGATIVE_EFFECTS.clear();
+        NutritionMain.NUTRITION_NEGATIVE_EFFECTS.putAll(negativeEffects);
     }
 
     private static void processEffects(JsonObject effectsJsonObject, HashMap<Integer, List<Object>> nutritionEffectsMap, int i) {

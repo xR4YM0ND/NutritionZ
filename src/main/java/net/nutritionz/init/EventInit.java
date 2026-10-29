@@ -18,71 +18,19 @@ public class EventInit {
     public static void init() {
         ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
             NutritionServerPacket.writeS2CItemNutritionPacket(handler.getPlayer());
+            NutritionServerPacket.writeS2CEffectNutritionPacket(handler.getPlayer());
         });
-        if (FabricLoader.getInstance().isModLoaded("dehydration")) {
-            DrinkEvent.EVENT.register((ItemStack stack, PlayerEntity player) -> {
-                if (!player.getWorld().isClient()) {
-                    Item item = stack.getItem();
-                    if (NutritionMain.NUTRITION_ITEM_MAP.containsKey(item)) {
-                        for (int i = 0; i < NutritionMain.NUTRITION_ITEM_MAP.get(item).size(); i++) {
-                            if (NutritionMain.NUTRITION_ITEM_MAP.get(item).get(i) > 0) {
-                                ((HungerManagerAccess) player.getHungerManager()).addNutritionLevel(i, NutritionMain.NUTRITION_ITEM_MAP.get(item).get(i));
-                            }
-                        }
-                    }
+        ServerLifecycleEvents.END_DATA_PACK_RELOAD.register((server, resourceManager, success) -> {
+            if (success) {
+                for (ServerPlayerEntity serverPlayerEntity : server.getPlayerManager().getPlayerList()) {
+                    NutritionServerPacket.writeS2CItemNutritionPacket(serverPlayerEntity);
+                    NutritionServerPacket.writeS2CEffectNutritionPacket(serverPlayerEntity);
                 }
-            });
-        }
-
-        // Main Compat
-        if (ConfigInit.CONFIG.minecraftDefaultCompat) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "minecraft_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
-                    ResourcePackActivationType.DEFAULT_ENABLED);
-        }
-        
-        // Lets Do Compat
-        if (FabricLoader.getInstance().isModLoaded("alpinewhispers") && ConfigInit.CONFIG.letsdo.letsdoAlpineWhispersDefaultCompat) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "letsdo_alpinewhispers_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
-                    ResourcePackActivationType.DEFAULT_ENABLED);
-        }
-        if (FabricLoader.getInstance().isModLoaded("bakery") && ConfigInit.CONFIG.letsdo.letsdoBakeryDefaultCompat) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "letsdo_bakery_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
-                    ResourcePackActivationType.DEFAULT_ENABLED);
-        }
-        if (FabricLoader.getInstance().isModLoaded("beachparty") && ConfigInit.CONFIG.letsdo.letsdoBeachpartyDefaultCompat) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "letsdo_beachparty_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
-                    ResourcePackActivationType.DEFAULT_ENABLED);
-        }
-        if (FabricLoader.getInstance().isModLoaded("brewery") && ConfigInit.CONFIG.letsdo.letsdoBreweryDefaultCompat) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "letsdo_brewery_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
-                    ResourcePackActivationType.DEFAULT_ENABLED);
-        }
-        if (FabricLoader.getInstance().isModLoaded("candlelight") && ConfigInit.CONFIG.letsdo.letsdoCandlelightDefaultCompat) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "letsdo_candlelight_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
-                    ResourcePackActivationType.DEFAULT_ENABLED);
-        }
-        if (FabricLoader.getInstance().isModLoaded("cornexpansion") && ConfigInit.CONFIG.letsdo.letsdoCornexpansionDefaultCompat) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "letsdo_cornexpansion_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
-                    ResourcePackActivationType.DEFAULT_ENABLED);
-        }
-        if (FabricLoader.getInstance().isModLoaded("farm_and_charm") && ConfigInit.CONFIG.letsdo.letsdoFarmcharmDefaultCompat) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "letsdo_farmcharm_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
-                    ResourcePackActivationType.DEFAULT_ENABLED);
-        }
-        if (FabricLoader.getInstance().isModLoaded("herbalbrews") && ConfigInit.CONFIG.letsdo.letsdoHerbalbrewsDefaultCompat) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "letsdo_herbalbrews_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
-                    ResourcePackActivationType.DEFAULT_ENABLED);
-        }
-        if (FabricLoader.getInstance().isModLoaded("lilis_lucky_lures") && ConfigInit.CONFIG.letsdo.letsdoLllDefaultCompat) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "letsdo_lll_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
-                    ResourcePackActivationType.DEFAULT_ENABLED);
-        }
-        if (FabricLoader.getInstance().isModLoaded("meadow") && ConfigInit.CONFIG.letsdo.letsdoMeadowDefaultCompat) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "letsdo_meadow_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
-                    ResourcePackActivationType.DEFAULT_ENABLED);
-        }
-        if (FabricLoader.getInstance().isModLoaded("vinery") && ConfigInit.CONFIG.letsdo.letsdoVineryDefaultCompat) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "letsdo_vinery_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
+            }
+        });
+        // datapacks
+        if (ConfigInit.CONFIG.vanillaMinecraftDefaultDatapack) {
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "vanilla_minecraft_nutrition_datapack"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("wildernature") && ConfigInit.CONFIG.letsdo.letsdoWildernatureDefaultCompat) {
