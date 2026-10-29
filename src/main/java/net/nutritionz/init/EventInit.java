@@ -147,6 +147,10 @@ public class EventInit {
             ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "farmz_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
+        if (FabricLoader.getInstance().isModLoaded("farmz") && FabricLoader.getInstance().isModLoaded("farm_and_charm") && ConfigInit.CONFIG.misc.farmzfarmcharmDefaultCompat) {
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "farmz_farmcharm_nutritionz"),
+                    FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(), ResourcePackActivationType.DEFAULT_ENABLED);
+        }
         if (FabricLoader.getInstance().isModLoaded("fishofthieves") && ConfigInit.CONFIG.misc.fishofthievesDefaultCompat) {
             ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionz", "fishofthieves_nutritionz"), FabricLoader.getInstance().getModContainer("nutritionz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);

@@ -109,6 +109,8 @@ public class NutritionzConfig implements ConfigData {
     @ConfigEntry.Gui.RequiresRestart
     public boolean farmzDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
+    public boolean farmzfarmcharmDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
     public boolean fishofthievesDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
     public boolean livingthingsDefaultCompat = true;

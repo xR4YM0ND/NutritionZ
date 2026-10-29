@@ -1,0 +1,37 @@
+{
+  "farmz:glistering_strawberry": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "farmz:golden_corn": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 6,
+    "minerals": 4
+  },
+  "farmz:golden_lettuce": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 10
+  },
+  "farmz:golden_onion": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 14,
+    "minerals": 6
+  },
+  "farmz:golden_tomato": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 30,
+    "minerals": 10
+  }
+}
