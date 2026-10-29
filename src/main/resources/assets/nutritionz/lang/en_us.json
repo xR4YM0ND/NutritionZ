@@ -7,6 +7,10 @@
     "screen.nutritionz.vitamins": "Vitamins",
     "screen.nutritionz.minerals": "Minerals",
     "screen.nutritionz.nutritionValue": "%s/%s",
+    "screen.nutritionz.negativeEffects": "Deficient (0-%s)",
+    "screen.nutritionz.positiveEffects": "Well Fed (%s-%s)",
+    "screen.nutritionz.active": " - Active",
+    "screen.nutritionz.noEffects": "No effects",
 
     "item.nutritionz.nutrients": "§7Nutrients:",
     "item.nutritionz.carbohydrates": " %s Carbs",
@@ -17,6 +21,13 @@
 
     "category.nutritionz.keybind": "NutritionZ",
     "key.nutritionz.opennutritionscreen": "Nutrition Screen",
+
+    "commands.nutritionz.invalidType": "Unknown nutrition type: %s",
+    "commands.nutritionz.get": "%1$s has %2$s/%3$s %4$s",
+    "commands.nutritionz.set.single": "Set %2$s of %3$s to %4$s",
+    "commands.nutritionz.set.multiple": "Set %2$s of %3$s players to %1$s",
+    "commands.nutritionz.add.single": "Added %1$s %2$s to %3$s (now %4$s)",
+    "commands.nutritionz.add.multiple": "Added %1$s %2$s to %3$s players",
 
     "text.autoconfig.nutritionz.option.icons": "Change the item shown for each nutrient",
     "text.autoconfig.nutritionz.option.icons.carbohydrateItemId": "Carbohydrate Item Id",

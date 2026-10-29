@@ -3,14 +3,12 @@ package net.nutritionz.config;
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
-import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
-import net.fabricmc.loader.api.FabricLoader;
-import net.nutritionz.config.NutritionzConfig.LetsDoCategory;
-import net.nutritionz.config.NutritionzConfig.MISCCategory;
+import net.libz.api.ConfigSync;
+import net.nutritionz.init.ConfigInit;
 
 @Config(name = "nutritionz")
-// @Config.Gui.Background("minecraft:textures/block/stone.png")
-public class NutritionzConfig implements ConfigData {
+@Config.Gui.Background("minecraft:textures/block/stone.png")
+public class NutritionzConfig implements ConfigData, ConfigSync {
 
   @ConfigEntry.Category("general")
   @ConfigEntry.Gui.CollapsibleObject(startExpanded = true)
@@ -23,15 +21,22 @@ public class NutritionzConfig implements ConfigData {
   @ConfigEntry.Category("general")
   public int positiveNutrition = 90;
   @ConfigEntry.Category("general")
+  @ConfigSync.ClientOnly
   public int posX = 162;
   @ConfigEntry.Category("general")
+  @ConfigSync.ClientOnly
   public int posY = 5;
 
   public static class Icons {
+    @ConfigSync.ClientOnly
     public String carbohydrateItemId = "minecraft:sugar";
+    @ConfigSync.ClientOnly
     public String proteinItemId = "minecraft:chicken";
+    @ConfigSync.ClientOnly
     public String fatItemId = "minecraft:porkchop";
+    @ConfigSync.ClientOnly
     public String vitaminItemId = "minecraft:apple";
+    @ConfigSync.ClientOnly
     public String mineralItemId = "minecraft:iron_nugget";
   }
 
@@ -130,4 +135,16 @@ public class NutritionzConfig implements ConfigData {
     public boolean yungsCaveBiomesDefaultCompat = true;
   }
 
+
+    @Override
+    public void validatePostLoad() {
+        this.maxNutrition = Math.max(1, this.maxNutrition);
+        this.negativeNutrition = Math.clamp(this.negativeNutrition, 0, this.maxNutrition);
+        this.positiveNutrition = Math.clamp(this.positiveNutrition, this.negativeNutrition, this.maxNutrition);
+    }
+
+    @Override
+    public void updateConfig(ConfigData data) {
+        ConfigInit.CONFIG = (NutritionzConfig) data;
+    }
 }
