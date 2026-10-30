@@ -1,4 +1,11 @@
 {
+  "herbalbrews:tea_blossom": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
   "herbalbrews:yerba_mate_leaf": {
     "carbohydrates": 0,
     "protein": 0,

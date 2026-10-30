@@ -1,8 +1,3 @@
 ### Fixed:
 - Multiple default datapacks
-### Added:
-- 
-### Changed:
-- 
-### Updated:
-- 
+- Some default datapacks

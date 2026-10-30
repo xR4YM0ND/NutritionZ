@@ -61,19 +61,5 @@
         "fat": 5,
         "vitamins": 0,
         "minerals": 5
-    },
-    "wildernature:pelican_meat": {
-        "carbohydrates": 0,
-        "protein": 5,
-        "fat": 5,
-        "vitamins": 0,
-        "minerals": 0
-    },
-    "wildernature:cooked_pelican_meat": {
-        "carbohydrates": 0,
-        "protein": 15,
-        "fat": 15,
-        "vitamins": 0,
-        "minerals": 0
     }
 }
