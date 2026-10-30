@@ -11,3 +11,5 @@
 ## Changed:
 - LibZ is now a required dependency
 - Improved nutrition tooltip
+## Updated:
+- FarmZ x Farm and Charm default compat
