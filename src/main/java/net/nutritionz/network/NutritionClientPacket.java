@@ -10,7 +10,7 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -68,18 +68,18 @@ public class NutritionClientPacket {
         ClientPlayNetworking.registerGlobalReceiver(NutritionEffectPacket.PACKET_ID, (payload, context) -> {
 
             List<Integer> positiveEffectCount = payload.positiveEffectCount();
-            List<ResourceLocation> positiveEffectIds = payload.positiveEffectIds();
+            List<Identifier> positiveEffectIds = payload.positiveEffectIds();
             List<Integer> positiveEffectDurations = payload.positiveEffectDurations();
             List<Integer> positiveEffectAmplifiers = payload.positiveEffectAmplifiers();
-            List<ResourceLocation> positiveAttributeIds = payload.positiveAttributeIds();
+            List<Identifier> positiveAttributeIds = payload.positiveAttributeIds();
             List<Float> positiveAttributeValues = payload.positiveAttributeValues();
             List<String> positiveAttributeOperations = payload.positiveAttributeOperations();
 
             List<Integer> negativeEffectCount = payload.negativeEffectCount();
-            List<ResourceLocation> negativeEffectIds = payload.negativeEffectIds();
+            List<Identifier> negativeEffectIds = payload.negativeEffectIds();
             List<Integer> negativeEffectDurations = payload.negativeEffectDurations();
             List<Integer> negativeEffectAmplifiers = payload.negativeEffectAmplifiers();
-            List<ResourceLocation> negativeAttributeIds = payload.negativeAttributeIds();
+            List<Identifier> negativeAttributeIds = payload.negativeAttributeIds();
             List<Float> negativeAttributeValues = payload.negativeAttributeValues();
             List<String> negativeAttributeOperations = payload.negativeAttributeOperations();
 
@@ -91,16 +91,16 @@ public class NutritionClientPacket {
                 List<Object> list = new ArrayList<>();
 
                 for (int u = 0; u < positiveEffectCount.get(i * 2); u++) {
-                    if (BuiltInRegistries.MOB_EFFECT.get(positiveEffectIds.get(effectCount)) != null) {
-                        list.add(new MobEffectInstance(BuiltInRegistries.MOB_EFFECT.getHolder(positiveEffectIds.get(effectCount)).get(), positiveEffectDurations.get(effectCount), positiveEffectAmplifiers.get(effectCount), false, false, true));
+                    if (BuiltInRegistries.MOB_EFFECT.getValue(positiveEffectIds.get(effectCount)) != null) {
+                        list.add(new MobEffectInstance(BuiltInRegistries.MOB_EFFECT.get(positiveEffectIds.get(effectCount)).get(), positiveEffectDurations.get(effectCount), positiveEffectAmplifiers.get(effectCount), false, false, true));
                     }
                     effectCount++;
                 }
 
                 for (int u = 0; u < positiveEffectCount.get(i * 2 + 1); u++) {
-                    if (BuiltInRegistries.ATTRIBUTE.get(positiveAttributeIds.get(attributeCount)) != null) {
+                    if (BuiltInRegistries.ATTRIBUTE.getValue(positiveAttributeIds.get(attributeCount)) != null) {
                         Multimap<Holder<Attribute>, AttributeModifier> attributeModifiers = LinkedHashMultimap.create();
-                        attributeModifiers.put(BuiltInRegistries.ATTRIBUTE.getHolder(positiveAttributeIds.get(attributeCount)).get(),
+                        attributeModifiers.put(BuiltInRegistries.ATTRIBUTE.get(positiveAttributeIds.get(attributeCount)).get(),
                                 new AttributeModifier(NutritionLoader.getModifierId(NutritionType.byIndex(i), true, positiveAttributeIds.get(attributeCount)), positiveAttributeValues.get(attributeCount), Operation.valueOf(positiveAttributeOperations.get(attributeCount).toUpperCase())));
                         list.add(attributeModifiers);
                     }
@@ -118,16 +118,16 @@ public class NutritionClientPacket {
                 List<Object> list = new ArrayList<>();
 
                 for (int u = 0; u < negativeEffectCount.get(i * 2); u++) {
-                    if (BuiltInRegistries.MOB_EFFECT.get(negativeEffectIds.get(effectCount)) != null) {
-                        list.add(new MobEffectInstance(BuiltInRegistries.MOB_EFFECT.getHolder(negativeEffectIds.get(effectCount)).get(), negativeEffectDurations.get(effectCount), negativeEffectAmplifiers.get(effectCount), false, false, true));
+                    if (BuiltInRegistries.MOB_EFFECT.getValue(negativeEffectIds.get(effectCount)) != null) {
+                        list.add(new MobEffectInstance(BuiltInRegistries.MOB_EFFECT.get(negativeEffectIds.get(effectCount)).get(), negativeEffectDurations.get(effectCount), negativeEffectAmplifiers.get(effectCount), false, false, true));
                     }
                     effectCount++;
                 }
 
                 for (int u = 0; u < negativeEffectCount.get(i * 2 + 1); u++) {
-                    if (BuiltInRegistries.ATTRIBUTE.get(negativeAttributeIds.get(attributeCount)) != null) {
+                    if (BuiltInRegistries.ATTRIBUTE.getValue(negativeAttributeIds.get(attributeCount)) != null) {
                         Multimap<Holder<Attribute>, AttributeModifier> attributeModifiers = LinkedHashMultimap.create();
-                        attributeModifiers.put(BuiltInRegistries.ATTRIBUTE.getHolder(negativeAttributeIds.get(attributeCount)).get(),
+                        attributeModifiers.put(BuiltInRegistries.ATTRIBUTE.get(negativeAttributeIds.get(attributeCount)).get(),
                                 new AttributeModifier(NutritionLoader.getModifierId(NutritionType.byIndex(i), false, negativeAttributeIds.get(attributeCount)), negativeAttributeValues.get(attributeCount), AttributeModifier.Operation.valueOf(negativeAttributeOperations.get(attributeCount).toUpperCase())));
                         list.add(attributeModifiers);
                     }

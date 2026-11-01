@@ -3,16 +3,16 @@ package net.nutritionz.mixin;
 import com.google.common.collect.LinkedHashMultimap;
 import com.google.common.collect.Multimap;
 import net.minecraft.core.Holder;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.nbt.Tag;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.util.Mth;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.food.FoodData;
+import net.minecraft.world.level.storage.ValueInput;
+import net.minecraft.world.level.storage.ValueOutput;
 import net.nutritionz.NutritionMain;
 import net.nutritionz.access.HungerManagerAccess;
 import net.nutritionz.api.NutritionEvents;
@@ -45,7 +45,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
     @Unique
     private int mineralLevel = ConfigInit.CONFIG.maxNutrition / 2;
     @Unique
-    private final Map<ResourceLocation, Holder<Attribute>> appliedModifiers = new HashMap<>();
+    private final Map<Identifier, Holder<Attribute>> appliedModifiers = new HashMap<>();
     // Unused
     private boolean shouldUpdateNutritions = false;
 
@@ -53,7 +53,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
     private int tickTimer;
 
     @Inject(method = "tick", at = @At(value = "INVOKE_ASSIGN", target = "Ljava/lang/Math;max(II)I", ordinal = 0))
-    private void updateNutritionMixin(Player player, CallbackInfo info) {
+    private void updateNutritionMixin(ServerPlayer player, CallbackInfo info) {
         for (NutritionType type : NutritionType.values()) {
             int oldLevel = getNutritionLevel(type.getIndex());
             decrementNutritionLevel(type.getIndex(), 1);
@@ -65,7 +65,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
     }
 
     @Inject(method = "tick", at = @At("HEAD"))
-    private void updateMixin(Player player, CallbackInfo info) {
+    private void updateMixin(ServerPlayer player, CallbackInfo info) {
         if (this.tickTimer % 5 == 0 && this.shouldUpdateNutritions) {
             this.shouldUpdateNutritions = false;
         }
@@ -73,7 +73,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
 
     @SuppressWarnings("unchecked")
     @Inject(method = "tick", at = @At("TAIL"))
-    private void updateNutritionEffectsMixin(Player player, CallbackInfo info) {
+    private void updateNutritionEffectsMixin(ServerPlayer player, CallbackInfo info) {
         if (player.level().getGameTime() % 20 != 0) {
             return;
         }
@@ -97,9 +97,9 @@ public class HungerManagerMixin implements HungerManagerAccess {
             }
         }
 
-        Iterator<Map.Entry<ResourceLocation, Holder<Attribute>>> iterator = this.appliedModifiers.entrySet().iterator();
+        Iterator<Map.Entry<Identifier, Holder<Attribute>>> iterator = this.appliedModifiers.entrySet().iterator();
         while (iterator.hasNext()) {
-            Map.Entry<ResourceLocation, Holder<Attribute>> entry = iterator.next();
+            Map.Entry<Identifier, Holder<Attribute>> entry = iterator.next();
             if (activeModifiers.get(entry.getValue()).stream().noneMatch(modifier -> modifier.id().equals(entry.getKey()))) {
                 AttributeInstance attributeInstance = player.getAttributes().getInstance(entry.getValue());
                 if (attributeInstance != null) {
@@ -141,7 +141,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
     }
 
     @Inject(method = "readAdditionalSaveData", at = @At("TAIL"))
-    private void readNbtMixin(CompoundTag nbt, CallbackInfo info) {
+    private void readNbtMixin(ValueInput nbt, CallbackInfo info) {
         this.carbohydrateLevel = readNutritionLevel(nbt, "CarbohydrateLevel", this.carbohydrateLevel);
         this.proteinLevel = readNutritionLevel(nbt, "ProteinLevel", this.proteinLevel);
         this.fatLevel = readNutritionLevel(nbt, "FatLevel", this.fatLevel);
@@ -150,12 +150,12 @@ public class HungerManagerMixin implements HungerManagerAccess {
     }
 
     @Unique
-    private static int readNutritionLevel(CompoundTag nbt, String key, int defaultLevel) {
-        return nbt.contains(key, Tag.TAG_ANY_NUMERIC) ? Mth.clamp(nbt.getInt(key), 0, ConfigInit.CONFIG.maxNutrition) : defaultLevel;
+    private static int readNutritionLevel(ValueInput nbt, String key, int defaultLevel) {
+        return Mth.clamp(nbt.getIntOr(key, defaultLevel), 0, ConfigInit.CONFIG.maxNutrition);
     }
 
     @Inject(method = "addAdditionalSaveData", at = @At("TAIL"))
-    private void writeNbtMixin(CompoundTag nbt, CallbackInfo info) {
+    private void writeNbtMixin(ValueOutput nbt, CallbackInfo info) {
         nbt.putInt("CarbohydrateLevel", this.carbohydrateLevel);
         nbt.putInt("ProteinLevel", this.proteinLevel);
         nbt.putInt("FatLevel", this.fatLevel);

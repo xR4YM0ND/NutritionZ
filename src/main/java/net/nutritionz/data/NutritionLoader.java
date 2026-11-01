@@ -7,7 +7,7 @@ import com.google.gson.JsonParser;
 import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.effect.MobEffect;
@@ -30,8 +30,8 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
     public static final Logger LOGGER = LogManager.getLogger("NutritionZ");
 
     @Override
-    public ResourceLocation getFabricId() {
-        return ResourceLocation.fromNamespaceAndPath("nutritionz", "loader");
+    public Identifier getFabricId() {
+        return Identifier.fromNamespaceAndPath("nutritionz", "loader");
     }
 
     @Override
@@ -48,13 +48,13 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
 
                 for (String itemId : data.keySet()) {
                     try {
-                        ResourceLocation itemIdentifier = ResourceLocation.tryParse(itemId);
+                        Identifier itemIdentifier = Identifier.tryParse(itemId);
                         if (itemIdentifier == null || !BuiltInRegistries.ITEM.containsKey(itemIdentifier)) {
                             LOGGER.info("{} is not a valid item identifier", itemId);
                             continue;
                         }
 
-                        Item item = BuiltInRegistries.ITEM.get(itemIdentifier);
+                        Item item = BuiltInRegistries.ITEM.getValue(itemIdentifier);
                         if (replacedItems.contains(item)) {
                             continue;
                         }
@@ -114,22 +114,22 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
         NutritionMain.NUTRITION_NEGATIVE_EFFECTS.putAll(negativeEffects);
     }
 
-    public static ResourceLocation getModifierId(NutritionType type, boolean positive, ResourceLocation attributeId) {
-        return ResourceLocation.fromNamespaceAndPath("nutritionz", type.getId() + "/" + (positive ? "positive" : "negative") + "/" + attributeId.getNamespace() + "/" + attributeId.getPath());
+    public static Identifier getModifierId(NutritionType type, boolean positive, Identifier attributeId) {
+        return Identifier.fromNamespaceAndPath("nutritionz", type.getId() + "/" + (positive ? "positive" : "negative") + "/" + attributeId.getNamespace() + "/" + attributeId.getPath());
     }
 
-    private static void processEffects(JsonObject effectsJsonObject, List<Object> list, NutritionType type, boolean positive, ResourceLocation resourceId) {
+    private static void processEffects(JsonObject effectsJsonObject, List<Object> list, NutritionType type, boolean positive, Identifier resourceId) {
         for (String effectId : effectsJsonObject.keySet()) {
             try {
-                ResourceLocation effectIdentifier = ResourceLocation.parse(effectId);
+                Identifier effectIdentifier = Identifier.parse(effectId);
                 JsonObject effectJsonObject = effectsJsonObject.get(effectId).getAsJsonObject();
 
                 if (BuiltInRegistries.MOB_EFFECT.containsKey(effectIdentifier)) {
-                    Holder<MobEffect> statusEffect = BuiltInRegistries.MOB_EFFECT.getHolder(effectIdentifier).get();
+                    Holder<MobEffect> statusEffect = BuiltInRegistries.MOB_EFFECT.get(effectIdentifier).get();
                     list.removeIf(object -> object instanceof MobEffectInstance statusEffectInstance && statusEffectInstance.getEffect().equals(statusEffect));
                     list.add(new MobEffectInstance(statusEffect, GsonHelper.getAsInt(effectJsonObject, "duration"), GsonHelper.getAsInt(effectJsonObject, "amplifier", 0), false, false, true));
                 } else if (BuiltInRegistries.ATTRIBUTE.containsKey(effectIdentifier)) {
-                    Holder<Attribute> attribute = BuiltInRegistries.ATTRIBUTE.getHolder(effectIdentifier).get();
+                    Holder<Attribute> attribute = BuiltInRegistries.ATTRIBUTE.get(effectIdentifier).get();
                     list.removeIf(object -> object instanceof Multimap<?, ?> multimap && multimap.containsKey(attribute));
                     Multimap<Holder<Attribute>, AttributeModifier> attributeModifiers = LinkedHashMultimap.create();
                     attributeModifiers.put(attribute, new AttributeModifier(getModifierId(type, positive, effectIdentifier), GsonHelper.getAsFloat(effectJsonObject, "value"),

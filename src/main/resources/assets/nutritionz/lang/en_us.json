@@ -19,7 +19,7 @@
     "item.nutritionz.vitamins": " %s Vitamins",
     "item.nutritionz.minerals": " %s Minerals",
 
-    "category.nutritionz.keybind": "NutritionZ",
+    "key.category.nutritionz.keybind": "NutritionZ",
     "key.nutritionz.opennutritionscreen": "Nutrition Screen",
 
     "commands.nutritionz.invalidType": "Unknown nutrition type: %s",

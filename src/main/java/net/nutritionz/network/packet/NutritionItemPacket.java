@@ -1,20 +1,23 @@
 package net.nutritionz.network.packet;
 
 import java.util.List;
-import net.minecraft.network.FriendlyByteBuf;
+import io.netty.buffer.ByteBuf;
 import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 public record NutritionItemPacket(List<Integer> itemIds, List<Integer> nutritionValues) implements CustomPacketPayload {
 
-    public static final CustomPacketPayload.Type<NutritionItemPacket> PACKET_ID = new CustomPacketPayload.Type<>(ResourceLocation.fromNamespaceAndPath("nutritionz", "nutrition_item_packet"));
+    public static final CustomPacketPayload.Type<NutritionItemPacket> PACKET_ID = new CustomPacketPayload.Type<>(Identifier.fromNamespaceAndPath("nutritionz", "nutrition_item_packet"));
+
+    private static final StreamCodec<ByteBuf, List<Integer>> INT_LIST = ByteBufCodecs.INT.apply(ByteBufCodecs.list());
 
     public static final StreamCodec<RegistryFriendlyByteBuf, NutritionItemPacket> PACKET_CODEC = StreamCodec.ofMember((value, buf) -> {
-        buf.writeCollection(value.itemIds, FriendlyByteBuf::writeInt);
-        buf.writeCollection(value.nutritionValues, FriendlyByteBuf::writeInt);
-    }, buf -> new NutritionItemPacket(buf.readList(FriendlyByteBuf::readInt), buf.readList(FriendlyByteBuf::readInt)));
+        INT_LIST.encode(buf, value.itemIds);
+        INT_LIST.encode(buf, value.nutritionValues);
+    }, buf -> new NutritionItemPacket(INT_LIST.decode(buf), INT_LIST.decode(buf)));
 
     @Override
     public Type<? extends CustomPacketPayload> type() {

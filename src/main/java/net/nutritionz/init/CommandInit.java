@@ -28,7 +28,7 @@ public class CommandInit {
 
     public static void init() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-            dispatcher.register(Commands.literal("nutrition").requires(source -> source.hasPermission(2))
+            dispatcher.register(Commands.literal("nutrition").requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
                     .then(Commands.literal("get").then(Commands.argument("target", EntityArgument.player())
                             .then(Commands.argument("type", StringArgumentType.word()).suggests(NUTRITION_SUGGESTION_PROVIDER).executes(context -> {
                                 return executeGet(context.getSource(), EntityArgument.getPlayer(context, "target"), getType(context));

@@ -1,3 +1,2 @@
-### Fixed:
-- Multiple default datapacks
-- Some default datapacks
+### Changed:
+- Updated to 26.3

@@ -2,21 +2,21 @@
     "carbohydrates": {
         "replace": false,
         "positive": {
-            "generic.attack_speed": {
+            "attack_speed": {
                 "operation": "ADD_VALUE",
                 "value": 0.5
             },
-            "generic.movement_speed": {
+            "movement_speed": {
                 "operation": "ADD_VALUE",
                 "value": 0.02
             }
         },
         "negative": {
-            "generic.attack_speed": {
+            "attack_speed": {
                 "operation": "ADD_VALUE",
                 "value": -0.5
             },
-            "generic.movement_speed": {
+            "movement_speed": {
                 "operation": "ADD_VALUE",
                 "value": -0.02
             }
@@ -25,21 +25,21 @@
     "protein": {
         "replace": false,
         "positive": {
-            "generic.attack_damage": {
+            "attack_damage": {
                 "operation": "ADD_VALUE",
                 "value": 2.0
             },
-            "generic.attack_knockback": {
+            "attack_knockback": {
                 "operation": "ADD_VALUE",
                 "value": 1.0
             }
         },
         "negative": {
-            "generic.attack_damage": {
+            "attack_damage": {
                 "operation": "ADD_VALUE",
                 "value": -2.0
             },
-            "generic.attack_knockback": {
+            "attack_knockback": {
                 "operation": "ADD_VALUE",
                 "value": -1.0
             }
@@ -48,21 +48,21 @@
     "fat": {
         "replace": false,
         "positive": {
-            "generic.armor": {
+            "armor": {
                 "operation": "ADD_VALUE",
                 "value": 2.0
             },
-            "generic.knockback_resistance": {
+            "knockback_resistance": {
                 "operation": "ADD_VALUE",
                 "value": 0.1
             }
         },
         "negative": {
-            "generic.armor": {
+            "armor": {
                 "operation": "ADD_VALUE",
                 "value": -2.0
             },
-            "generic.knockback_resistance": {
+            "knockback_resistance": {
                 "operation": "ADD_VALUE",
                 "value": -0.1
             }
@@ -71,7 +71,7 @@
     "vitamins": {
         "replace": false,
         "positive": {
-            "generic.max_health": {
+            "max_health": {
                 "operation": "ADD_VALUE",
                 "value": 2.0
             },
@@ -81,7 +81,7 @@
             }
         },
         "negative": {
-            "generic.max_health": {
+            "max_health": {
                 "operation": "ADD_VALUE",
                 "value": -2.0
             },
@@ -94,7 +94,7 @@
     "minerals": {
         "replace": false,
         "positive": {
-            "generic.armor_toughness": {
+            "armor_toughness": {
                 "operation": "ADD_VALUE",
                 "value": 1.0
             },
@@ -104,7 +104,7 @@
             }
         },
         "negative": {
-            "generic.armor_toughness": {
+            "armor_toughness": {
                 "operation": "ADD_VALUE",
                 "value": -1.0
             },

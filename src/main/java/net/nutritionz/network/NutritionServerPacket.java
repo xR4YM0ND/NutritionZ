@@ -9,7 +9,7 @@ import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.ai.attributes.Attribute;
@@ -25,10 +25,10 @@ import net.nutritionz.network.packet.NutritionSyncPacket;
 public class NutritionServerPacket {
 
     public static void init() {
-        PayloadTypeRegistry.playS2C().register(NutritionPacket.PACKET_ID, NutritionPacket.PACKET_CODEC);
-        PayloadTypeRegistry.playS2C().register(NutritionItemPacket.PACKET_ID, NutritionItemPacket.PACKET_CODEC);
-        PayloadTypeRegistry.playS2C().register(NutritionEffectPacket.PACKET_ID, NutritionEffectPacket.PACKET_CODEC);
-        PayloadTypeRegistry.playC2S().register(NutritionSyncPacket.PACKET_ID, NutritionSyncPacket.PACKET_CODEC);
+        PayloadTypeRegistry.clientboundPlay().register(NutritionPacket.PACKET_ID, NutritionPacket.PACKET_CODEC);
+        PayloadTypeRegistry.clientboundPlay().register(NutritionItemPacket.PACKET_ID, NutritionItemPacket.PACKET_CODEC);
+        PayloadTypeRegistry.clientboundPlay().register(NutritionEffectPacket.PACKET_ID, NutritionEffectPacket.PACKET_CODEC);
+        PayloadTypeRegistry.serverboundPlay().register(NutritionSyncPacket.PACKET_ID, NutritionSyncPacket.PACKET_CODEC);
 
         ServerPlayNetworking.registerGlobalReceiver(NutritionSyncPacket.PACKET_ID, (payload, context) -> {
             context.server().execute(() -> {
@@ -55,10 +55,10 @@ public class NutritionServerPacket {
 
     public static void writeS2CEffectNutritionPacket(ServerPlayer serverPlayerEntity) {
         List<Integer> positiveEffectCount = new ArrayList<>();
-        List<ResourceLocation> positiveEffectIds = new ArrayList<>();
+        List<Identifier> positiveEffectIds = new ArrayList<>();
         List<Integer> positiveEffectDurations = new ArrayList<>();
         List<Integer> positiveEffectAmplifiers = new ArrayList<>();
-        List<ResourceLocation> positiveAttributeIds = new ArrayList<>();
+        List<Identifier> positiveAttributeIds = new ArrayList<>();
         List<Float> positiveAttributeValues = new ArrayList<>();
         List<String> positiveAttributeOperations = new ArrayList<>();
 
@@ -86,10 +86,10 @@ public class NutritionServerPacket {
         }
 
         List<Integer> negativeEffectCount = new ArrayList<>();
-        List<ResourceLocation> negativeEffectIds = new ArrayList<>();
+        List<Identifier> negativeEffectIds = new ArrayList<>();
         List<Integer> negativeEffectDurations = new ArrayList<>();
         List<Integer> negativeEffectAmplifiers = new ArrayList<>();
-        List<ResourceLocation> negativeAttributeIds = new ArrayList<>();
+        List<Identifier> negativeAttributeIds = new ArrayList<>();
         List<Float> negativeAttributeValues = new ArrayList<>();
         List<String> negativeAttributeOperations = new ArrayList<>();
 
