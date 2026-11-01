@@ -5,17 +5,17 @@ import com.google.common.collect.Multimap;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
-import net.minecraft.entity.attribute.EntityAttribute;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.attribute.EntityAttributeModifier.Operation;
-import net.minecraft.entity.effect.StatusEffect;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.item.Item;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.resource.ResourceManager;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.JsonHelper;
+import net.minecraft.core.Holder;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.util.GsonHelper;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation;
+import net.minecraft.world.item.Item;
 import net.nutritionz.NutritionMain;
 import net.nutritionz.api.NutritionType;
 import org.apache.logging.log4j.LogManager;
@@ -30,41 +30,41 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
     public static final Logger LOGGER = LogManager.getLogger("NutritionZ");
 
     @Override
-    public Identifier getFabricId() {
-        return Identifier.of("nutritionz", "loader");
+    public ResourceLocation getFabricId() {
+        return ResourceLocation.fromNamespaceAndPath("nutritionz", "loader");
     }
 
     @Override
-    public void reload(ResourceManager manager) {
+    public void onResourceManagerReload(ResourceManager manager) {
         Map<Item, List<Integer>> itemMap = new HashMap<>();
         Set<Item> replacedItems = new HashSet<>();
         Map<Integer, List<Object>> positiveEffects = new HashMap<>();
         Map<Integer, List<Object>> negativeEffects = new HashMap<>();
         boolean[] replacedEffects = new boolean[NutritionType.values().length];
 
-        manager.findResources("nutrition", id -> id.getPath().endsWith(".json")).forEach((id, resourceRef) -> {
-            try (InputStream stream = resourceRef.getInputStream()) {
+        manager.listResources("nutrition", id -> id.getPath().endsWith(".json")).forEach((id, resourceRef) -> {
+            try (InputStream stream = resourceRef.open()) {
                 JsonObject data = JsonParser.parseReader(new InputStreamReader(stream)).getAsJsonObject();
 
                 for (String itemId : data.keySet()) {
                     try {
-                        Identifier itemIdentifier = Identifier.tryParse(itemId);
-                        if (itemIdentifier == null || !Registries.ITEM.containsId(itemIdentifier)) {
+                        ResourceLocation itemIdentifier = ResourceLocation.tryParse(itemId);
+                        if (itemIdentifier == null || !BuiltInRegistries.ITEM.containsKey(itemIdentifier)) {
                             LOGGER.info("{} is not a valid item identifier", itemId);
                             continue;
                         }
 
-                        Item item = Registries.ITEM.get(itemIdentifier);
+                        Item item = BuiltInRegistries.ITEM.get(itemIdentifier);
                         if (replacedItems.contains(item)) {
                             continue;
                         }
                         JsonObject jsonObject = data.get(itemId).getAsJsonObject();
-                        if (JsonHelper.getBoolean(jsonObject, "replace", false)) {
+                        if (GsonHelper.getAsBoolean(jsonObject, "replace", false)) {
                             replacedItems.add(item);
                         }
                         List<Integer> nutritionList = new ArrayList<>();
                         for (NutritionType type : NutritionType.values()) {
-                            nutritionList.add(JsonHelper.getInt(jsonObject, type.getId(), 0));
+                            nutritionList.add(GsonHelper.getAsInt(jsonObject, type.getId(), 0));
                         }
                         itemMap.put(item, nutritionList);
                     } catch (Exception e) {
@@ -77,8 +77,8 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
             }
         });
 
-        manager.findResources("nutrition_manager", id -> id.getPath().endsWith(".json")).forEach((id, resourceRef) -> {
-            try (InputStream stream = resourceRef.getInputStream()) {
+        manager.listResources("nutrition_manager", id -> id.getPath().endsWith(".json")).forEach((id, resourceRef) -> {
+            try (InputStream stream = resourceRef.open()) {
                 JsonObject data = JsonParser.parseReader(new InputStreamReader(stream)).getAsJsonObject();
 
                 for (NutritionType type : NutritionType.values()) {
@@ -88,7 +88,7 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
                     }
                     JsonObject jsonObject = data.getAsJsonObject(type.getId());
 
-                    if (JsonHelper.getBoolean(jsonObject, "replace", false)) {
+                    if (GsonHelper.getAsBoolean(jsonObject, "replace", false)) {
                         replacedEffects[i] = true;
                         positiveEffects.remove(i);
                         negativeEffects.remove(i);
@@ -114,26 +114,26 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
         NutritionMain.NUTRITION_NEGATIVE_EFFECTS.putAll(negativeEffects);
     }
 
-    public static Identifier getModifierId(NutritionType type, boolean positive, Identifier attributeId) {
-        return Identifier.of("nutritionz", type.getId() + "/" + (positive ? "positive" : "negative") + "/" + attributeId.getNamespace() + "/" + attributeId.getPath());
+    public static ResourceLocation getModifierId(NutritionType type, boolean positive, ResourceLocation attributeId) {
+        return ResourceLocation.fromNamespaceAndPath("nutritionz", type.getId() + "/" + (positive ? "positive" : "negative") + "/" + attributeId.getNamespace() + "/" + attributeId.getPath());
     }
 
-    private static void processEffects(JsonObject effectsJsonObject, List<Object> list, NutritionType type, boolean positive, Identifier resourceId) {
+    private static void processEffects(JsonObject effectsJsonObject, List<Object> list, NutritionType type, boolean positive, ResourceLocation resourceId) {
         for (String effectId : effectsJsonObject.keySet()) {
             try {
-                Identifier effectIdentifier = Identifier.of(effectId);
+                ResourceLocation effectIdentifier = ResourceLocation.parse(effectId);
                 JsonObject effectJsonObject = effectsJsonObject.get(effectId).getAsJsonObject();
 
-                if (Registries.STATUS_EFFECT.containsId(effectIdentifier)) {
-                    RegistryEntry<StatusEffect> statusEffect = Registries.STATUS_EFFECT.getEntry(effectIdentifier).get();
-                    list.removeIf(object -> object instanceof StatusEffectInstance statusEffectInstance && statusEffectInstance.getEffectType().equals(statusEffect));
-                    list.add(new StatusEffectInstance(statusEffect, JsonHelper.getInt(effectJsonObject, "duration"), JsonHelper.getInt(effectJsonObject, "amplifier", 0), false, false, true));
-                } else if (Registries.ATTRIBUTE.containsId(effectIdentifier)) {
-                    RegistryEntry<EntityAttribute> attribute = Registries.ATTRIBUTE.getEntry(effectIdentifier).get();
+                if (BuiltInRegistries.MOB_EFFECT.containsKey(effectIdentifier)) {
+                    Holder<MobEffect> statusEffect = BuiltInRegistries.MOB_EFFECT.getHolder(effectIdentifier).get();
+                    list.removeIf(object -> object instanceof MobEffectInstance statusEffectInstance && statusEffectInstance.getEffect().equals(statusEffect));
+                    list.add(new MobEffectInstance(statusEffect, GsonHelper.getAsInt(effectJsonObject, "duration"), GsonHelper.getAsInt(effectJsonObject, "amplifier", 0), false, false, true));
+                } else if (BuiltInRegistries.ATTRIBUTE.containsKey(effectIdentifier)) {
+                    Holder<Attribute> attribute = BuiltInRegistries.ATTRIBUTE.getHolder(effectIdentifier).get();
                     list.removeIf(object -> object instanceof Multimap<?, ?> multimap && multimap.containsKey(attribute));
-                    Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> attributeModifiers = LinkedHashMultimap.create();
-                    attributeModifiers.put(attribute, new EntityAttributeModifier(getModifierId(type, positive, effectIdentifier), JsonHelper.getFloat(effectJsonObject, "value"),
-                            Operation.valueOf(JsonHelper.getString(effectJsonObject, "operation").toUpperCase())));
+                    Multimap<Holder<Attribute>, AttributeModifier> attributeModifiers = LinkedHashMultimap.create();
+                    attributeModifiers.put(attribute, new AttributeModifier(getModifierId(type, positive, effectIdentifier), GsonHelper.getAsFloat(effectJsonObject, "value"),
+                            Operation.valueOf(GsonHelper.getAsString(effectJsonObject, "operation").toUpperCase())));
                     list.add(attributeModifiers);
                 } else {
                     LOGGER.info("{} is not a valid status effect identifier nor attribute identifier", effectIdentifier);

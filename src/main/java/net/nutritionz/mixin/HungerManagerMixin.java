@@ -2,17 +2,17 @@ package net.nutritionz.mixin;
 
 import com.google.common.collect.LinkedHashMultimap;
 import com.google.common.collect.Multimap;
-import net.minecraft.entity.attribute.EntityAttribute;
-import net.minecraft.entity.attribute.EntityAttributeInstance;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.player.HungerManager;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.nbt.NbtElement;
-import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.math.MathHelper;
+import net.minecraft.core.Holder;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.Tag;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.food.FoodData;
 import net.nutritionz.NutritionMain;
 import net.nutritionz.access.HungerManagerAccess;
 import net.nutritionz.api.NutritionEvents;
@@ -31,7 +31,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-@Mixin(HungerManager.class)
+@Mixin(FoodData.class)
 public class HungerManagerMixin implements HungerManagerAccess {
 
     @Unique
@@ -45,15 +45,15 @@ public class HungerManagerMixin implements HungerManagerAccess {
     @Unique
     private int mineralLevel = ConfigInit.CONFIG.maxNutrition / 2;
     @Unique
-    private final Map<Identifier, RegistryEntry<EntityAttribute>> appliedModifiers = new HashMap<>();
+    private final Map<ResourceLocation, Holder<Attribute>> appliedModifiers = new HashMap<>();
     // Unused
     private boolean shouldUpdateNutritions = false;
 
     @Shadow
-    private int foodTickTimer;
+    private int tickTimer;
 
-    @Inject(method = "update", at = @At(value = "INVOKE_ASSIGN", target = "Ljava/lang/Math;max(II)I", ordinal = 0))
-    private void updateNutritionMixin(PlayerEntity player, CallbackInfo info) {
+    @Inject(method = "tick", at = @At(value = "INVOKE_ASSIGN", target = "Ljava/lang/Math;max(II)I", ordinal = 0))
+    private void updateNutritionMixin(Player player, CallbackInfo info) {
         for (NutritionType type : NutritionType.values()) {
             int oldLevel = getNutritionLevel(type.getIndex());
             decrementNutritionLevel(type.getIndex(), 1);
@@ -64,20 +64,20 @@ public class HungerManagerMixin implements HungerManagerAccess {
         }
     }
 
-    @Inject(method = "update", at = @At("HEAD"))
-    private void updateMixin(PlayerEntity player, CallbackInfo info) {
-        if (this.foodTickTimer % 5 == 0 && this.shouldUpdateNutritions) {
+    @Inject(method = "tick", at = @At("HEAD"))
+    private void updateMixin(Player player, CallbackInfo info) {
+        if (this.tickTimer % 5 == 0 && this.shouldUpdateNutritions) {
             this.shouldUpdateNutritions = false;
         }
     }
 
     @SuppressWarnings("unchecked")
-    @Inject(method = "update", at = @At("TAIL"))
-    private void updateNutritionEffectsMixin(PlayerEntity player, CallbackInfo info) {
-        if (player.getWorld().getTime() % 20 != 0) {
+    @Inject(method = "tick", at = @At("TAIL"))
+    private void updateNutritionEffectsMixin(Player player, CallbackInfo info) {
+        if (player.level().getGameTime() % 20 != 0) {
             return;
         }
-        Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> activeModifiers = LinkedHashMultimap.create();
+        Multimap<Holder<Attribute>, AttributeModifier> activeModifiers = LinkedHashMultimap.create();
         if (!player.isCreative() && !player.isSpectator()) {
             for (int i = 0; i < NutritionType.values().length; i++) {
                 List<Object> effectList = getActiveEffects(i);
@@ -85,23 +85,23 @@ public class HungerManagerMixin implements HungerManagerAccess {
                     continue;
                 }
                 for (Object effect : effectList) {
-                    if (effect instanceof StatusEffectInstance statusEffectInstance) {
-                        if (!player.hasStatusEffect(statusEffectInstance.getEffectType())
-                                || player.getStatusEffect(statusEffectInstance.getEffectType()).getDuration() < statusEffectInstance.getDuration() - 50) {
-                            player.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
+                    if (effect instanceof MobEffectInstance statusEffectInstance) {
+                        if (!player.hasEffect(statusEffectInstance.getEffect())
+                                || player.getEffect(statusEffectInstance.getEffect()).getDuration() < statusEffectInstance.getDuration() - 50) {
+                            player.addEffect(new MobEffectInstance(statusEffectInstance));
                         }
                     } else if (effect instanceof Multimap<?, ?> multimap) {
-                        activeModifiers.putAll((Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier>) multimap);
+                        activeModifiers.putAll((Multimap<Holder<Attribute>, AttributeModifier>) multimap);
                     }
                 }
             }
         }
 
-        Iterator<Map.Entry<Identifier, RegistryEntry<EntityAttribute>>> iterator = this.appliedModifiers.entrySet().iterator();
+        Iterator<Map.Entry<ResourceLocation, Holder<Attribute>>> iterator = this.appliedModifiers.entrySet().iterator();
         while (iterator.hasNext()) {
-            Map.Entry<Identifier, RegistryEntry<EntityAttribute>> entry = iterator.next();
+            Map.Entry<ResourceLocation, Holder<Attribute>> entry = iterator.next();
             if (activeModifiers.get(entry.getValue()).stream().noneMatch(modifier -> modifier.id().equals(entry.getKey()))) {
-                EntityAttributeInstance attributeInstance = player.getAttributes().getCustomInstance(entry.getValue());
+                AttributeInstance attributeInstance = player.getAttributes().getInstance(entry.getValue());
                 if (attributeInstance != null) {
                     attributeInstance.removeModifier(entry.getKey());
                 }
@@ -110,14 +110,14 @@ public class HungerManagerMixin implements HungerManagerAccess {
         }
 
         activeModifiers.forEach((attribute, modifier) -> {
-            EntityAttributeInstance attributeInstance = player.getAttributes().getCustomInstance(attribute);
+            AttributeInstance attributeInstance = player.getAttributes().getInstance(attribute);
             if (attributeInstance != null) {
-                EntityAttributeModifier currentModifier = attributeInstance.getModifier(modifier.id());
+                AttributeModifier currentModifier = attributeInstance.getModifier(modifier.id());
                 if (!modifier.equals(currentModifier)) {
                     if (currentModifier != null) {
                         attributeInstance.removeModifier(modifier.id());
                     }
-                    attributeInstance.addTemporaryModifier(modifier);
+                    attributeInstance.addTransientModifier(modifier);
                 }
                 this.appliedModifiers.put(modifier.id(), attribute);
             }
@@ -140,8 +140,8 @@ public class HungerManagerMixin implements HungerManagerAccess {
     private void addExhaustionMixin(float exhaustion, CallbackInfo info) {
     }
 
-    @Inject(method = "readNbt", at = @At("TAIL"))
-    private void readNbtMixin(NbtCompound nbt, CallbackInfo info) {
+    @Inject(method = "readAdditionalSaveData", at = @At("TAIL"))
+    private void readNbtMixin(CompoundTag nbt, CallbackInfo info) {
         this.carbohydrateLevel = readNutritionLevel(nbt, "CarbohydrateLevel", this.carbohydrateLevel);
         this.proteinLevel = readNutritionLevel(nbt, "ProteinLevel", this.proteinLevel);
         this.fatLevel = readNutritionLevel(nbt, "FatLevel", this.fatLevel);
@@ -150,12 +150,12 @@ public class HungerManagerMixin implements HungerManagerAccess {
     }
 
     @Unique
-    private static int readNutritionLevel(NbtCompound nbt, String key, int defaultLevel) {
-        return nbt.contains(key, NbtElement.NUMBER_TYPE) ? MathHelper.clamp(nbt.getInt(key), 0, ConfigInit.CONFIG.maxNutrition) : defaultLevel;
+    private static int readNutritionLevel(CompoundTag nbt, String key, int defaultLevel) {
+        return nbt.contains(key, Tag.TAG_ANY_NUMERIC) ? Mth.clamp(nbt.getInt(key), 0, ConfigInit.CONFIG.maxNutrition) : defaultLevel;
     }
 
-    @Inject(method = "writeNbt", at = @At("TAIL"))
-    private void writeNbtMixin(NbtCompound nbt, CallbackInfo info) {
+    @Inject(method = "addAdditionalSaveData", at = @At("TAIL"))
+    private void writeNbtMixin(CompoundTag nbt, CallbackInfo info) {
         nbt.putInt("CarbohydrateLevel", this.carbohydrateLevel);
         nbt.putInt("ProteinLevel", this.proteinLevel);
         nbt.putInt("FatLevel", this.fatLevel);

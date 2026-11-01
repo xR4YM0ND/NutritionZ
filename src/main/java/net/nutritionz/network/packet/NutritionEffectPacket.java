@@ -1,44 +1,43 @@
 package net.nutritionz.network.packet;
 
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.network.RegistryByteBuf;
-import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.network.packet.CustomPayload;
-import net.minecraft.util.Identifier;
-
 import java.util.*;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.resources.ResourceLocation;
 
-public record NutritionEffectPacket(List<Integer> positiveEffectCount, List<Identifier> positiveEffectIds, List<Integer> positiveEffectDurations, List<Integer> positiveEffectAmplifiers,
-                                    List<Identifier> positiveAttributeIds,
-                                    List<Float> positiveAttributeValues, List<String> positiveAttributeOperations, List<Integer> negativeEffectCount, List<Identifier> negativeEffectIds,
+public record NutritionEffectPacket(List<Integer> positiveEffectCount, List<ResourceLocation> positiveEffectIds, List<Integer> positiveEffectDurations, List<Integer> positiveEffectAmplifiers,
+                                    List<ResourceLocation> positiveAttributeIds,
+                                    List<Float> positiveAttributeValues, List<String> positiveAttributeOperations, List<Integer> negativeEffectCount, List<ResourceLocation> negativeEffectIds,
                                     List<Integer> negativeEffectDurations,
-                                    List<Integer> negativeEffectAmplifiers, List<Identifier> negativeAttributeIds, List<Float> negativeAttributeValues,
-                                    List<String> negativeAttributeOperations) implements CustomPayload {
+                                    List<Integer> negativeEffectAmplifiers, List<ResourceLocation> negativeAttributeIds, List<Float> negativeAttributeValues,
+                                    List<String> negativeAttributeOperations) implements CustomPacketPayload {
 
-    public static final CustomPayload.Id<NutritionEffectPacket> PACKET_ID = new CustomPayload.Id<>(Identifier.of("nutritionz", "nutrition_effect_packet"));
+    public static final CustomPacketPayload.Type<NutritionEffectPacket> PACKET_ID = new CustomPacketPayload.Type<>(ResourceLocation.fromNamespaceAndPath("nutritionz", "nutrition_effect_packet"));
 
-    public static final PacketCodec<RegistryByteBuf, NutritionEffectPacket> PACKET_CODEC = PacketCodec.of((value, buf) -> {
-        buf.writeCollection(value.positiveEffectCount(), PacketByteBuf::writeInt);
-        buf.writeCollection(value.positiveEffectIds(), PacketByteBuf::writeIdentifier);
-        buf.writeCollection(value.positiveEffectDurations(), PacketByteBuf::writeInt);
-        buf.writeCollection(value.positiveEffectAmplifiers(), PacketByteBuf::writeInt);
-        buf.writeCollection(value.positiveAttributeIds(), PacketByteBuf::writeIdentifier);
-        buf.writeCollection(value.positiveAttributeValues(), PacketByteBuf::writeFloat);
-        buf.writeCollection(value.positiveAttributeOperations(), PacketByteBuf::writeString);
-        buf.writeCollection(value.negativeEffectCount(), PacketByteBuf::writeInt);
-        buf.writeCollection(value.negativeEffectIds(), PacketByteBuf::writeIdentifier);
-        buf.writeCollection(value.negativeEffectDurations(), PacketByteBuf::writeInt);
-        buf.writeCollection(value.negativeEffectAmplifiers(), PacketByteBuf::writeInt);
-        buf.writeCollection(value.negativeAttributeIds(), PacketByteBuf::writeIdentifier);
-        buf.writeCollection(value.negativeAttributeValues(), PacketByteBuf::writeFloat);
-        buf.writeCollection(value.negativeAttributeOperations(), PacketByteBuf::writeString);
-    }, buf -> new NutritionEffectPacket(buf.readList(PacketByteBuf::readInt), buf.readList(PacketByteBuf::readIdentifier), buf.readList(PacketByteBuf::readInt), buf.readList(PacketByteBuf::readInt),
-            buf.readList(PacketByteBuf::readIdentifier), buf.readList(PacketByteBuf::readFloat), buf.readList(PacketByteBuf::readString),
-            buf.readList(PacketByteBuf::readInt), buf.readList(PacketByteBuf::readIdentifier), buf.readList(PacketByteBuf::readInt), buf.readList(PacketByteBuf::readInt),
-            buf.readList(PacketByteBuf::readIdentifier), buf.readList(PacketByteBuf::readFloat), buf.readList(PacketByteBuf::readString)));
+    public static final StreamCodec<RegistryFriendlyByteBuf, NutritionEffectPacket> PACKET_CODEC = StreamCodec.ofMember((value, buf) -> {
+        buf.writeCollection(value.positiveEffectCount(), FriendlyByteBuf::writeInt);
+        buf.writeCollection(value.positiveEffectIds(), FriendlyByteBuf::writeResourceLocation);
+        buf.writeCollection(value.positiveEffectDurations(), FriendlyByteBuf::writeInt);
+        buf.writeCollection(value.positiveEffectAmplifiers(), FriendlyByteBuf::writeInt);
+        buf.writeCollection(value.positiveAttributeIds(), FriendlyByteBuf::writeResourceLocation);
+        buf.writeCollection(value.positiveAttributeValues(), FriendlyByteBuf::writeFloat);
+        buf.writeCollection(value.positiveAttributeOperations(), FriendlyByteBuf::writeUtf);
+        buf.writeCollection(value.negativeEffectCount(), FriendlyByteBuf::writeInt);
+        buf.writeCollection(value.negativeEffectIds(), FriendlyByteBuf::writeResourceLocation);
+        buf.writeCollection(value.negativeEffectDurations(), FriendlyByteBuf::writeInt);
+        buf.writeCollection(value.negativeEffectAmplifiers(), FriendlyByteBuf::writeInt);
+        buf.writeCollection(value.negativeAttributeIds(), FriendlyByteBuf::writeResourceLocation);
+        buf.writeCollection(value.negativeAttributeValues(), FriendlyByteBuf::writeFloat);
+        buf.writeCollection(value.negativeAttributeOperations(), FriendlyByteBuf::writeUtf);
+    }, buf -> new NutritionEffectPacket(buf.readList(FriendlyByteBuf::readInt), buf.readList(FriendlyByteBuf::readResourceLocation), buf.readList(FriendlyByteBuf::readInt), buf.readList(FriendlyByteBuf::readInt),
+            buf.readList(FriendlyByteBuf::readResourceLocation), buf.readList(FriendlyByteBuf::readFloat), buf.readList(FriendlyByteBuf::readUtf),
+            buf.readList(FriendlyByteBuf::readInt), buf.readList(FriendlyByteBuf::readResourceLocation), buf.readList(FriendlyByteBuf::readInt), buf.readList(FriendlyByteBuf::readInt),
+            buf.readList(FriendlyByteBuf::readResourceLocation), buf.readList(FriendlyByteBuf::readFloat), buf.readList(FriendlyByteBuf::readUtf)));
 
     @Override
-    public Id<? extends CustomPayload> getId() {
+    public Type<? extends CustomPacketPayload> type() {
         return PACKET_ID;
     }
 

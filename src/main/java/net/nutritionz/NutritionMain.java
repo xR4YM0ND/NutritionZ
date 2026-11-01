@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.item.Item;
+import net.minecraft.world.item.Item;
 import net.nutritionz.init.CommandInit;
 import net.nutritionz.init.ConfigInit;
 import net.nutritionz.init.EventInit;

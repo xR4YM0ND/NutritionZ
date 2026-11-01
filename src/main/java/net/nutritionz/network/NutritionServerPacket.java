@@ -7,13 +7,13 @@ import com.google.common.collect.Multimap;
 
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
-import net.minecraft.entity.attribute.EntityAttribute;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.util.Identifier;
+import net.minecraft.core.Holder;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.nutritionz.NutritionMain;
 import net.nutritionz.access.HungerManagerAccess;
 import net.nutritionz.api.NutritionType;
@@ -32,33 +32,33 @@ public class NutritionServerPacket {
 
         ServerPlayNetworking.registerGlobalReceiver(NutritionSyncPacket.PACKET_ID, (payload, context) -> {
             context.server().execute(() -> {
-                writeS2CNutritionPacket(context.player(), ((HungerManagerAccess) context.player().getHungerManager()));
+                writeS2CNutritionPacket(context.player(), ((HungerManagerAccess) context.player().getFoodData()));
                 writeS2CEffectNutritionPacket(context.player());
             });
         });
     }
 
-    public static void writeS2CNutritionPacket(ServerPlayerEntity serverPlayerEntity, HungerManagerAccess hungerManagerAccess) {
+    public static void writeS2CNutritionPacket(ServerPlayer serverPlayerEntity, HungerManagerAccess hungerManagerAccess) {
         ServerPlayNetworking.send(serverPlayerEntity, new NutritionPacket(hungerManagerAccess.getNutritionLevel(0), hungerManagerAccess.getNutritionLevel(1), hungerManagerAccess.getNutritionLevel(2), hungerManagerAccess.getNutritionLevel(3), hungerManagerAccess.getNutritionLevel(4)));
     }
 
-    public static void writeS2CItemNutritionPacket(ServerPlayerEntity serverPlayerEntity) {
+    public static void writeS2CItemNutritionPacket(ServerPlayer serverPlayerEntity) {
         List<Integer> itemIds = new ArrayList<>();
         List<Integer> nutritionValues = new ArrayList<>();
         NutritionMain.NUTRITION_ITEM_MAP.forEach((item, list) -> {
-            itemIds.add(Registries.ITEM.getRawId(item));
+            itemIds.add(BuiltInRegistries.ITEM.getId(item));
             nutritionValues.addAll(list);
         });
 
         ServerPlayNetworking.send(serverPlayerEntity, new NutritionItemPacket(itemIds, nutritionValues));
     }
 
-    public static void writeS2CEffectNutritionPacket(ServerPlayerEntity serverPlayerEntity) {
+    public static void writeS2CEffectNutritionPacket(ServerPlayer serverPlayerEntity) {
         List<Integer> positiveEffectCount = new ArrayList<>();
-        List<Identifier> positiveEffectIds = new ArrayList<>();
+        List<ResourceLocation> positiveEffectIds = new ArrayList<>();
         List<Integer> positiveEffectDurations = new ArrayList<>();
         List<Integer> positiveEffectAmplifiers = new ArrayList<>();
-        List<Identifier> positiveAttributeIds = new ArrayList<>();
+        List<ResourceLocation> positiveAttributeIds = new ArrayList<>();
         List<Float> positiveAttributeValues = new ArrayList<>();
         List<String> positiveAttributeOperations = new ArrayList<>();
 
@@ -66,16 +66,16 @@ public class NutritionServerPacket {
             int effectCount = 0;
             int attributeCount = 0;
             for (Object object : NutritionMain.NUTRITION_POSITIVE_EFFECTS.getOrDefault(i, List.of())) {
-                if (object instanceof StatusEffectInstance statusEffectInstance) {
-                    positiveEffectIds.add(Registries.STATUS_EFFECT.getId(statusEffectInstance.getEffectType().value()));
+                if (object instanceof MobEffectInstance statusEffectInstance) {
+                    positiveEffectIds.add(BuiltInRegistries.MOB_EFFECT.getKey(statusEffectInstance.getEffect().value()));
                     positiveEffectDurations.add(statusEffectInstance.getDuration());
                     positiveEffectAmplifiers.add(statusEffectInstance.getAmplifier());
                     effectCount++;
                 } else {
-                    Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> multimap = (Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier>) object;
+                    Multimap<Holder<Attribute>, AttributeModifier> multimap = (Multimap<Holder<Attribute>, AttributeModifier>) object;
                     multimap.forEach((attribute, modifier) -> {
-                        positiveAttributeIds.add(Registries.ATTRIBUTE.getId(attribute.value()));
-                        positiveAttributeValues.add((float) modifier.value());
+                        positiveAttributeIds.add(BuiltInRegistries.ATTRIBUTE.getKey(attribute.value()));
+                        positiveAttributeValues.add((float) modifier.amount());
                         positiveAttributeOperations.add(modifier.operation().name());
                     });
                     attributeCount += multimap.size();
@@ -86,10 +86,10 @@ public class NutritionServerPacket {
         }
 
         List<Integer> negativeEffectCount = new ArrayList<>();
-        List<Identifier> negativeEffectIds = new ArrayList<>();
+        List<ResourceLocation> negativeEffectIds = new ArrayList<>();
         List<Integer> negativeEffectDurations = new ArrayList<>();
         List<Integer> negativeEffectAmplifiers = new ArrayList<>();
-        List<Identifier> negativeAttributeIds = new ArrayList<>();
+        List<ResourceLocation> negativeAttributeIds = new ArrayList<>();
         List<Float> negativeAttributeValues = new ArrayList<>();
         List<String> negativeAttributeOperations = new ArrayList<>();
 
@@ -97,16 +97,16 @@ public class NutritionServerPacket {
             int effectCount = 0;
             int attributeCount = 0;
             for (Object object : NutritionMain.NUTRITION_NEGATIVE_EFFECTS.getOrDefault(i, List.of())) {
-                if (object instanceof StatusEffectInstance statusEffectInstance) {
-                    negativeEffectIds.add(Registries.STATUS_EFFECT.getId(statusEffectInstance.getEffectType().value()));
+                if (object instanceof MobEffectInstance statusEffectInstance) {
+                    negativeEffectIds.add(BuiltInRegistries.MOB_EFFECT.getKey(statusEffectInstance.getEffect().value()));
                     negativeEffectDurations.add(statusEffectInstance.getDuration());
                     negativeEffectAmplifiers.add(statusEffectInstance.getAmplifier());
                     effectCount++;
                 } else {
-                    Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> multimap = (Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier>) object;
+                    Multimap<Holder<Attribute>, AttributeModifier> multimap = (Multimap<Holder<Attribute>, AttributeModifier>) object;
                     multimap.forEach((attribute, modifier) -> {
-                        negativeAttributeIds.add(Registries.ATTRIBUTE.getId(attribute.value()));
-                        negativeAttributeValues.add((float) modifier.value());
+                        negativeAttributeIds.add(BuiltInRegistries.ATTRIBUTE.getKey(attribute.value()));
+                        negativeAttributeValues.add((float) modifier.amount());
                         negativeAttributeOperations.add(modifier.operation().name());
                     });
                     attributeCount += multimap.size();

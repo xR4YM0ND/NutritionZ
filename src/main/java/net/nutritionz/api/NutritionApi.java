@@ -1,12 +1,11 @@
 package net.nutritionz.api;
 
 import java.util.List;
-
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.util.math.MathHelper;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.Mth;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.nutritionz.NutritionMain;
 import net.nutritionz.access.HungerManagerAccess;
 import net.nutritionz.init.ConfigInit;
@@ -17,21 +16,21 @@ public final class NutritionApi {
     private NutritionApi() {
     }
 
-    public static int getNutrition(PlayerEntity player, NutritionType type) {
+    public static int getNutrition(Player player, NutritionType type) {
         return getAccess(player).getNutritionLevel(type.getIndex());
     }
 
-    public static void setNutrition(PlayerEntity player, NutritionType type, int level) {
-        if (changeNutrition(player, type, level) && player instanceof ServerPlayerEntity serverPlayerEntity) {
+    public static void setNutrition(Player player, NutritionType type, int level) {
+        if (changeNutrition(player, type, level) && player instanceof ServerPlayer serverPlayerEntity) {
             syncNutrition(serverPlayerEntity);
         }
     }
 
-    public static void addNutrition(PlayerEntity player, NutritionType type, int amount) {
+    public static void addNutrition(Player player, NutritionType type, int amount) {
         setNutrition(player, type, getNutrition(player, type) + amount);
     }
 
-    public static void applyItemNutrition(PlayerEntity player, ItemStack stack) {
+    public static void applyItemNutrition(Player player, ItemStack stack) {
         List<Integer> nutritionList = NutritionMain.NUTRITION_ITEM_MAP.get(stack.getItem());
         boolean changed = false;
         for (NutritionType type : NutritionType.values()) {
@@ -40,7 +39,7 @@ public final class NutritionApi {
                 changed |= changeNutrition(player, type, getNutrition(player, type) + value);
             }
         }
-        if (changed && player instanceof ServerPlayerEntity serverPlayerEntity) {
+        if (changed && player instanceof ServerPlayer serverPlayerEntity) {
             syncNutrition(serverPlayerEntity);
         }
     }
@@ -66,22 +65,22 @@ public final class NutritionApi {
         return ConfigInit.CONFIG.positiveNutrition;
     }
 
-    public static boolean isDeficient(PlayerEntity player, NutritionType type) {
+    public static boolean isDeficient(Player player, NutritionType type) {
         return getNutrition(player, type) <= getNegativeNutrition();
     }
 
-    public static boolean isWellFed(PlayerEntity player, NutritionType type) {
+    public static boolean isWellFed(Player player, NutritionType type) {
         return !isDeficient(player, type) && getNutrition(player, type) >= getPositiveNutrition();
     }
 
-    public static void syncNutrition(ServerPlayerEntity serverPlayerEntity) {
+    public static void syncNutrition(ServerPlayer serverPlayerEntity) {
         NutritionServerPacket.writeS2CNutritionPacket(serverPlayerEntity, getAccess(serverPlayerEntity));
     }
 
-    private static boolean changeNutrition(PlayerEntity player, NutritionType type, int level) {
+    private static boolean changeNutrition(Player player, NutritionType type, int level) {
         HungerManagerAccess hungerManagerAccess = getAccess(player);
         int oldLevel = hungerManagerAccess.getNutritionLevel(type.getIndex());
-        int newLevel = MathHelper.clamp(level, 0, getMaxNutrition());
+        int newLevel = Mth.clamp(level, 0, getMaxNutrition());
         if (oldLevel == newLevel) {
             return false;
         }
@@ -90,7 +89,7 @@ public final class NutritionApi {
         return true;
     }
 
-    private static HungerManagerAccess getAccess(PlayerEntity player) {
-        return (HungerManagerAccess) player.getHungerManager();
+    private static HungerManagerAccess getAccess(Player player) {
+        return (HungerManagerAccess) player.getFoodData();
     }
 }

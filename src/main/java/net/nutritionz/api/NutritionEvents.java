@@ -2,8 +2,8 @@ package net.nutritionz.api;
 
 import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 
 public final class NutritionEvents {
 
@@ -25,11 +25,11 @@ public final class NutritionEvents {
 
     @FunctionalInterface
     public interface ItemNutrition {
-        int modifyNutrition(PlayerEntity player, ItemStack stack, NutritionType type, int value);
+        int modifyNutrition(Player player, ItemStack stack, NutritionType type, int value);
     }
 
     @FunctionalInterface
     public interface NutritionChanged {
-        void onNutritionChanged(PlayerEntity player, NutritionType type, int oldLevel, int newLevel);
+        void onNutritionChanged(Player player, NutritionType type, int oldLevel, int newLevel);
     }
 }
