@@ -1,3 +1,3 @@
 ### Fixed:
-- Multiple default datapacks
+- background affected by custom menu backgrounds (e.g. fancy menu)
 - Some default datapacks
