@@ -1,0 +1,42 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "nutritionz"
+version = "${version}"
+displayName = "NutritionZ"
+iconFile = "assets/nutritionz/icon.png"
+authors = "Globox_Z, xR4YM0ND"
+description = '''This mod is about nutritions'''
+
+[[mixins]]
+config = "nutritionz.mixins.json"
+
+[[dependencies.nutritionz]]
+modId = "neoforge"
+type = "required"
+versionRange = "[${neoforge_version},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.nutritionz]]
+modId = "minecraft"
+type = "required"
+versionRange = "[${minecraft_version},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.nutritionz]]
+modId = "cloth_config"
+type = "required"
+versionRange = "[${cloth_config_version},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.nutritionz]]
+modId = "libz"
+type = "required"
+versionRange = "[${libz_version},)"
+ordering = "AFTER"
+side = "BOTH"
