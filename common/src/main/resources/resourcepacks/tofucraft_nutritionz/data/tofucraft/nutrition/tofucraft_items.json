@@ -1,0 +1,744 @@
+{
+  "tofucraft:giant_okara_donut": {
+    "carbohydrates": 10,
+    "protein": 5,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tofucraft:soystick": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:tofucookie": {
+    "carbohydrates": 5,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:moyashiohitashi": {
+    "carbohydrates": 10,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:moyashiitame": {
+    "carbohydrates": 10,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:chikuwa": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:tofu_chikuwa": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:natto": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:nether_natto": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:edamame_boild": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 0
+  },
+  "tofucraft:kinakomanju": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:kinako_mochi": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:zundamanju": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 0
+  },
+  "tofucraft:zunda_mochi": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 5
+  },
+  "tofucraft:nethermanju": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tofucraft:soulmanju": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tofucraft:goheimochi": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:apricotjerry_bread": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tofucraft:mabodofu": {
+    "carbohydrates": 10,
+    "protein": 25,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:tomato_soybean_stew": {
+    "carbohydrates": 5,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 10
+  },
+  "tofucraft:koyadofustew": {
+    "carbohydrates": 5,
+    "protein": 20,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:tastybeefstew": {
+    "carbohydrates": 10,
+    "protein": 20,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tofucraft:tastystew": {
+    "carbohydrates": 10,
+    "protein": 20,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tofucraft:hiyayakko": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tofucraft:nattohiyayakko": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 10
+  },
+  "tofucraft:warabi_mochi": {
+    "carbohydrates": 5,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:crimson_soup": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 15
+  },
+  "tofucraft:misodengaku": {
+    "carbohydrates": 5,
+    "protein": 15,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:misosoup": {
+    "carbohydrates": 5,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:nanban": {
+    "carbohydrates": 10,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 5,
+    "minerals": 10
+  },
+  "tofucraft:nanbantofu": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 5,
+    "minerals": 10
+  },
+  "tofucraft:nikujaga": {
+    "carbohydrates": 10,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tofucraft:oage": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:inari": {
+    "carbohydrates": 5,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:okarastick": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:okara_donut": {
+    "carbohydrates": 5,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:onigiri": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:onigiri_salt": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:yakionigiri_miso": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:yakionigiri_shoyu": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:raw_tofufish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:cooked_tofufish": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:riceburger": {
+    "carbohydrates": 10,
+    "protein": 20,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:ricetofu": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:ricesoborotofu": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:ricenatto": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:ricenattoleek": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:rice_nether_natto": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:rice_nether_natto_leek": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:edamame_rice": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 5
+  },
+  "tofucraft:yuba": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:yudofu": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:meatwrapped_yuba": {
+    "carbohydrates": 5,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:soymeat": {
+    "carbohydrates": 0,
+    "protein": 3,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 2
+  },
+  "tofucraft:soy_cheese": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:soy_nether_cheese": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:soy_soul_cheese": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:rotten_pork": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "tofucraft:monster_pork_jerky": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:monster_jerky": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:soy_chocolate": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:tofunian_soy_chocolate": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:tofusteak": {
+    "carbohydrates": 5,
+    "protein": 20,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:tofuhamburg": {
+    "carbohydrates": 5,
+    "protein": 20,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:tofusomenbowl_glass": {
+    "carbohydrates": 5,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:pudding": {
+    "carbohydrates": 5,
+    "protein": 5,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:pudding_soymilk": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:gratin": {
+    "carbohydrates": 10,
+    "protein": 20,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:caprese": {
+    "carbohydrates": 5,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:mushroom_ankake": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 10
+  },
+  "tofucraft:tofu_ankake": {
+    "carbohydrates": 10,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:hell_mabou": {
+    "carbohydrates": 10,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "tofucraft:red_soup": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 15,
+    "minerals": 20
+  },
+  "tofucraft:hell_red_soup": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 15,
+    "minerals": 20
+  },
+  "tofucraft:sukiyaki": {
+    "carbohydrates": 0,
+    "protein": 45,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:tofu_buns_burger": {
+    "carbohydrates": 10,
+    "protein": 35,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:tttburger": {
+    "carbohydrates": 15,
+    "protein": 30,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:steamed_bread": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:steamed_bread_cocoa": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:sanbuzhan": {
+    "carbohydrates": 10,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:kinako_bread": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:edamame_templa": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 0
+  },
+  "tofucraft:negima": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tofucraft:soy_karaage": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "tofucraft:soymeatdon": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tofucraft:sprouts": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 0
+  },
+  "tofucraft:apricot": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 0
+  },
+  "tofucraft:chili": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 0
+  },
+  "tofucraft:zunda_ingot": {
+    "carbohydrates": 0,
+    "protein": 30,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tofucraft:tofu_minced": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:tofu_kinu": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:tofu_momen": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:tofu_ishi": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:tofu_hell": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:tofu_soul": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:tofu_misc": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:tofu_annin": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:tofu_dried": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:tofu_egg": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:tofu_zunda": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:tofu_strawberry": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 0
+  },
+  "tofucraft:tofu_sesame": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tofucraft:smoketofu": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:tofu_grilled": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:tofu_fried": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tofucraft:tofu_fried_pouch": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  }
+}

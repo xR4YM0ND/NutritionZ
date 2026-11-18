@@ -1,0 +1,58 @@
+{
+  "rusticpancakes:syrup": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "rusticpancakes:batter": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "rusticpancakes:pancake": {
+    "carbohydrates": 10,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "rusticpancakes:honey_pancake": {
+    "carbohydrates": 10,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "rusticpancakes:chocolate_pancake": {
+    "carbohydrates": 5,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "rusticpancakes:cherry_blossom_pancake": {
+    "carbohydrates": 5,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 5,
+    "minerals": 0
+  },
+  "rusticpancakes:vegetable_pancake": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 0
+  },
+  "rusticpancakes:pumpkin_pancake": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 0
+  }
+}

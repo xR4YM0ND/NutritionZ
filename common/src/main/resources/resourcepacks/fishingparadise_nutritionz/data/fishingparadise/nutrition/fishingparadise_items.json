@@ -1,0 +1,170 @@
+{
+  "fishingparadise:raw_anchoveta": {
+    "carbohydrates": 0,
+    "protein": 3,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:cooked_anchoveta": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:raw_carp": {
+    "carbohydrates": 0,
+    "protein": 4,
+    "fat": 6,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:cooked_carp": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:raw_hering": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:cooked_hering": {
+    "carbohydrates": 0,
+    "protein": 20,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:raw_shrimp": {
+    "carbohydrates": 0,
+    "protein": 4,
+    "fat": 1,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:cooked_shrimp": {
+    "carbohydrates": 0,
+    "protein": 8,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:raw_tilapia": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:cooked_tilapia": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:raw_tuna": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:cooked_tuna": {
+    "carbohydrates": 0,
+    "protein": 25,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:raw_crab": {
+    "carbohydrates": 0,
+    "protein": 8,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:starfish": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "fishingparadise:fish_fillets": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:cooked_fish_fillets": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "fishingparadise:fish_and_chips": {
+    "carbohydrates": 15,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "fishingparadise:fish_pie": {
+    "carbohydrates": 10,
+    "protein": 20,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "fishingparadise:fish_stew": {
+    "carbohydrates": 0,
+    "protein": 20,
+    "fat": 10,
+    "vitamins": 15,
+    "minerals": 5
+  },
+  "fishingparadise:sea_food": {
+    "carbohydrates": 0,
+    "protein": 30,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "fishingparadise:sushi": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "fishingparadise:anglerfish": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "fishingparadise:octopus": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "fishingparadise:serpent": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  }
+}

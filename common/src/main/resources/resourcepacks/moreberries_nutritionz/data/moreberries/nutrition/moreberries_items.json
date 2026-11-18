@@ -1,0 +1,142 @@
+{
+  "moreberries:sweet_berry_juice": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "moreberries:sweet_berry_pie": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "moreberries:blue_berries": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 6,
+    "minerals": 1
+  },
+  "moreberries:blue_berry_juice": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "moreberries:blue_berry_pie": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "moreberries:yellow_berries": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 6,
+    "minerals": 1
+  },
+  "moreberries:yellow_berry_juice": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "moreberries:yellow_berry_pie": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "moreberries:orange_berries": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 6,
+    "minerals": 1
+  },
+  "moreberries:orange_berry_juice": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "moreberries:orange_berry_pie": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "moreberries:purple_berries": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 6,
+    "minerals": 1
+  },
+  "moreberries:purple_berry_juice": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "moreberries:purple_berry_pie": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "moreberries:green_berries": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 6,
+    "minerals": 1
+  },
+  "moreberries:green_berry_juice": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "moreberries:green_berry_pie": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "moreberries:black_berries": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 6,
+    "minerals": 1
+  },
+  "moreberries:black_berry_juice": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "moreberries:black_berry_pie": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 10
+  }
+}

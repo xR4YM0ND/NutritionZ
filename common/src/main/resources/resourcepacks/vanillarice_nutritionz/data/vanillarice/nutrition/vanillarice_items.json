@@ -1,0 +1,30 @@
+{
+  "vanillarice:rice_bowl": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "vanillarice:fried_rice": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "vanillarice:maki_sushi": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "vanillarice:mochi": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  }
+}

@@ -28,76 +28,47 @@ public class EventInit {
         if (ConfigInit.CONFIG.minecraftDefaultCompat) {
             packs.add("minecraft_nutritionz");
         }
-        
-        // Lets Do Compat
-        if (Services.PLATFORM.isModLoaded("alpinewhispers") && ConfigInit.CONFIG.letsdo.letsdoAlpineWhispersDefaultCompat) {
-            packs.add("letsdo_alpinewhispers_nutritionz");
-        }
-        if (Services.PLATFORM.isModLoaded("bakery") && ConfigInit.CONFIG.letsdo.letsdoBakeryDefaultCompat) {
-            packs.add("letsdo_bakery_nutritionz");
-        }
-        if (Services.PLATFORM.isModLoaded("beachparty") && ConfigInit.CONFIG.letsdo.letsdoBeachpartyDefaultCompat) {
-            packs.add("letsdo_beachparty_nutritionz");
-        }
-        if (Services.PLATFORM.isModLoaded("brewery") && ConfigInit.CONFIG.letsdo.letsdoBreweryDefaultCompat) {
-            packs.add("letsdo_brewery_nutritionz");
-        }
-        if (Services.PLATFORM.isModLoaded("candlelight") && ConfigInit.CONFIG.letsdo.letsdoCandlelightDefaultCompat) {
-            packs.add("letsdo_candlelight_nutritionz");
-        }
-        if (Services.PLATFORM.isModLoaded("cornexpansion") && ConfigInit.CONFIG.letsdo.letsdoCornexpansionDefaultCompat) {
-            packs.add("letsdo_cornexpansion_nutritionz");
-        }
-        if (Services.PLATFORM.isModLoaded("farm_and_charm") && ConfigInit.CONFIG.letsdo.letsdoFarmcharmDefaultCompat) {
-            packs.add("letsdo_farmcharm_nutritionz");
-        }
-        if (Services.PLATFORM.isModLoaded("herbalbrews") && ConfigInit.CONFIG.letsdo.letsdoHerbalbrewsDefaultCompat) {
-            packs.add("letsdo_herbalbrews_nutritionz");
-        }
-        if (Services.PLATFORM.isModLoaded("lilis_lucky_lures") && ConfigInit.CONFIG.letsdo.letsdoLllDefaultCompat) {
-            packs.add("letsdo_lll_nutritionz");
-        }
-        if (Services.PLATFORM.isModLoaded("meadow") && ConfigInit.CONFIG.letsdo.letsdoMeadowDefaultCompat) {
-            packs.add("letsdo_meadow_nutritionz");
-        }
-        if (Services.PLATFORM.isModLoaded("vinery") && ConfigInit.CONFIG.letsdo.letsdoVineryDefaultCompat) {
-            packs.add("letsdo_vinery_nutritionz");
-        }
-        if (Services.PLATFORM.isModLoaded("wildernature") && ConfigInit.CONFIG.letsdo.letsdoWildernatureDefaultCompat) {
-            packs.add("letsdo_wildernature_nutritionz");
-        }
 
         // Farmers Delight Compat
         if (Services.PLATFORM.isModLoaded("farmersdelight") && ConfigInit.CONFIG.fd.fdFarmersdelightDefaultCompat) {
             packs.add("fd_farmersdelight_nutritionz");
         }
+        if (Services.PLATFORM.isModLoaded("culturaldelights") && ConfigInit.CONFIG.fd.fdCulturaldelightsDefaultCompat) {
+            packs.add("fd_culturaldelights_nutritionz");
+        }
+        if (Services.PLATFORM.isModLoaded("eastersdelight") && ConfigInit.CONFIG.fd.fdEastersdelightDefaultCompat) {
+            packs.add("fd_eastersdelight_nutritionz");
+        }
         if (Services.PLATFORM.isModLoaded("moredelight") && ConfigInit.CONFIG.fd.fdMoredelightDefaultCompat) {
             packs.add("fd_moredelight_nutritionz");
         }
-        if (Services.PLATFORM.isModLoaded("natures_delight") && Services.PLATFORM.isModLoaded("natures_spirit") && ConfigInit.CONFIG.fd.fdNaturesdelightDefaultCompat) {
-            packs.add("fd_ns_naturesdelight_nutritionz");
+        if (Services.PLATFORM.isModLoaded("mynethersdelight") && ConfigInit.CONFIG.fd.fdMynethersdelightDefaultCompat) {
+            packs.add("fd_mynethersdelight_nutritionz");
         }
-        if (Services.PLATFORM.isModLoaded("oceansdelight") && ConfigInit.CONFIG.fd.fdOceansdelightDefaultCompat) {
-            packs.add("fd_oceansdelight_nutritionz");
+        if (Services.PLATFORM.isModLoaded("rusticdelight") && ConfigInit.CONFIG.fd.fdRusticdelightDefaultCompat) {
+            packs.add("fd_rusticdelight_nutritionz");
+        }
+        if (Services.PLATFORM.isModLoaded("spanishdelight") && ConfigInit.CONFIG.fd.fdSpanishdelightDefaultCompat) {
+            packs.add("fd_spanishdelight_nutritionz");
         }
         if (Services.PLATFORM.isModLoaded("ubesdelight") && ConfigInit.CONFIG.fd.fdUbesdelightDefaultCompat) {
             packs.add("fd_ubesdelight_nutritionz");
+        }
+        if (Services.PLATFORM.isModLoaded("wilderdelights") && ConfigInit.CONFIG.fd.fdWilderdelightsDefaultCompat) {
+            packs.add("fd_wilderdelights_nutritionz");
         }
 
         // Dehydration Compat
         if (Services.PLATFORM.isModLoaded("dehydration") && ConfigInit.CONFIG.misc.dehydrationDefaultCompat) {
             packs.add("dehydration_nutritionz");
         }
-        if (Services.PLATFORM.isModLoaded("dehydration") && Services.PLATFORM.isModLoaded("meadow") && ConfigInit.CONFIG.misc.dehydrationmeadowDefaultCompat) {
-            packs.add("dehydration_meadow_nutritionz");
-        }
-        if (Services.PLATFORM.isModLoaded("dehydration") && Services.PLATFORM.isModLoaded("vinery") && ConfigInit.CONFIG.misc.dehydrationvineryDefaultCompat) {
-            packs.add("dehydration_vinery_nutritionz");
-        }
 
         // MISC Compat
         if (Services.PLATFORM.isModLoaded("adventurez") && ConfigInit.CONFIG.misc.adventurezDefaultCompat) {
             packs.add("adventurez_nutritionz");
+        }
+        if (Services.PLATFORM.isModLoaded("aquaculture") && ConfigInit.CONFIG.misc.aquacultureDefaultCompat) {
+            packs.add("aquaculture_nutritionz");
         }
         if (Services.PLATFORM.isModLoaded("betterend") && ConfigInit.CONFIG.misc.betterendDefaultCompat) {
             packs.add("betterend_nutritionz");
@@ -105,41 +76,68 @@ public class EventInit {
         if (Services.PLATFORM.isModLoaded("betternether") && ConfigInit.CONFIG.misc.betternetherDefaultCompat) {
             packs.add("betternether_nutritionz");
         }
-        if (Services.PLATFORM.isModLoaded("croptopia") && ConfigInit.CONFIG.misc.croptopiaDefaultCompat) {
-            packs.add("croptopia_nutritionz");
+        if (Services.PLATFORM.isModLoaded("create") && ConfigInit.CONFIG.misc.createDefaultCompat) {
+            packs.add("create_nutritionz");
+        }
+        if (Services.PLATFORM.isModLoaded("ecologics") && ConfigInit.CONFIG.misc.ecologicsDefaultCompat) {
+            packs.add("ecologics_nutritionz");
+        }
+        if (Services.PLATFORM.isModLoaded("exlinefishing") && ConfigInit.CONFIG.misc.exlinefishingDefaultCompat) {
+            packs.add("exlinefishing_nutritionz");
         }
         if (Services.PLATFORM.isModLoaded("farmz") && ConfigInit.CONFIG.misc.farmzDefaultCompat) {
             packs.add("farmz_nutritionz");
         }
-        if (Services.PLATFORM.isModLoaded("farmz") && Services.PLATFORM.isModLoaded("farm_and_charm") && ConfigInit.CONFIG.misc.farmzfarmcharmDefaultCompat) {
-            packs.add("farmz_farmcharm_nutritionz");
+        if (Services.PLATFORM.isModLoaded("fishingparadise") && ConfigInit.CONFIG.misc.fishingparadiseDefaultCompat) {
+            packs.add("fishingparadise_nutritionz");
         }
         if (Services.PLATFORM.isModLoaded("fishofthieves") && ConfigInit.CONFIG.misc.fishofthievesDefaultCompat) {
             packs.add("fishofthieves_nutritionz");
         }
+        if (Services.PLATFORM.isModLoaded("kafvalentine") && ConfigInit.CONFIG.misc.kafvalentineDefaultCompat) {
+            packs.add("kafvalentine_nutritionz");
+        }
         if (Services.PLATFORM.isModLoaded("livingthings") && ConfigInit.CONFIG.misc.livingthingsDefaultCompat) {
             packs.add("livingthings_nutritionz");
         }
-        if (Services.PLATFORM.isModLoaded("natures_spirit") && ConfigInit.CONFIG.misc.naturesspiritDefaultCompat) {
-            packs.add("naturesspirit_nutritionz");
+        if (Services.PLATFORM.isModLoaded("moreberries") && ConfigInit.CONFIG.misc.moreberriesDefaultCompat) {
+            packs.add("moreberries_nutritionz");
+        }
+        if (Services.PLATFORM.isModLoaded("naturalist") && ConfigInit.CONFIG.misc.naturalistDefaultCompat) {
+            packs.add("naturalist_nutritionz");
+        }
+        if (Services.PLATFORM.isModLoaded("netherandend") && ConfigInit.CONFIG.misc.netherandendDefaultCompat) {
+            packs.add("netherandend_nutritionz");
+        }
+        if (Services.PLATFORM.isModLoaded("promenade") && ConfigInit.CONFIG.misc.promenadeDefaultCompat) {
+            packs.add("promenade_nutritionz");
         }
         if (Services.PLATFORM.isModLoaded("rosegoldequipment") && ConfigInit.CONFIG.misc.rosegoldequipmentDefaultCompat) {
             packs.add("rosegoldequipment_nutritionz");
         }
-        if (Services.PLATFORM.isModLoaded("the_bumblezone") && ConfigInit.CONFIG.misc.thebumblezoneDefaultCompat) {
-            packs.add("thebumblezone_nutritionz");
+        if (Services.PLATFORM.isModLoaded("rusticpancakes") && ConfigInit.CONFIG.misc.rusticpancakesDefaultCompat) {
+            packs.add("rusticpancakes_nutritionz");
         }
-        if (Services.PLATFORM.isModLoaded("tide") && ConfigInit.CONFIG.misc.tideDefaultCompat) {
-            packs.add("tide_nutritionz");
+        if (Services.PLATFORM.isModLoaded("starcatcher") && ConfigInit.CONFIG.misc.starcatcherDefaultCompat) {
+            packs.add("starcatcher_nutritionz");
+        }
+        if (Services.PLATFORM.isModLoaded("tastyvanilla") && ConfigInit.CONFIG.misc.tastyvanillaDefaultCompat) {
+            packs.add("tastyvanilla_nutritionz");
+        }
+        if (Services.PLATFORM.isModLoaded("tofucraft") && ConfigInit.CONFIG.misc.tofucraftDefaultCompat) {
+            packs.add("tofucraft_nutritionz");
         }
         if (Services.PLATFORM.isModLoaded("untamed") && ConfigInit.CONFIG.misc.untamedDefaultCompat) {
             packs.add("untamed_nutritionz");
         }
+        if (Services.PLATFORM.isModLoaded("usefulfood") && ConfigInit.CONFIG.misc.usefulfoodDefaultCompat) {
+            packs.add("usefulfood_nutritionz");
+        }
+        if (Services.PLATFORM.isModLoaded("vanillarice") && ConfigInit.CONFIG.misc.vanillariceDefaultCompat) {
+            packs.add("vanillarice_nutritionz");
+        }
         if (Services.PLATFORM.isModLoaded("wilderwild") && ConfigInit.CONFIG.misc.wilderwildDefaultCompat) {
             packs.add("wilderwild_nutritionz");
-        }
-        if (Services.PLATFORM.isModLoaded("yungscavebiomes") && ConfigInit.CONFIG.misc.yungsCaveBiomesDefaultCompat) {
-            packs.add("yungscavebiomes_nutritionz");
         }
         return packs;
     }

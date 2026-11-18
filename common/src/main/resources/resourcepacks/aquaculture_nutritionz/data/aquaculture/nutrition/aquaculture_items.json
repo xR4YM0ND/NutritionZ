@@ -1,0 +1,233 @@
+{
+  "aquaculture:algae": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 2,
+    "minerals": 3
+  },
+  "aquaculture:fish_fillet_raw": {
+    "carbohydrates": 0,
+    "protein": 3,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:fish_fillet_cooked": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:turtle_soup": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 15
+  },
+  "aquaculture:sushi": {
+    "carbohydrates": 0,
+    "protein": 8,
+    "fat": 8,
+    "vitamins": 4,
+    "minerals": 0
+  },
+  "aquaculture:atlantic_cod": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:blackfish": {
+    "carbohydrates": 0,
+    "protein": 8,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:pacific_halibut": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:atlantic_halibut": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:atlantic_herring": {
+    "carbohydrates": 0,
+    "protein": 3,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:pink_salmon": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:pollock": {
+    "carbohydrates": 0,
+    "protein": 4,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 4
+  },
+  "aquaculture:rainbow_trout": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:bayad": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:boulti": {
+    "carbohydrates": 0,
+    "protein": 3,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:capitaine": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:synodontis": {
+    "carbohydrates": 0,
+    "protein": 3,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:smallmouth_bass": {
+    "carbohydrates": 0,
+    "protein": 8,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:largemouth_bass": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:bluegill": {
+    "carbohydrates": 0,
+    "protein": 3,
+    "fat": 1,
+    "vitamins": 0,
+    "minerals": 1
+  },
+  "aquaculture:brown_trout": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:carp": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:catfish": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:gar": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 2
+  },
+  "aquaculture:muskellunge": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:perch": {
+    "carbohydrates": 0,
+    "protein": 3,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:arapaima": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:piranha": {
+    "carbohydrates": 0,
+    "protein": 1,
+    "fat": 1,
+    "vitamins": 0,
+    "minerals": 3
+  },
+  "aquaculture:tambaqui": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:brown_shrooma": {
+    "carbohydrates": 0,
+    "protein": 4,
+    "fat": 1,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:red_shrooma": {
+    "carbohydrates": 0,
+    "protein": 1,
+    "fat": 0,
+    "vitamins": 2,
+    "minerals": 2
+  },
+  "aquaculture:red_grouper": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "aquaculture:tuna": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  }
+}

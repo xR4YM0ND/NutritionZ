@@ -1,0 +1,779 @@
+{
+  "usefulfood:chocolatemilkbottle": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:cheese": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:chocolatebar": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "usefulfood:fruitsalad": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 25,
+    "minerals": 10
+  },
+  "usefulfood:magicfruitsalad": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 20
+  },
+  "usefulfood:sugarcube": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:caramel": {
+    "carbohydrates": 25,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:caramelapple": {
+    "carbohydrates": 25,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 25,
+    "minerals": 0
+  },
+  "usefulfood:roastedseeds": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:friedegg": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:pumpkinsoup": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 0
+  },
+  "usefulfood:salad": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 5
+  },
+  "usefulfood:oatmeal": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "usefulfood:jelly": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "usefulfood:rawmarshmallow": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:cookedmarshmallow": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "usefulfood:vanillaicecream": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:breadslice": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:porkchopsandwich": {
+    "carbohydrates": 20,
+    "protein": 25,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:steaksandwich": {
+    "carbohydrates": 20,
+    "protein": 25,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:fishsandwich": {
+    "carbohydrates": 15,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:chickensandwich": {
+    "carbohydrates": 20,
+    "protein": 25,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:eggsandwich": {
+    "carbohydrates": 15,
+    "protein": 5,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:biscuit": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:trailmix": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 15
+  },
+  "usefulfood:muttonsandwich": {
+    "carbohydrates": 20,
+    "protein": 25,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:squidrtentacle": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:cookedsquidtentacle": {
+    "carbohydrates": 0,
+    "protein": 20,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:squidsandwich": {
+    "carbohydrates": 15,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:magicapplejuice": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 30,
+    "minerals": 35
+  },
+  "usefulfood:melonjuice": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 30,
+    "minerals": 0
+  },
+  "usefulfood:applejuice": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 50,
+    "minerals": 10
+  },
+  "usefulfood:carrotjuice": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 60,
+    "minerals": 0
+  },
+  "usefulfood:carrotsoup": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 40,
+    "minerals": 5
+  },
+  "usefulfood:pumpkinbread": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 10
+  },
+  "usefulfood:fishnchips": {
+    "carbohydrates": 20,
+    "protein": 20,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "usefulfood:sugarbiscuit": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:applejambiscuit": {
+    "carbohydrates": 30,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 0
+  },
+  "usefulfood:chocolatebiscuit": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:carrotpie": {
+    "carbohydrates": 25,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 0
+  },
+  "usefulfood:hotchocolatemilkbottle": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:chocolateicecream": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "usefulfood:magicicecream": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 15,
+    "minerals": 10
+  },
+  "usefulfood:squidsushi": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:baked_sushi": {
+    "carbohydrates": 10,
+    "protein": 20,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "usefulfood:salmon_sushi": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:cod_roe_sushi": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:cactusjuice": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 15
+  },
+  "usefulfood:spaghetti": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:appleicecream": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 15,
+    "minerals": 0
+  },
+  "usefulfood:melonicecream": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 20,
+    "minerals": 5
+  },
+  "usefulfood:chocolateapple": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 30,
+    "minerals": 15
+  },
+  "usefulfood:caramelbiscuit": {
+    "carbohydrates": 30,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:fishsoup": {
+    "carbohydrates": 10,
+    "protein": 25,
+    "fat": 5,
+    "vitamins": 15,
+    "minerals": 5
+  },
+  "usefulfood:tea": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "usefulfood:hotmilkbottle": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:cheesesandwich": {
+    "carbohydrates": 10,
+    "protein": 5,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:caramelicecream": {
+    "carbohydrates": 25,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:cereal": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:chocolatecereal": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "usefulfood:frenchfries": {
+    "carbohydrates": 25,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:applejelly": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 5
+  },
+  "usefulfood:melonjelly": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 25,
+    "minerals": 0
+  },
+  "usefulfood:donut": {
+    "carbohydrates": 25,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "usefulfood:oreo": {
+    "carbohydrates": 25,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "usefulfood:carameltoast": {
+    "carbohydrates": 30,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:chocolatetoast": {
+    "carbohydrates": 30,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "usefulfood:sugartoast": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:sugarpancake": {
+    "carbohydrates": 25,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "usefulfood:applejampancake": {
+    "carbohydrates": 40,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 25,
+    "minerals": 10
+  },
+  "usefulfood:applejamtoast": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 10
+  },
+  "usefulfood:applejam": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 10
+  },
+  "usefulfood:caramelpancake": {
+    "carbohydrates": 25,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 25
+  },
+  "usefulfood:chocolatepancake": {
+    "carbohydrates": 25,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 30
+  },
+  "usefulfood:melonjampancake": {
+    "carbohydrates": 15,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 20,
+    "minerals": 20
+  },
+  "usefulfood:melonjamtoast": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 0
+  },
+  "usefulfood:melonjambiscuit": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 0
+  },
+  "usefulfood:melonjam": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 0
+  },
+  "usefulfood:pancakedough": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "usefulfood:pancake": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:chorus_juice": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "usefulfood:glow_berries_juice": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "usefulfood:sweet_berries_juice": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 10
+  },
+  "usefulfood:chorus_jelly": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 15
+  },
+  "usefulfood:glow_berries_jelly": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 15
+  },
+  "usefulfood:sweet_berries_jelly": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 15
+  },
+  "usefulfood:chorus_ice_cream": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 5
+  },
+  "usefulfood:glow_berries_ice_cream": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "usefulfood:sweet_berries_ice_cream": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 15
+  },
+  "usefulfood:glow_berries_jam_pancake": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "usefulfood:glow_berries_jam_toast": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "usefulfood:glow_berries_jam_biscuit": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "usefulfood:glow_berries_jam": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "usefulfood:sweet_berries_jam_pancake": {
+    "carbohydrates": 15,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 5,
+    "minerals": 20
+  },
+  "usefulfood:sweet_berries_jam_toast": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 20
+  },
+  "usefulfood:sweet_berries_jam_biscuit": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 20
+  },
+  "usefulfood:sweet_berries_jam": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 15
+  },
+  "usefulfood:chorus_jam_pancake": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 20,
+    "minerals": 20
+  },
+  "usefulfood:chorus_jam_toast": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 20
+  },
+  "usefulfood:chorus_jam_biscuit": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 20
+  },
+  "usefulfood:chorus_jam": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 15
+  },
+  "usefulfood:waffle": {
+    "carbohydrates": 2,
+    "protein": 1,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:waffle_vanilla_icecream": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "usefulfood:waffle_chorus_ice_cream": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 5,
+    "minerals": 0
+  },
+  "usefulfood:waffle_glow_berries_ice_cream": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "usefulfood:waffle_sweet_berries_ice_cream": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "usefulfood:waffle_chocolate_icecream": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "usefulfood:waffle_magic_icecream": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "usefulfood:waffle_apple_icecream": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 0
+  },
+  "usefulfood:waffle_melon_icecream": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 0
+  },
+  "usefulfood:waffle_caramel_icecream": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 5
+  }
+}

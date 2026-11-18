@@ -1,0 +1,296 @@
+{
+  "kafvalentine:special_chocolate_cookie": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "kafvalentine:extra_special_chocolate_cookie": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "kafvalentine:medic_cookie": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 2
+  },
+  "kafvalentine:special_medic_cookie": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "kafvalentine:good_vision_cookie": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 2
+  },
+  "kafvalentine:special_good_vision_cookie": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "kafvalentine:fire_cookie": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 2
+  },
+  "kafvalentine:special_fire_cookie": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "kafvalentine:melon_cookie": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 2,
+    "minerals": 0
+  },
+  "kafvalentine:special_melon_cookie": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 0
+  },
+  "kafvalentine:apple_cookie": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 2,
+    "minerals": 0
+  },
+  "kafvalentine:special_apple_cookie": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 0
+  },
+  "kafvalentine:nether_wart_cookie": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 2
+  },
+  "kafvalentine:special_nether_wart_cookie": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "kafvalentine:glow_cookie": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 1,
+    "minerals": 1
+  },
+  "kafvalentine:special_glow_cookie": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "kafvalentine:caramel_cookie": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "kafvalentine:special_caramel_cookie": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "kafvalentine:explosive_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "kafvalentine:special_explosive_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "kafvalentine:golden_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "kafvalentine:special_golden_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "kafvalentine:evil_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "kafvalentine:special_evil_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 20,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "kafvalentine:aristea_cookie": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 2
+  },
+  "kafvalentine:special_aristea_cookie": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "kafvalentine:rocket_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "kafvalentine:special_rocket_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "kafvalentine:spooky_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 0
+  },
+  "kafvalentine:special_spooky_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 0
+  },
+  "kafvalentine:peculiar_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "kafvalentine:special_peculiar_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "kafvalentine:prismatic_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "kafvalentine:special_prismatic_cookie": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "kafvalentine:chorus_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 3,
+    "minerals": 2
+  },
+  "kafvalentine:special_chorus_cookie": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "kafvalentine:berry_cookie": {
+    "carbohydrates": 3,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 2,
+    "minerals": 0
+  },
+  "kafvalentine:special_berry_cookie": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 0
+  },
+  "kafvalentine:omega_cookie": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "kafvalentine:special_omega_cookie": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "kafvalentine:cotton_candy": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "kafvalentine:candied_cotton_candy_candy": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  }
+}

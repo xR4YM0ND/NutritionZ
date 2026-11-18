@@ -1,0 +1,786 @@
+{
+  "starcatcher:obidontiee": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:driftfin": {
+    "carbohydrates": 0,
+    "protein": 8,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:rainfin": {
+    "carbohydrates": 0,
+    "protein": 8,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:rockgill": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:peakdweller": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:silverveil_perch": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 2
+  },
+  "starcatcher:elderscale": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:sunny_sturgeon": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:twilight_koi": {
+    "carbohydrates": 0,
+    "protein": 4,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 4
+  },
+  "starcatcher:ripple_catfish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:sun_seeking_carp": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:thunder_bass": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 2
+  },
+  "starcatcher:lightning_bass": {
+    "carbohydrates": 0,
+    "protein": 4,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 4
+  },
+  "starcatcher:frostjaw_trout": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:crystalback_trout": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:wintery_pike": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:blue_ice_pike": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:aurora": {
+    "carbohydrates": 0,
+    "protein": 3,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "starcatcher:sandtail": {
+    "carbohydrates": 0,
+    "protein": 8,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:scorchfish": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:mirage_carp": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:agave_bream": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:cactifish": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 2,
+    "vitamins": 3,
+    "minerals": 0
+  },
+  "starcatcher:oasis_sturgeon": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:sludge_catfish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:lily_snapper": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:sage_catfish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:pale_carp": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:pale_pinfish": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:pinfish": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:blossomfish": {
+    "carbohydrates": 0,
+    "protein": 4,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 3
+  },
+  "starcatcher:petaldrift_carp": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:pink_koi": {
+    "carbohydrates": 0,
+    "protein": 7,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:morganite": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:rose_siamese_fish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:vesani": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:petal_bass": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:sunflower_carp": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:cloudfin": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:crystalback_sturgeon": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:icetooth_sturgeon": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:boreal": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:crystalback_boreal": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:silverfin_pike": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:carpenjoe": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:willow_bream": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:drifting_bream": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:downfall_bream": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:hollowbelly_darter": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:mistback_chub": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:bluegigi": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:frostgill_chub": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:crystalback_minnow": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:mothfish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:azure_crystalback_minnow": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:blue_crystal_fin": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:blue_herring": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:ironjaw_herring": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:deepjaw_herring": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:dusktail_snapper": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:joel": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:redscaled_tuna": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:bigeye_tuna": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:sea_bass": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:glimmergill": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:cryospine": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:lilac_minnow": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:shroomfish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:sporefish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:gold_fan": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:whiteveil": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:amethystback": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:stonefish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:fossilized_angelfish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:dripfin": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:yellowstone_fish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:lush_pike": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:vivid_moss": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:the_quarrish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:shadowfin": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:mossfin": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:livid_bamboo": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:ghostly_pike": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:aquamarine_pike": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:garnet_mackerel": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:bright_amethyst_snapper": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:dark_amethyst_snapper": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:deepslatefish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:sculkfish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:ward": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:glowing_dark": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:suneater": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:pyrotrout": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:embergill": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:scalding_pike": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:magma_fish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:glowstone_seeker": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:glowstone_pufferfish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:willish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:cerberay": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:charfish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:end_glow": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:dreamliner": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:voidbiter": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:purple_carp": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:voidfin": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:chorus_minnow": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:cinder_squid": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:spacejelly": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:nebula_squid": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:starcaught_fish": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 4,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "starcatcher:cooked_starcaught_fish": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 5
+  }
+}

@@ -1,0 +1,877 @@
+{
+  "tastyvanilla:cookie_apple": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 0
+  },
+  "tastyvanilla:cookie_carrot": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 0
+  },
+  "tastyvanilla:cookie_glow_berry": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:cookie_honey": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tastyvanilla:cookie_oatmeal": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:cookie_poppy_seed": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:cookie_pumpkin": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 0
+  },
+  "tastyvanilla:cookie_spider_eye": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:cookie_sugar": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tastyvanilla:cookie_sunflower_seed": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:cookie_sweet_berry": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:bread_baguel": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:bread_baguette": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:bread_baked": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:bread_brownie": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "tastyvanilla:bread_croissant": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:bread_flatbread": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:bread_focaccia": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:bread_honey": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:bread_multigrain": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 5,
+    "minerals": 10
+  },
+  "tastyvanilla:bread_pancakes": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:bread_sourdough": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:bread_sweet_roll": {
+    "carbohydrates": 25,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:pie_apple": {
+    "carbohydrates": 10,
+    "protein": 5,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 5
+  },
+  "tastyvanilla:pie_chicken": {
+    "carbohydrates": 10,
+    "protein": 15,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:pie_chocolate": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:pie_chorus_fruit": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tastyvanilla:pie_fish": {
+    "carbohydrates": 10,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:pie_fungus": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 5,
+    "minerals": 15
+  },
+  "tastyvanilla:pie_glow_berry": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 15,
+    "minerals": 15
+  },
+  "tastyvanilla:pie_honey": {
+    "carbohydrates": 25,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:pie_meat": {
+    "carbohydrates": 10,
+    "protein": 20,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:pie_melon": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 15,
+    "minerals": 5
+  },
+  "tastyvanilla:pie_mushroom": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 5,
+    "minerals": 15
+  },
+  "tastyvanilla:pie_shepherds": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 5
+  },
+  "tastyvanilla:pie_sweet_berry": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 5,
+    "minerals": 15
+  },
+  "tastyvanilla:pie_strawberry": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tastyvanilla:pie_vegetable": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 20,
+    "minerals": 10
+  },
+  "tastyvanilla:cabbage": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 0
+  },
+  "tastyvanilla:chilli": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 5
+  },
+  "tastyvanilla:garlic": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 0
+  },
+  "tastyvanilla:eggplant": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 0
+  },
+  "tastyvanilla:lettuce": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 0
+  },
+  "tastyvanilla:onion": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 0
+  },
+  "tastyvanilla:sweet_potato": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 0
+  },
+  "tastyvanilla:tomato": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 0
+  },
+  "tastyvanilla:food_onion_ring": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 15,
+    "minerals": 0
+  },
+  "tastyvanilla:food_potato_fries": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:food_chilli_stew": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 15
+  },
+  "tastyvanilla:food_coleslaw": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 20,
+    "minerals": 0
+  },
+  "tastyvanilla:food_baked_sweet_potato": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 0
+  },
+  "tastyvanilla:food_roasted_garlic": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 5
+  },
+  "tastyvanilla:food_salad": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 10
+  },
+  "tastyvanilla:food_tomato_soup": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 5
+  },
+  "tastyvanilla:food_wrap": {
+    "carbohydrates": 10,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tastyvanilla:food_wrap_veggie": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 10
+  },
+  "tastyvanilla:food_onion_soup": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tastyvanilla:food_sweet_potato_fries": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:food_bumsblech_salad": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 25,
+    "minerals": 5
+  },
+  "tastyvanilla:bread_garlic": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 10
+  },
+  "tastyvanilla:berry_blackberries": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tastyvanilla:berry_blueberries": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:berry_elderberries": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:berry_goji_berries": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:berry_gooseberries": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:berry_raspberries": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:berry_strawberries": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 0
+  },
+  "tastyvanilla:berry_white_currant_berries": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:jam_blackberry": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 15
+  },
+  "tastyvanilla:jam_blueberry": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 15
+  },
+  "tastyvanilla:jam_elderberry": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 15
+  },
+  "tastyvanilla:jam_goji_berry": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 15
+  },
+  "tastyvanilla:jam_gooseberry": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 15
+  },
+  "tastyvanilla:jam_raspberry": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 15
+  },
+  "tastyvanilla:jam_sweet_berry": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 15
+  },
+  "tastyvanilla:jam_strawberry": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 15
+  },
+  "tastyvanilla:jam_white_currant_berry": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 15,
+    "minerals": 15
+  },
+  "tastyvanilla:jam_blackberry_mash": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:jam_blueberry_mash": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:jam_elderberry_mash": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:jam_goji_berry_mash": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:jam_gooseberry_mash": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:jam_raspberry_mash": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:jam_sweet_berry_mash": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:jam_strawberry_mash": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:jam_white_currant_berry_mash": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_bear": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_camel": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_horse": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_veggie": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 0
+  },
+  "tastyvanilla:raw_meat_sniffer": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:raw_meat_goat": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_llama": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_wolf": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_fox": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_cat": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_parrot": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_frog": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_bat": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_turtle": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_dolphin": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_squid": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_axolotl": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_armadillo": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_allay": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_nautilus": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:raw_meat_ravager": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "tastyvanilla:cooked_meat_bear": {
+    "carbohydrates": 0,
+    "protein": 25,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:cooked_meat_camel": {
+    "carbohydrates": 0,
+    "protein": 20,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:cooked_meat_horse": {
+    "carbohydrates": 0,
+    "protein": 20,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:cooked_meat_veggie": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "tastyvanilla:cooked_meat_sniffer": {
+    "carbohydrates": 0,
+    "protein": 20,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "tastyvanilla:cooked_meat_goat": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:cooked_meat_llama": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:cooked_meat_wolf": {
+    "carbohydrates": 0,
+    "protein": 20,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:cooked_meat_fox": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:cooked_meat_parrot": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:cooked_meat_frog": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:cooked_meat_turtle": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:cooked_meat_dolphin": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "tastyvanilla:cooked_meat_squid": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "tastyvanilla:cooked_meat_axolotl": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "tastyvanilla:cooked_meat_armadillo": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "tastyvanilla:cooked_meat_nautilus": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "tastyvanilla:cooked_meat_ravager": {
+    "carbohydrates": 0,
+    "protein": 30,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  }
+}

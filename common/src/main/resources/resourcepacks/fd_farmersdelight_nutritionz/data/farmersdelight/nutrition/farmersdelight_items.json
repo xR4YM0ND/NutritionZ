@@ -195,6 +195,13 @@
         "vitamins": 0,
         "minerals": 0
     },
+    "farmersdelight:pumpkin_pie_slice": {
+        "carbohydrates": 6,
+        "protein": 2,
+        "fat": 7,
+        "vitamins": 0,
+        "minerals": 0
+    },
     "farmersdelight:sweet_berry_cookie": {
         "carbohydrates": 6,
         "protein": 1,
@@ -405,6 +412,13 @@
         "vitamins": 0,
         "minerals": 15
     },
+    "farmersdelight:onion_soup": {
+        "carbohydrates": 20,
+        "protein": 5,
+        "fat": 15,
+        "vitamins": 15,
+        "minerals": 15
+    },
     "farmersdelight:bacon_and_eggs": {
         "carbohydrates": 0,
         "protein": 20,
@@ -502,6 +516,13 @@
         "fat": 10,
         "vitamins": 10,
         "minerals": 10
+    },
+    "farmersdelight:gleaming_salad": {
+        "carbohydrates": 10,
+        "protein": 0,
+        "fat": 10,
+        "vitamins": 30,
+        "minerals": 20
     },
     "farmersdelight:dog_food": {
         "carbohydrates": 5,

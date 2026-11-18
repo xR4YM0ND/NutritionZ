@@ -1,0 +1,51 @@
+{
+  "eastersdelight:boiled_egg": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "eastersdelight:boiled_brown_egg": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "eastersdelight:boiled_blue_egg": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "eastersdelight:egg_slice": {
+    "carbohydrates": 0,
+    "protein": 6,
+    "fat": 2,
+    "vitamins": 0,
+    "minerals": 2
+  },
+  "eastersdelight:chocolate_egg": {
+    "carbohydrates": 5,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "eastersdelight:bunny_cookie": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "eastersdelight:dyed_egg": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  }
+}

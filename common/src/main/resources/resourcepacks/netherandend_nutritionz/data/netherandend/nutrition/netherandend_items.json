@@ -1,0 +1,79 @@
+{
+  "netherandend:warped_stew": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 40
+  },
+  "netherandend:crimson_pie": {
+    "carbohydrates": 10,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "netherandend:raw_strider_meat": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "netherandend:smoked_strider_meat": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "netherandend:cooked_strider_meat": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "netherandend:burnt_strider_meat": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "netherandend:ender_fruit": {
+    "carbohydrates": 12,
+    "protein": 8,
+    "fat": 12,
+    "vitamins": 0,
+    "minerals": 8
+  },
+  "netherandend:chorus_soup": {
+    "carbohydrates": 20,
+    "protein": 10,
+    "fat": 20,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "netherandend:chorus_pie": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "netherandend:shulker_pearl": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 15
+  },
+  "netherandend:hardened_shulker_pearl": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  }
+}

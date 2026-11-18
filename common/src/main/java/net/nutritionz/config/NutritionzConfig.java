@@ -52,44 +52,21 @@ public class NutritionzConfig implements ConfigData, ConfigSync {
     @ConfigEntry.Gui.RequiresRestart
     public boolean fdFarmersdelightDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
+    public boolean fdCulturaldelightsDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
+    public boolean fdEastersdelightDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
     public boolean fdMoredelightDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
-    public boolean fdNaturesdelightDefaultCompat = true;
+    public boolean fdMynethersdelightDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
-    public boolean fdOceansdelightDefaultCompat = true;
+    public boolean fdRusticdelightDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
+    public boolean fdSpanishdelightDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
     public boolean fdUbesdelightDefaultCompat = true;
-  }
-
-  @ConfigEntry.Category("compat")
-  @ConfigEntry.Gui.CollapsibleObject(startExpanded = false)
-  public LetsDoCategory letsdo = new LetsDoCategory();
-
-  public static class LetsDoCategory {
     @ConfigEntry.Gui.RequiresRestart
-    public boolean letsdoAlpineWhispersDefaultCompat = true;
-    @ConfigEntry.Gui.RequiresRestart
-    public boolean letsdoBakeryDefaultCompat = true;
-    @ConfigEntry.Gui.RequiresRestart
-    public boolean letsdoBeachpartyDefaultCompat = true;
-    @ConfigEntry.Gui.RequiresRestart
-    public boolean letsdoBreweryDefaultCompat = true;
-    @ConfigEntry.Gui.RequiresRestart
-    public boolean letsdoCandlelightDefaultCompat = true;
-    @ConfigEntry.Gui.RequiresRestart
-    public boolean letsdoCornexpansionDefaultCompat = true;
-    @ConfigEntry.Gui.RequiresRestart
-    public boolean letsdoFarmcharmDefaultCompat = true;
-    @ConfigEntry.Gui.RequiresRestart
-    public boolean letsdoHerbalbrewsDefaultCompat = true;
-    @ConfigEntry.Gui.RequiresRestart
-    public boolean letsdoLllDefaultCompat = true;
-    @ConfigEntry.Gui.RequiresRestart
-    public boolean letsdoMeadowDefaultCompat = true;
-    @ConfigEntry.Gui.RequiresRestart
-    public boolean letsdoVineryDefaultCompat = true;
-    @ConfigEntry.Gui.RequiresRestart
-    public boolean letsdoWildernatureDefaultCompat = true;
+    public boolean fdWilderdelightsDefaultCompat = true;
   }
 
   @ConfigEntry.Category("compat")
@@ -100,39 +77,55 @@ public class NutritionzConfig implements ConfigData, ConfigSync {
     @ConfigEntry.Gui.RequiresRestart
     public boolean adventurezDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
+    public boolean aquacultureDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
     public boolean betterendDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
     public boolean betternetherDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
-    public boolean croptopiaDefaultCompat = true;
+    public boolean createDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
     public boolean dehydrationDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
-    public boolean dehydrationmeadowDefaultCompat = true;
+    public boolean ecologicsDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
-    public boolean dehydrationvineryDefaultCompat = true;
+    public boolean exlinefishingDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
     public boolean farmzDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
-    public boolean farmzfarmcharmDefaultCompat = true;
+    public boolean fishingparadiseDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
     public boolean fishofthievesDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
+    public boolean kafvalentineDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
     public boolean livingthingsDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
-    public boolean naturesspiritDefaultCompat = true;
+    public boolean moreberriesDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
+    public boolean naturalistDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
+    public boolean netherandendDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
+    public boolean promenadeDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
     public boolean rosegoldequipmentDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
-    public boolean thebumblezoneDefaultCompat = true;
+    public boolean rusticpancakesDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
-    public boolean tideDefaultCompat = true;
+    public boolean starcatcherDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
+    public boolean tastyvanillaDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
+    public boolean tofucraftDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
     public boolean untamedDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
-    public boolean wilderwildDefaultCompat = true;
+    public boolean usefulfoodDefaultCompat = true;
     @ConfigEntry.Gui.RequiresRestart
-    public boolean yungsCaveBiomesDefaultCompat = true;
+    public boolean vanillariceDefaultCompat = true;
+    @ConfigEntry.Gui.RequiresRestart
+    public boolean wilderwildDefaultCompat = true;
   }
 
 

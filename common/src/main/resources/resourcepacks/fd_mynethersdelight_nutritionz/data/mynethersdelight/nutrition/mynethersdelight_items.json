@@ -1,0 +1,429 @@
+{
+  "mynethersdelight:hoglin_loin": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "mynethersdelight:hoglin_sausage": {
+    "carbohydrates": 0,
+    "protein": 4,
+    "fat": 3,
+    "vitamins": 0,
+    "minerals": 3
+  },
+  "mynethersdelight:roasted_sausage": {
+    "carbohydrates": 0,
+    "protein": 8,
+    "fat": 6,
+    "vitamins": 0,
+    "minerals": 6
+  },
+  "mynethersdelight:hotdog": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:hotdog_with_mixed_salad": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "mynethersdelight:hotdog_with_nether_salad": {
+    "carbohydrates": 10,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 5,
+    "minerals": 15
+  },
+  "mynethersdelight:sausage_and_potatoes": {
+    "carbohydrates": 15,
+    "protein": 15,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "mynethersdelight:breakfast_sampler": {
+    "carbohydrates": 10,
+    "protein": 20,
+    "fat": 20,
+    "vitamins": 0,
+    "minerals": 25
+  },
+  "mynethersdelight:cooked_loin": {
+    "carbohydrates": 0,
+    "protein": 15,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:nether_burger": {
+    "carbohydrates": 10,
+    "protein": 20,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "mynethersdelight:blue_tenderloin_steak": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 5,
+    "minerals": 20
+  },
+  "mynethersdelight:fried_hoglin_chop": {
+    "carbohydrates": 10,
+    "protein": 20,
+    "fat": 20,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:red_loin_on_a_stick": {
+    "carbohydrates": 0,
+    "protein": 30,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:bacon-wrapped_sausage_on_a_stick": {
+    "carbohydrates": 0,
+    "protein": 30,
+    "fat": 20,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "mynethersdelight:roast_ear": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "mynethersdelight:plate_of_stuffed_hoglin_snout": {
+    "carbohydrates": 0,
+    "protein": 30,
+    "fat": 20,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "mynethersdelight:plate_of_stuffed_hoglin_ham": {
+    "carbohydrates": 0,
+    "protein": 30,
+    "fat": 20,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:plate_of_stuffed_hoglin": {
+    "carbohydrates": 0,
+    "protein": 20,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:strider_egg": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "mynethersdelight:golden_egg": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:enchanted_golden_egg": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:boiled_egg": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 0
+  },
+  "mynethersdelight:deviled_egg": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 5,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "mynethersdelight:scotch_eggs": {
+    "carbohydrates": 10,
+    "protein": 20,
+    "fat": 20,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:egg_soup": {
+    "carbohydrates": 0,
+    "protein": 20,
+    "fat": 15,
+    "vitamins": 10,
+    "minerals": 5
+  },
+  "mynethersdelight:strider_slice": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:minced_strider": {
+    "carbohydrates": 0,
+    "protein": 5,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "mynethersdelight:bleeding_tartar": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:strider_with_grilled_fungus": {
+    "carbohydrates": 0,
+    "protein": 20,
+    "fat": 5,
+    "vitamins": 5,
+    "minerals": 20
+  },
+  "mynethersdelight:strider_stew": {
+    "carbohydrates": 0,
+    "protein": 20,
+    "fat": 5,
+    "vitamins": 5,
+    "minerals": 10
+  },
+  "mynethersdelight:crimson_stroganoff": {
+    "carbohydrates": 10,
+    "protein": 20,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "mynethersdelight:plate_of_striderloaf": {
+    "carbohydrates": 5,
+    "protein": 15,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "mynethersdelight:plate_of_cold_striderloaf": {
+    "carbohydrates": 10,
+    "protein": 20,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "mynethersdelight:tear_popsicle": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "mynethersdelight:ghasta": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "mynethersdelight:twisted_ghasta": {
+    "carbohydrates": 20,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 20
+  },
+  "mynethersdelight:spicy_noodle_soup": {
+    "carbohydrates": 20,
+    "protein": 20,
+    "fat": 20,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "mynethersdelight:fries_ghasta": {
+    "carbohydrates": 25,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "mynethersdelight:spicy_cotton": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "mynethersdelight:ghast_salad": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 20,
+    "minerals": 10
+  },
+  "mynethersdelight:dried_ghast_with_milk": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:sizzling_pudding": {
+    "carbohydrates": 10,
+    "protein": 5,
+    "fat": 15,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "mynethersdelight:plate_of_ghasta_with_cream": {
+    "carbohydrates": 10,
+    "protein": 5,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "mynethersdelight:giant_takoyaki": {
+    "carbohydrates": 25,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 10,
+    "minerals": 25
+  },
+  "mynethersdelight:ghast_dough": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "mynethersdelight:ghast_sourdough": {
+    "carbohydrates": 10,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "mynethersdelight:slices_of_bread": {
+    "carbohydrates": 15,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:toasts": {
+    "carbohydrates": 25,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:bullet_pepper": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 5
+  },
+  "mynethersdelight:stuffed_pepper": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 10,
+    "minerals": 10
+  },
+  "mynethersdelight:spicy_skewer": {
+    "carbohydrates": 5,
+    "protein": 15,
+    "fat": 0,
+    "vitamins": 5,
+    "minerals": 10
+  },
+  "mynethersdelight:chilidog": {
+    "carbohydrates": 10,
+    "protein": 25,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 20
+  },
+  "mynethersdelight:spicy_hoglin_stew": {
+    "carbohydrates": 10,
+    "protein": 15,
+    "fat": 5,
+    "vitamins": 20,
+    "minerals": 10
+  },
+  "mynethersdelight:hot_wings": {
+    "carbohydrates": 0,
+    "protein": 20,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 10
+  },
+  "mynethersdelight:hot_wings_bucket": {
+    "carbohydrates": 0,
+    "protein": 60,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 30
+  },
+  "mynethersdelight:spicy_curry": {
+    "carbohydrates": 10,
+    "protein": 20,
+    "fat": 10,
+    "vitamins": 15,
+    "minerals": 20
+  },
+  "mynethersdelight:rock_soup": {
+    "carbohydrates": 0,
+    "protein": 10,
+    "fat": 10,
+    "vitamins": 0,
+    "minerals": 15
+  },
+  "mynethersdelight:burnt_roll": {
+    "carbohydrates": 0,
+    "protein": 20,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 30
+  },
+  "mynethersdelight:magma_cake_slice": {
+    "carbohydrates": 5,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "mynethersdelight:hot_cream": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 5
+  },
+  "mynethersdelight:hot_cream_cone": {
+    "carbohydrates": 0,
+    "protein": 0,
+    "fat": 0,
+    "vitamins": 0,
+    "minerals": 20
+  }
+}

@@ -159,5 +159,68 @@
         "fat": 6,
         "vitamins": 0,
         "minerals": 12
+    },
+    "fishofthieves:banana": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 5,
+        "minerals": 5
+    },
+    "fishofthieves:coconut": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 5,
+        "vitamins": 5,
+        "minerals": 5
+    },
+    "fishofthieves:pomegranate": {
+        "carbohydrates": 5,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 5,
+        "minerals": 10
+    },
+    "fishofthieves:raw_mango": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 0
+    },
+    "fishofthieves:mango": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 25,
+        "minerals": 5
+    },
+    "fishofthieves:half_pineapple": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 20,
+        "minerals": 10
+    },
+    "fishofthieves:crownless_pineapple": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 20,
+        "minerals": 10
+    },
+    "fishofthieves:pineapple": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 20,
+        "minerals": 10
+    },
+    "fishofthieves:guardian_fruit": {
+        "carbohydrates": 0,
+        "protein": 0,
+        "fat": 0,
+        "vitamins": 10,
+        "minerals": 20
     }
 }

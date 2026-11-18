@@ -12,7 +12,158 @@ NutritionZ is a mod built for both the [Fabric Loader](https://fabricmc.net/) an
 
 ## Adjustments
 ### Default Datapacks & Mod Compat
-NutritionZ provides some [default datapacks](https://github.com/xR4YM0ND/NutritionZ/tree/1.21/src/main/resources/resourcepacks) for other mods. You can disable/enable them via config.
+NutritionZ provides some [default datapacks](https://github.com/xR4YM0ND/NutritionZ/tree/26.3/common/src/main/resources/resourcepacks) for other mods. 
+
+</center>
+
+<details>
+<summary>26.3 default datapacks</summary>
+
+- Farmers Delight
+- Cultural Delights
+- Easters Delight
+- More Delight
+- My Nethers Delight
+- Rustic Delight
+- Spanish Delight
+- Ubes Delight
+- Wilder Delights
+
+
+- AdventureZ
+- Aquaculture 2
+- BetterEnd
+- BetterNether
+- Create
+- Dehydration
+- Ecologics
+- Exline Fishing
+- FarmZ
+- Fishing Paradise
+- Fish of Thieves
+- Kaf Valentine Special
+- Living Things
+- More Berries
+- Naturalist
+- Nether & End
+- Promenade
+- Rose Gold Equipment
+- Rustic Pancakes
+- Starcatcher
+- Tasty Vanilla
+- Tofucraft
+- Untamed
+- UsefulFood Reborn
+- Vanilla Rice
+- WilderWild
+
+</details>
+
+<details>
+<summary>1.21.1 default datapacks</summary>
+
+- Farmers Delight
+- More Delight
+- Natures Delight
+- Oceans Delight
+- Ubes Delight
+
+
+- Lets Do AlpineWhispers
+- Lets Do Bakery
+- Lets Do Beachparty
+- Lets Do Brewery
+- Lets Do Candlelight
+- Lets Do Corn Expansion
+- Lets Do Farm and Charm
+- Lets Do HerbalBrews
+- Lets Do Lilis Lucky Lures
+- Lets Do Meadow
+- Lets Do Vinery
+- Lets Do WilderNature
+
+
+- AdventureZ
+- BetterEnd
+- BetterNether
+- Croptopia
+- Dehydration
+- FarmZ
+- Living Things
+- Natures Spirit
+- Rose Gold Equipment
+- The Bumblezone
+- Tide 2
+- Untamed
+- WilderWild
+- Yungs Cave Biomes
+
+</details>
+
+<details>
+<summary>1.20.1 default datapacks</summary>
+
+- Farmers Delight
+- Cultural Delights
+- Ends Delight
+- Expanded Delight
+- Farmers Delight
+- Festive Delight
+- More Delight
+- Natures Delight
+- Oceans Delight
+- Ubes Delight
+
+
+- Lets Do Bakery
+- Lets Do Beachparty
+- Lets Do Brewery
+- Lets Do Candlelight
+- Lets Do Corn Expansion
+- Lets Do Farm and Charm
+- Lets Do HerbalBrews
+- Lets Do Lilis Lucky Lures
+- Lets Do Meadow
+- Lets Do Nether Vinery
+- Lets Do Vinery
+- Lets Do WilderNature
+
+
+- AdAstra
+- AdventureZ
+- Amarite
+- Aquamirae
+- BetterEnd
+- BetterNether
+- BiomeMakeOver
+- Bountiful Fares
+- Brewin and Chewin
+- Create
+- Create Addition
+- Culinaire
+- Dehydration
+- Exline Fishing
+- Fish of Thieves
+- Hybrid Aquatic
+- Immersive Weathering
+- Living Things
+- Mob Catalog
+- Naturalist
+- Natures Spirit
+- Nether Depths Upgrade
+- Promenade
+- Regions Unexplored
+- Spawn
+- Spelunkery
+- Supplementaries
+- The Bumblezone
+- Tide
+- Wilder Wild
+
+</details>
+<center>
+
+You can disable/enable them via config.
 You can add other mod compats via datapack. Just follow the structure `data/somemod/nutrition/somename.json`.
 
 Here's an example from the default vanilla datapack:
@@ -85,16 +236,12 @@ Max Nutrition & thresholds can be set in the `nutritionz.json5` config.
 
 <center>
 
-## Credits
-<a href="https://discord.gg/WXdSYn4yHB" target="_blank">
-<img alt="Discord Fabricated Atelier" src="https://img.shields.io/discord/745451299713056791?color=7289DA&label=DISCORD&logo=discord&logoColor=white&style=for-the-badge"></a>
-<a href="https://github.com/xR4YM0ND/NutritionZ/blob/1.21/LICENSE" target="_blank">
-<img alt="GitHub License" src="https://img.shields.io/github/license/xR4YM0ND/NutritionZ?style=for-the-badge"></a>
-<a href="https://github.com/xR4YM0ND/NutritionZ" target="_blank">
-<img alt="GitHub Source Code" src="https://img.shields.io/badge/Github-Source_Code-lightgrey?style=for-the-badge"></a>
-<p></p>
-<a href="https://modrinth.com/user/xR4YM0ND" target="_blank">
-<img alt="xR4YM0ND Modrinth" src="https://img.shields.io/badge/Modrinth-xR4YM0ND-1bd96a?style=for-the-badge"></a>
-<a href="https://legacy.curseforge.com/members/spigotde/projects" target="_blank"><img alt="xR4YM0ND Curseforge" src="https://img.shields.io/badge/Curseforge-xR4YM0ND-f16436?style=for-the-badge"></a>
-<p></p>
+## Links
+[![GitHub License Badge](https://img.shields.io/github/license/xR4YM0ND/NutritionZ?style=for-the-badge&label=%C2%A7&labelColor=555555)](https://github.com/xR4YM0ND/NutritionZ/blob/26.3/LICENSE)
+[![Source Code Badge](https://img.shields.io/badge/source_code-lightgray?style=for-the-badge&logo=github&label=%20&labelColor=555555)](https://github.com/xR4YM0ND/NutritionZ/tree/26.3)
+[![Discord Badge](https://img.shields.io/discord/745451299713056791?style=for-the-badge&logo=discord&logoColor=white&label=%20&labelColor=555555&color=5865F2)](https://discord.gg/WXdSYn4yHB)
+
+[![Modrinth Downloads Badge](https://img.shields.io/modrinth/dt/9IASI8W8?style=for-the-badge&logo=modrinth&logoColor=white&label=%20&labelColor=555555&color=1BD964)](https://modrinth.com/mod/nutritionz)
+[![CurseForge Downloads Badge](https://img.shields.io/curseforge/dt/956695?style=for-the-badge&logo=curseforge&logoColor=white&label=%20&labelColor=555555&color=FF8041)](https://www.curseforge.com/minecraft/mc-mods/nutritionz)
+
 </center>
